@@ -1,0 +1,27 @@
+# Future JavaScript tooling
+node_modules/
+dist/
+coverage/
+.vite/
+.vitest/
+playwright-report/
+test-results/
+
+# Local configuration and secrets
+.env
+.env.*
+!.env.example
+*.log
+
+# Future native Python environment; no container tooling
+.venv/
+__pycache__/
+.pytest_cache/
+*.py[cod]
+
+# Generated local runs; small reviewed fixtures belong in tests/fixtures instead
+artifacts/local/
+
+# OS files
+.DS_Store
+Thumbs.db
