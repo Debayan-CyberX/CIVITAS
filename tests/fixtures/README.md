@@ -1,0 +1,1 @@
+B01 fixtures test structural contract boundaries only. They are not a validated city, real hash/replay evidence, or a simulation result. B02 supplies topology and deterministic demand fixtures; B03/B04 supply behavior and replay evidence.

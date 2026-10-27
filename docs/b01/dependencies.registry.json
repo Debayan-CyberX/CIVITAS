@@ -1,0 +1,450 @@
+{
+  "checkedAt": "2026-10-27T22:22:36.879Z",
+  "node": "v24.22.1",
+  "packages": [
+    {
+      "name": "@axe-core/playwright",
+      "version": "4.14.0",
+      "source": "https://registry.npmjs.org/%40axe-core%2Fplaywright/4.14.0",
+      "engines": {
+        "node": ">=22.12.0"
+      },
+      "peers": {
+        "playwright-core": ">= 1.0.0"
+      },
+      "optionalPeers": {},
+      "integrity": "sha512-SGUhG5PIHd2eMdpgBF2PyQLOhX+qyDR2PT4cmoS4Qk2ak+jX/rrSvst9l0PGv5WTHolKpUMvVmoHpr4cZgf1RQ=="
+    },
+    {
+      "name": "@eslint/js",
+      "version": "10.0.1",
+      "source": "https://registry.npmjs.org/%40eslint%2Fjs/10.0.1",
+      "engines": {
+        "node": "^20.19.0 || ^22.13.0 || >=24"
+      },
+      "peers": {
+        "eslint": "^10.0.0"
+      },
+      "optionalPeers": {
+        "eslint": {
+          "optional": true
+        }
+      },
+      "integrity": "sha512-zeR9k5pd4gxjZ0abRoIaxdc7I3nDktoXZk2qOv9gCNWx3mVwEn32VRhyLaRsDiJjTs0xq/T8mfPtyuXu7GWBcA=="
+    },
+    {
+      "name": "@playwright/test",
+      "version": "1.64.1",
+      "source": "https://registry.npmjs.org/%40playwright%2Ftest/1.64.1",
+      "engines": {
+        "node": ">=20"
+      },
+      "peers": {},
+      "optionalPeers": {},
+      "integrity": "sha512-IaYGml/nSOiZWROfPtuIL7neuu9qDOZ3TNvNljUIrhDMxiGTgPjzj/g9p9RxpS2tSepPDRY+UwAaEeiKtUvIAg=="
+    },
+    {
+      "name": "@react-three/fiber",
+      "version": "9.8.2",
+      "source": "https://registry.npmjs.org/%40react-three%2Ffiber/9.8.2",
+      "engines": {},
+      "peers": {
+        "expo": ">=43.0",
+        "react": ">=19 <19.4",
+        "three": ">=0.156",
+        "expo-gl": ">=11.0",
+        "react-dom": ">=19 <19.4",
+        "expo-asset": ">=8.4",
+        "react-native": ">=0.78",
+        "expo-file-system": ">=11.0"
+      },
+      "optionalPeers": {
+        "expo": {
+          "optional": true
+        },
+        "expo-gl": {
+          "optional": true
+        },
+        "react-dom": {
+          "optional": true
+        },
+        "expo-asset": {
+          "optional": true
+        },
+        "react-native": {
+          "optional": true
+        },
+        "expo-file-system": {
+          "optional": true
+        }
+      },
+      "integrity": "sha512-6s0ejw0bT1myQ/aLLugcil8/zBmNnnHw/AISWF1yfDLOxfX3yYaTS+0IkpJITEnm/SSMLtxje6CJDt0i5Wu1Sw=="
+    },
+    {
+      "name": "@types/node",
+      "version": "24.19.2",
+      "source": "https://registry.npmjs.org/%40types%2Fnode/24.19.2",
+      "engines": {},
+      "peers": {},
+      "optionalPeers": {},
+      "integrity": "sha512-93d49wCWJkCyN87MxLpNN6KXPCwFw7bVUg79mGUV1OS40JGWwVCr8n61DXCSqz7CV6/VfPkb7xec7uP2M+QHWQ=="
+    },
+    {
+      "name": "@types/react",
+      "version": "19.3.0",
+      "source": "https://registry.npmjs.org/%40types%2Freact/19.3.0",
+      "engines": {},
+      "peers": {},
+      "optionalPeers": {},
+      "integrity": "sha512-N0rFCuH9YoxG9/m61l9MfpJKfmLOVU0em7ipIz6TRgSSkvReLB9vL85GB+yr8Bs5leqpvg96JSwF4ZS1s4viQg=="
+    },
+    {
+      "name": "@types/react-dom",
+      "version": "19.3.0",
+      "source": "https://registry.npmjs.org/%40types%2Freact-dom/19.3.0",
+      "engines": {},
+      "peers": {
+        "@types/react": "^19.3.0"
+      },
+      "optionalPeers": {},
+      "integrity": "sha512-ZI7bU42mZXXKHn/qNLEw2IrbiINU7X5+vfgdixBHkCNpYWXjKgfQ/P+uyGb5CjOLB9UcnTeg3rylQtV2hym44Q=="
+    },
+    {
+      "name": "@types/three",
+      "version": "0.186.0",
+      "source": "https://registry.npmjs.org/%40types%2Fthree/0.186.0",
+      "engines": {},
+      "peers": {},
+      "optionalPeers": {},
+      "integrity": "sha512-mxYSBpDC+D0pLfSP6sW4WZTcT+nrtmZcimMqnVmy36Hte3XpeYSrvgg4TRdaM1GemGog1AWzI5qL2VoIfMXbJQ=="
+    },
+    {
+      "name": "@vitejs/plugin-react",
+      "version": "6.1.2",
+      "source": "https://registry.npmjs.org/%40vitejs%2Fplugin-react/6.1.2",
+      "engines": {
+        "node": "^20.19.0 || >=22.12.0"
+      },
+      "peers": {
+        "vite": "^8.0.0",
+        "oxc-transform-react": "^0.152.0",
+        "@rolldown/plugin-babel": "^0.1.7 || ^0.2.0",
+        "babel-plugin-react-compiler": "^1.0.0"
+      },
+      "optionalPeers": {
+        "oxc-transform-react": {
+          "optional": true
+        },
+        "@rolldown/plugin-babel": {
+          "optional": true
+        },
+        "babel-plugin-react-compiler": {
+          "optional": true
+        }
+      },
+      "integrity": "sha512-fhJNGUdscQa4HkI0xFxwonWyhnVReCPDbXI7FH7jmzpnVCrFQI7PRrhWecO263610vOrs9tr2Y4xcf8uAdFxbw=="
+    },
+    {
+      "name": "eslint",
+      "version": "10.13.0",
+      "source": "https://registry.npmjs.org/eslint/10.13.0",
+      "engines": {
+        "node": "^20.19.0 || ^22.13.0 || >=24"
+      },
+      "peers": {
+        "jiti": "*"
+      },
+      "optionalPeers": {
+        "jiti": {
+          "optional": true
+        }
+      },
+      "integrity": "sha512-UohDjD4zSzEwhf58M3O7vc/ycc8O1I7dNlhtD0WxE8Px8EHNJKtUwzBqrzeGhisRuv2ag4sAYswszCJRgKXYUg=="
+    },
+    {
+      "name": "eslint-plugin-react-hooks",
+      "version": "7.1.1",
+      "source": "https://registry.npmjs.org/eslint-plugin-react-hooks/7.1.1",
+      "engines": {
+        "node": ">=18"
+      },
+      "peers": {
+        "eslint": "^3.0.0 || ^4.0.0 || ^5.0.0 || ^6.0.0 || ^7.0.0 || ^8.0.0-0 || ^9.0.0 || ^10.0.0"
+      },
+      "optionalPeers": {},
+      "integrity": "sha512-f2I7Gw6JbvCexzIInuSbZpfdQ44D7iqdWX01FKLvrPgqxoE7oMj8clOfto8U6vYiz4yd5oKu39rRSVOe1zRu0g=="
+    },
+    {
+      "name": "eslint-plugin-react-refresh",
+      "version": "0.5.7",
+      "source": "https://registry.npmjs.org/eslint-plugin-react-refresh/0.5.7",
+      "engines": {},
+      "peers": {
+        "eslint": "^9 || ^10"
+      },
+      "optionalPeers": {},
+      "integrity": "sha512-XhJSzLljuYD4UjNuFGJu2v7aD3sqNVK12w5/DCUfrNfHWegZo2+TsavNx8MuxMwEquuFAzNbNfXKU0WoZ+YUIg=="
+    },
+    {
+      "name": "fast-check",
+      "version": "4.10.2",
+      "source": "https://registry.npmjs.org/fast-check/4.10.2",
+      "engines": {
+        "node": ">=12.17.0"
+      },
+      "peers": {},
+      "optionalPeers": {},
+      "integrity": "sha512-iK2f+YrcmoeGqk6fA0ea2bptcu/itMIm4NfEozq6N25+aG6h7s5HZbB/k1aV7b5w5sFLMCbbtRUsTVR+BgC3xw=="
+    },
+    {
+      "name": "globals",
+      "version": "17.13.0",
+      "source": "https://registry.npmjs.org/globals/17.13.0",
+      "engines": {
+        "node": ">=18"
+      },
+      "peers": {},
+      "optionalPeers": {},
+      "integrity": "sha512-RwMTC61u7hrG3ZJMkZQOK4JLJrKS8QtoTii63EmWvFXHqycY9FObBJQCbsLxSO8kjKhWE5kV1GC+Vb1g3RI0Zg=="
+    },
+    {
+      "name": "prettier",
+      "version": "3.9.10",
+      "source": "https://registry.npmjs.org/prettier/3.9.10",
+      "engines": {
+        "node": ">=14"
+      },
+      "peers": {},
+      "optionalPeers": {},
+      "integrity": "sha512-skGHTH1Yb9QvaTC4hWnRTzEYtCpApF0UMBPz+t/0ZPzP8ihefo/btKd+QA7pUE0fEwA1SbS/NmhyEcstdXOIdA=="
+    },
+    {
+      "name": "react",
+      "version": "19.3.1",
+      "source": "https://registry.npmjs.org/react/19.3.1",
+      "engines": {
+        "node": ">=0.10.0"
+      },
+      "peers": {},
+      "optionalPeers": {},
+      "integrity": "sha512-QNhWdt7nrgVWWQG58QuGsAR3jv3Hbe4mb4vz7w2csnHavciZJgda1CPNaldF6eVxv90ud3jUXpKlHL69gO38yw=="
+    },
+    {
+      "name": "react-dom",
+      "version": "19.3.1",
+      "source": "https://registry.npmjs.org/react-dom/19.3.1",
+      "engines": {},
+      "peers": {
+        "react": "^19.3.1"
+      },
+      "optionalPeers": {},
+      "integrity": "sha512-Y0bARz53lhEC1NMCASs0/j+faB/zqt3R8hpvg1e8+61ZVJ4UL0UdC4cBbXfZMcIuhrfgeILTLe+ZeBCavQPtKQ=="
+    },
+    {
+      "name": "three",
+      "version": "0.186.1",
+      "source": "https://registry.npmjs.org/three/0.186.1",
+      "engines": {},
+      "peers": {},
+      "optionalPeers": {},
+      "integrity": "sha512-blFeqb49wRCSGUGj7gtpfnSGHy2lwDk94RhUmS1c/hTby70kvChbWpkJ4Pm1390LqzzvTmzgXKHPEafJwCb8jA=="
+    },
+    {
+      "name": "tsx",
+      "version": "4.23.15",
+      "source": "https://registry.npmjs.org/tsx/4.23.15",
+      "engines": {
+        "node": ">=18.0.0"
+      },
+      "peers": {},
+      "optionalPeers": {},
+      "integrity": "sha512-Yiex1Ovn8z2xPpOWckIiysV1SSyRMY9BkLF++q0yKiDxCqRhosKfMg3janKkiLBwZ5c/YryloKwGZcrEmtwxKw=="
+    },
+    {
+      "name": "typescript",
+      "version": "6.0.3",
+      "source": "https://registry.npmjs.org/typescript/6.0.3",
+      "engines": {
+        "node": ">=14.17"
+      },
+      "peers": {},
+      "optionalPeers": {},
+      "integrity": "sha512-y2TvuxSZPDyQakkFRPZHKFm+KKVqIisdg9/CZwm9ftvKXLP8NRWj38/ODjNbr43SsoXqNuAisEf1GdCxqWcdBw=="
+    },
+    {
+      "name": "typescript-eslint",
+      "version": "8.72.1",
+      "source": "https://registry.npmjs.org/typescript-eslint/8.72.1",
+      "engines": {
+        "node": "^18.18.0 || ^20.9.0 || >=21.1.0"
+      },
+      "peers": {
+        "eslint": "^8.57.0 || ^9.0.0 || ^10.0.0",
+        "typescript": ">=4.8.4 <6.1.0"
+      },
+      "optionalPeers": {},
+      "integrity": "sha512-3Li9FfPmQp45nxEtFD1ZCrYFI3cYK5kpyNtmm1H7lMagm8u9sy6PTjy3ytwQZs7KNukOyKFHAZ6z6GjYFeaeXw=="
+    },
+    {
+      "name": "vite",
+      "version": "8.3.5",
+      "source": "https://registry.npmjs.org/vite/8.3.5",
+      "engines": {
+        "node": "^20.19.0 || >=22.12.0"
+      },
+      "peers": {
+        "tsx": "^4.8.1",
+        "jiti": ">=1.21.0",
+        "less": "^4.0.0",
+        "sass": "^1.70.0",
+        "yaml": "^2.4.2",
+        "stylus": ">=0.54.8",
+        "terser": "^5.16.0",
+        "esbuild": "^0.27.0 || ^0.28.0",
+        "sugarss": "^5.0.0",
+        "@types/node": "^20.19.0 || >=22.12.0",
+        "sass-embedded": "^1.70.0",
+        "@vitejs/devtools": "^0.7.1 || ^0.8.0"
+      },
+      "optionalPeers": {
+        "tsx": {
+          "optional": true
+        },
+        "jiti": {
+          "optional": true
+        },
+        "less": {
+          "optional": true
+        },
+        "sass": {
+          "optional": true
+        },
+        "yaml": {
+          "optional": true
+        },
+        "stylus": {
+          "optional": true
+        },
+        "terser": {
+          "optional": true
+        },
+        "esbuild": {
+          "optional": true
+        },
+        "sugarss": {
+          "optional": true
+        },
+        "@types/node": {
+          "optional": true
+        },
+        "sass-embedded": {
+          "optional": true
+        },
+        "@vitejs/devtools": {
+          "optional": true
+        }
+      },
+      "integrity": "sha512-z1YpjieJ9g0ebTmQpLBv/oq9E3F9EIlOe+7LahW8SrE3LTiG3udBRUXQOlYXP9b+IC2q2phHeVxj9xGlw34OEQ=="
+    },
+    {
+      "name": "vitest",
+      "version": "5.0.5",
+      "source": "https://registry.npmjs.org/vitest/5.0.5",
+      "engines": {
+        "node": "^22.12.0 || ^24.0.0 || >=26.0.0"
+      },
+      "peers": {
+        "vite": "^6.4.0 || ^7.0.0 || ^8.0.0",
+        "jsdom": "*",
+        "happy-dom": "*",
+        "@vitest/ui": "5.0.5",
+        "@types/node": "^22.0.0 || >=24.0.0",
+        "@edge-runtime/vm": "*",
+        "@opentelemetry/api": "^1.9.0",
+        "@vitest/coverage-v8": "5.0.5",
+        "@vitest/browser-preview": "5.0.5",
+        "@vitest/coverage-istanbul": "5.0.5",
+        "@vitest/browser-playwright": "5.0.5",
+        "@vitest/browser-webdriverio": "^5.0.0-beta.5 || >=5.0.0"
+      },
+      "optionalPeers": {
+        "vite": {
+          "optional": false
+        },
+        "jsdom": {
+          "optional": true
+        },
+        "happy-dom": {
+          "optional": true
+        },
+        "@vitest/ui": {
+          "optional": true
+        },
+        "@types/node": {
+          "optional": true
+        },
+        "@edge-runtime/vm": {
+          "optional": true
+        },
+        "@opentelemetry/api": {
+          "optional": true
+        },
+        "@vitest/coverage-v8": {
+          "optional": true
+        },
+        "@vitest/browser-preview": {
+          "optional": true
+        },
+        "@vitest/coverage-istanbul": {
+          "optional": true
+        },
+        "@vitest/browser-playwright": {
+          "optional": true
+        },
+        "@vitest/browser-webdriverio": {
+          "optional": true
+        }
+      },
+      "integrity": "sha512-cPODOMF8YnkiiYtDdHo6n4wWmBrOBBbOIYH2d33M4l3CdNn72h+qMmO6uXffUN6A5AZFXNND/d+krS9mgkXRfg=="
+    },
+    {
+      "name": "zod",
+      "version": "4.6.7",
+      "source": "https://registry.npmjs.org/zod/4.6.7",
+      "engines": {},
+      "peers": {},
+      "optionalPeers": {},
+      "integrity": "sha512-g8W2D2kU6a8untc053fX1uVBKzM7yqAxW/3zwk83+6RyF2+SKOuV+c0wBDhUwzV1PaGapmZH+rmcUzPf+3CGwg=="
+    },
+    {
+      "name": "zustand",
+      "version": "5.0.16",
+      "source": "https://registry.npmjs.org/zustand/5.0.16",
+      "engines": {
+        "node": ">=12.20.0"
+      },
+      "peers": {
+        "immer": ">=9.0.6",
+        "react": ">=18.0.0",
+        "@types/react": ">=18.0.0",
+        "use-sync-external-store": ">=1.2.0"
+      },
+      "optionalPeers": {
+        "immer": {
+          "optional": true
+        },
+        "react": {
+          "optional": true
+        },
+        "@types/react": {
+          "optional": true
+        },
+        "use-sync-external-store": {
+          "optional": true
+        }
+      },
+      "integrity": "sha512-Uv7e327ihlCfayfja3hDc0M64Upev1LWBKpRobdK4NyovDDPeeX4imWXc/wzC1yc6fkYPoAY/ncKVPAs2jrtQw=="
+    }
+  ],
+  "peerResolution": "See strict-peer-deps package-lock-only resolution and npm ls --all evidence; metadata alone is not a peer solver."
+}

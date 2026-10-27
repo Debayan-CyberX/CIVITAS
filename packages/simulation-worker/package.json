@@ -1,0 +1,13 @@
+{
+  "name": "@civitas/simulation-worker",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    "./probe": "./src/probe.worker.ts"
+  },
+  "dependencies": {
+    "@civitas/contracts": "0.1.0",
+    "@civitas/simulation": "0.1.0"
+  }
+}

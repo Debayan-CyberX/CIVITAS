@@ -1,0 +1,37 @@
+:root {
+  font-family: system-ui, sans-serif;
+  color: #ece6da;
+  background: #181c1d;
+  line-height: 1.6;
+  color-scheme: dark;
+}
+body {
+  margin: 0;
+}
+main {
+  max-width: 42rem;
+  margin: 8vh auto;
+  padding: 2rem;
+}
+h1 {
+  font-family: Georgia, serif;
+  font-weight: 400;
+  font-size: clamp(2.5rem, 8vw, 4rem);
+  line-height: 1.1;
+  margin: 0 0 2rem;
+}
+h2 {
+  font-size: 1.25rem;
+}
+.eyebrow {
+  color: #d4aa72;
+}
+p[role='status'] {
+  padding: 1rem;
+  border: 1px solid #b9b1a5;
+}
+@media (forced-colors: active) {
+  p[role='status'] {
+    border-color: CanvasText;
+  }
+}

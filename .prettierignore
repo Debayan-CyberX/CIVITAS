@@ -1,0 +1,16 @@
+node_modules/
+dist/
+coverage/
+playwright-report/
+test-results/
+artifacts/local/
+package-lock.json
+# Preserve the reviewed Stage 00 dossier verbatim.
+/README.md
+docs/vision.md
+docs/architecture.md
+docs/simulation-spec.md
+docs/design-system.md
+docs/roadmap.md
+docs/acceptance-criteria.md
+docs/stage-01-build-plan.md
