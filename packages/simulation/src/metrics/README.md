@@ -1,1 +1,1 @@
-Reserved for B04 authoritative metric reducers. B01 defines their contracts only.
+`reducer.ts` derives metrics from actual transition contributions and request lifecycles. `encoding.ts` stores regular metric series compactly with validated definition metadata. See [B02–B05 evidence](../../../../docs/b02-b05/README.md).

@@ -1,1 +1,1 @@
-Reserved for B02 seeded demand and itinerary generation. No PRNG or manifest generator exists yet.
+`prng.ts` implements reviewed seeded randomness and independent streams. `manifest.ts` generates finite itineraries and validates request order, gateways, profiles and frozen reference costs. See [B02–B05 evidence](../../../../docs/b02-b05/README.md).

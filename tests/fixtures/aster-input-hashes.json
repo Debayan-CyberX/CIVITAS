@@ -1,0 +1,68 @@
+{
+  "description": "Reviewed B02 input identity fixture; regenerate only after an explicit input version change.",
+  "rows": [
+    {
+      "fleet": 100,
+      "seed": 104729,
+      "city": "92b02caa2ad93f4b8f719cf978e019bc8994cb25ae16eb90f28fe1221364388c",
+      "scenario": "763de6c1bbefcfd1bf354b0270dd1cfa989de57f2a4f8916785684c56d3a0091",
+      "manifest": "f36433f325eae31cfed5b04a5939b1cd8085e6f8fd3d215479f7f2564b1db26b"
+    },
+    {
+      "fleet": 100,
+      "seed": 130363,
+      "city": "92b02caa2ad93f4b8f719cf978e019bc8994cb25ae16eb90f28fe1221364388c",
+      "scenario": "f939b2aca7e73b834ad18914d156c219d7e903220a294b96bcb9f2c9ccfc9210",
+      "manifest": "ff94534e1f6c686fcc418ea93a7e99f332213fd8834a1b16df74f908eb0aa448"
+    },
+    {
+      "fleet": 100,
+      "seed": 155921,
+      "city": "92b02caa2ad93f4b8f719cf978e019bc8994cb25ae16eb90f28fe1221364388c",
+      "scenario": "e12400c2acbbed36ca50c1d832477444c19e91086a7df392e361eac4181ec998",
+      "manifest": "b4986f305ea071b5fbb686cb41226694094dcfd373dbc66bf620f12605719fcc"
+    },
+    {
+      "fleet": 200,
+      "seed": 104729,
+      "city": "92b02caa2ad93f4b8f719cf978e019bc8994cb25ae16eb90f28fe1221364388c",
+      "scenario": "fdd6cc01dc9032219a0846ed98ac51e759eceda9ee439b4a3b07f06d8e2cf591",
+      "manifest": "0fea7130a52d099ee760286fa43cf05d4e5b97cf5f3a552cd3cdfd0c8afc7597"
+    },
+    {
+      "fleet": 200,
+      "seed": 130363,
+      "city": "92b02caa2ad93f4b8f719cf978e019bc8994cb25ae16eb90f28fe1221364388c",
+      "scenario": "45f1bb2a7c8305f1670d0d69e593298f9775d0bb5a06e8c2cc0fa3bd3a7e09fb",
+      "manifest": "3e665721d2db7421bca5393cc12c76b1022b753d22040075d0fe6af3adb4a7b6"
+    },
+    {
+      "fleet": 200,
+      "seed": 155921,
+      "city": "92b02caa2ad93f4b8f719cf978e019bc8994cb25ae16eb90f28fe1221364388c",
+      "scenario": "1163ecdff241101862e0bdfe45efc70c17460a6b7b4b8a8b178a9090457998fe",
+      "manifest": "03d89ea8ae4355a19a2939abab3e78b501d37db72d2c444926e70ad27642454d"
+    },
+    {
+      "fleet": 300,
+      "seed": 104729,
+      "city": "92b02caa2ad93f4b8f719cf978e019bc8994cb25ae16eb90f28fe1221364388c",
+      "scenario": "f032a37ef19c2448156e6cf847e239aeaf3121a125c7a52ef217c715cc322a17",
+      "manifest": "e8e109a3fafce11e0e4679be13c8c2e6af19c855d81ed307a1c8b53ac6a1ab82"
+    },
+    {
+      "fleet": 300,
+      "seed": 130363,
+      "city": "92b02caa2ad93f4b8f719cf978e019bc8994cb25ae16eb90f28fe1221364388c",
+      "scenario": "990d4ebb0148cbb18553f7d15ef04162c2e71eddc9e1692792492a138af64805",
+      "manifest": "1a86f167365d9bae4af42c4cea36f8c2b8c1e64602bc8c9df9b7d757451261de"
+    },
+    {
+      "fleet": 300,
+      "seed": 155921,
+      "city": "92b02caa2ad93f4b8f719cf978e019bc8994cb25ae16eb90f28fe1221364388c",
+      "scenario": "e5784fa839c047f31ba189f1aa10f03bc3e0bd3c982edaa63ea52fa3d4d9b58c",
+      "manifest": "8ddb49ab9cb74e34ea18c33b4aa1f402f73aa7be818548d445e192ed83bb398a"
+    }
+  ]
+}

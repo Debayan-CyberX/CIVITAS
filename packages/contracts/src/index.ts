@@ -7,3 +7,5 @@ export * from './metrics';
 export * from './state';
 export * from './artifact';
 export * from './protocol';
+export * from './engine';
+export * from './browser-identity';

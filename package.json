@@ -13,6 +13,11 @@
   },
   "packageManager": "npm@11.19.1",
   "scripts": {
+    "data:build": "tsx scripts/build-data.ts",
+    "sim:run": "tsx scripts/headless.ts run",
+    "sim:verify": "tsx scripts/headless.ts verify",
+    "perf:headless": "node --expose-gc --import tsx scripts/headless.ts perf",
+    "evidence:b02-b05": "tsx scripts/collect-evidence.ts",
     "dev": "npm run dev --workspace @civitas/web",
     "preview": "npm run preview --workspace @civitas/web",
     "build": "npm run build --workspace @civitas/web",

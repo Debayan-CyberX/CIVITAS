@@ -1,1 +1,1 @@
-Reserved for B04 canonical serialization, hashing, and replay. B01 defines checkpoint shapes only.
+`canonical.ts` serializes deterministic state. `session.ts` owns scheduled checkpoints, authenticated history, bounded artifact validation, restoration and replay. SHA-256 is injected by the runtime. See [B02–B05 evidence](../../../../docs/b02-b05/README.md).

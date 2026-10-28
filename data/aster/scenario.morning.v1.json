@@ -1,0 +1,100 @@
+{
+  "schemaVersion": "scenario/1",
+  "id": "aster-morning",
+  "version": "v1",
+  "name": "Aster morning",
+  "cityId": "aster",
+  "cityVersion": "v1",
+  "cityHash": "92b02caa2ad93f4b8f719cf978e019bc8994cb25ae16eb90f28fe1221364388c",
+  "specVersion": "sim-spec/1",
+  "engineVersion": "engine/0.2.0",
+  "tickDurationMs": 100,
+  "seed": 104729,
+  "prngVersion": "xoshiro128**-1.1/splitmix64-1",
+  "horizonTicks": 9000,
+  "warmupTicks": 1200,
+  "demand": {
+    "fleetSize": 200,
+    "firstDepartureSpreadTicks": 600,
+    "itineraryIntervalTicks": 1200,
+    "originWeights": [
+      {
+        "districtId": "D0",
+        "weight": 5
+      },
+      {
+        "districtId": "D1",
+        "weight": 2
+      },
+      {
+        "districtId": "D2",
+        "weight": 3
+      }
+    ],
+    "destinationWeights": [
+      {
+        "originDistrictId": "D0",
+        "destinations": [
+          {
+            "districtId": "D0",
+            "weight": 1
+          },
+          {
+            "districtId": "D1",
+            "weight": 6
+          },
+          {
+            "districtId": "D2",
+            "weight": 3
+          }
+        ]
+      },
+      {
+        "originDistrictId": "D1",
+        "destinations": [
+          {
+            "districtId": "D0",
+            "weight": 4
+          },
+          {
+            "districtId": "D1",
+            "weight": 1
+          },
+          {
+            "districtId": "D2",
+            "weight": 5
+          }
+        ]
+      },
+      {
+        "originDistrictId": "D2",
+        "destinations": [
+          {
+            "districtId": "D0",
+            "weight": 3
+          },
+          {
+            "districtId": "D1",
+            "weight": 6
+          },
+          {
+            "districtId": "D2",
+            "weight": 1
+          }
+        ]
+      }
+    ]
+  },
+  "vehicleProfiles": [
+    {
+      "id": "passenger",
+      "lengthMm": 4500,
+      "minimumGapMm": 2000,
+      "desiredHeadwayMs": 1200,
+      "accelerationMmPerSecondSquared": 1500,
+      "comfortableBrakingMmPerSecondSquared": 2000,
+      "emergencyBrakingMmPerSecondSquared": 6000,
+      "exponent": 4
+    }
+  ]
+}

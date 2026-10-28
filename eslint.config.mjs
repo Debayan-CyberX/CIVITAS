@@ -50,6 +50,14 @@ export default tseslint.config(
     languageOptions: { globals: globals.worker },
   },
   {
+    files: [
+      'packages/contracts/src/**/*.ts',
+      'packages/simulation/src/**/*.ts',
+      'packages/simulation-worker/src/**/*.ts',
+    ],
+    languageOptions: { parserOptions: { project: null, projectService: true } },
+  },
+  {
     files: ['*.config.ts', 'apps/web/vite.config.ts', 'tests/**/*.ts'],
     languageOptions: { globals: globals.node },
   },

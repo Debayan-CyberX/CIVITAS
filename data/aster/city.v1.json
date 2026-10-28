@@ -1,0 +1,6947 @@
+{
+  "schemaVersion": "city/1",
+  "id": "aster",
+  "version": "v1",
+  "name": "Aster",
+  "topologyHash": "2fa64e5631802bef7a3bee1686533fdfc21e37c53aba60ddac2abd582ee1c8c7",
+  "frame": {
+    "id": "aster-local-meters",
+    "kind": "LOCAL_METRIC",
+    "units": "meters"
+  },
+  "bounds": {
+    "minEastM": -90,
+    "maxEastM": 630,
+    "minNorthM": -90,
+    "maxNorthM": 450
+  },
+  "nodes": [
+    {
+      "id": "J00",
+      "position": {
+        "eastM": 0,
+        "northM": 0,
+        "elevationM": 0
+      },
+      "districtId": "D0",
+      "incomingLaneIds": ["L:J01>J00", "L:J10>J00"],
+      "outgoingLaneIds": ["L:J00>J01", "L:J00>J10"]
+    },
+    {
+      "id": "J01",
+      "position": {
+        "eastM": 0,
+        "northM": 180,
+        "elevationM": 0
+      },
+      "districtId": "D0",
+      "incomingLaneIds": ["L:J00>J01", "L:J02>J01", "L:J11>J01"],
+      "outgoingLaneIds": ["L:J01>J00", "L:J01>J02", "L:J01>J11"]
+    },
+    {
+      "id": "J02",
+      "position": {
+        "eastM": 0,
+        "northM": 360,
+        "elevationM": 0
+      },
+      "districtId": "D0",
+      "incomingLaneIds": ["L:J01>J02", "L:J12>J02"],
+      "outgoingLaneIds": ["L:J02>J01", "L:J02>J12"]
+    },
+    {
+      "id": "J10",
+      "position": {
+        "eastM": 180,
+        "northM": 0,
+        "elevationM": 0
+      },
+      "districtId": "D1",
+      "incomingLaneIds": ["L:J00>J10", "L:J11>J10", "L:J20>J10"],
+      "outgoingLaneIds": ["L:J10>J00", "L:J10>J11", "L:J10>J20"]
+    },
+    {
+      "id": "J11",
+      "position": {
+        "eastM": 180,
+        "northM": 180,
+        "elevationM": 0
+      },
+      "districtId": "D1",
+      "incomingLaneIds": ["L:J01>J11", "L:J10>J11", "L:J12>J11", "L:J21>J11"],
+      "outgoingLaneIds": ["L:J11>J01", "L:J11>J10", "L:J11>J12", "L:J11>J21"]
+    },
+    {
+      "id": "J12",
+      "position": {
+        "eastM": 180,
+        "northM": 360,
+        "elevationM": 0
+      },
+      "districtId": "D1",
+      "incomingLaneIds": ["L:J02>J12", "L:J11>J12", "L:J22>J12"],
+      "outgoingLaneIds": ["L:J12>J02", "L:J12>J11", "L:J12>J22"]
+    },
+    {
+      "id": "J20",
+      "position": {
+        "eastM": 360,
+        "northM": 0,
+        "elevationM": 0
+      },
+      "districtId": "D1",
+      "incomingLaneIds": ["L:J10>J20", "L:J21>J20", "L:J30>J20"],
+      "outgoingLaneIds": ["L:J20>J10", "L:J20>J21", "L:J20>J30"]
+    },
+    {
+      "id": "J21",
+      "position": {
+        "eastM": 360,
+        "northM": 180,
+        "elevationM": 0
+      },
+      "districtId": "D1",
+      "incomingLaneIds": ["L:J11>J21", "L:J20>J21", "L:J22>J21", "L:J31>J21"],
+      "outgoingLaneIds": ["L:J21>J11", "L:J21>J20", "L:J21>J22", "L:J21>J31"]
+    },
+    {
+      "id": "J22",
+      "position": {
+        "eastM": 360,
+        "northM": 360,
+        "elevationM": 0
+      },
+      "districtId": "D1",
+      "incomingLaneIds": ["L:J12>J22", "L:J21>J22", "L:J32>J22"],
+      "outgoingLaneIds": ["L:J22>J12", "L:J22>J21", "L:J22>J32"]
+    },
+    {
+      "id": "J30",
+      "position": {
+        "eastM": 540,
+        "northM": 0,
+        "elevationM": 0
+      },
+      "districtId": "D2",
+      "incomingLaneIds": ["L:J20>J30", "L:J31>J30"],
+      "outgoingLaneIds": ["L:J30>J20", "L:J30>J31"]
+    },
+    {
+      "id": "J31",
+      "position": {
+        "eastM": 540,
+        "northM": 180,
+        "elevationM": 0
+      },
+      "districtId": "D2",
+      "incomingLaneIds": ["L:J21>J31", "L:J30>J31", "L:J32>J31"],
+      "outgoingLaneIds": ["L:J31>J21", "L:J31>J30", "L:J31>J32"]
+    },
+    {
+      "id": "J32",
+      "position": {
+        "eastM": 540,
+        "northM": 360,
+        "elevationM": 0
+      },
+      "districtId": "D2",
+      "incomingLaneIds": ["L:J22>J32", "L:J31>J32"],
+      "outgoingLaneIds": ["L:J32>J22", "L:J32>J31"]
+    }
+  ],
+  "segments": [
+    {
+      "id": "R:J00:J01",
+      "endpoints": ["J00", "J01"],
+      "footprint": [
+        {
+          "eastM": -3.2,
+          "northM": 0,
+          "elevationM": 0
+        },
+        {
+          "eastM": 3.2,
+          "northM": 0,
+          "elevationM": 0
+        },
+        {
+          "eastM": 3.2,
+          "northM": 180,
+          "elevationM": 0
+        },
+        {
+          "eastM": -3.2,
+          "northM": 180,
+          "elevationM": 0
+        }
+      ],
+      "laneIds": ["L:J00>J01", "L:J01>J00"]
+    },
+    {
+      "id": "R:J00:J10",
+      "endpoints": ["J00", "J10"],
+      "footprint": [
+        {
+          "eastM": 0,
+          "northM": -3.2,
+          "elevationM": 0
+        },
+        {
+          "eastM": 180,
+          "northM": -3.2,
+          "elevationM": 0
+        },
+        {
+          "eastM": 180,
+          "northM": 3.2,
+          "elevationM": 0
+        },
+        {
+          "eastM": 0,
+          "northM": 3.2,
+          "elevationM": 0
+        }
+      ],
+      "laneIds": ["L:J00>J10", "L:J10>J00"]
+    },
+    {
+      "id": "R:J01:J02",
+      "endpoints": ["J01", "J02"],
+      "footprint": [
+        {
+          "eastM": -3.2,
+          "northM": 180,
+          "elevationM": 0
+        },
+        {
+          "eastM": 3.2,
+          "northM": 180,
+          "elevationM": 0
+        },
+        {
+          "eastM": 3.2,
+          "northM": 360,
+          "elevationM": 0
+        },
+        {
+          "eastM": -3.2,
+          "northM": 360,
+          "elevationM": 0
+        }
+      ],
+      "laneIds": ["L:J01>J02", "L:J02>J01"]
+    },
+    {
+      "id": "R:J01:J11",
+      "endpoints": ["J01", "J11"],
+      "footprint": [
+        {
+          "eastM": 0,
+          "northM": 176.8,
+          "elevationM": 0
+        },
+        {
+          "eastM": 180,
+          "northM": 176.8,
+          "elevationM": 0
+        },
+        {
+          "eastM": 180,
+          "northM": 183.2,
+          "elevationM": 0
+        },
+        {
+          "eastM": 0,
+          "northM": 183.2,
+          "elevationM": 0
+        }
+      ],
+      "laneIds": ["L:J01>J11", "L:J11>J01"]
+    },
+    {
+      "id": "R:J02:J12",
+      "endpoints": ["J02", "J12"],
+      "footprint": [
+        {
+          "eastM": 0,
+          "northM": 356.8,
+          "elevationM": 0
+        },
+        {
+          "eastM": 180,
+          "northM": 356.8,
+          "elevationM": 0
+        },
+        {
+          "eastM": 180,
+          "northM": 363.2,
+          "elevationM": 0
+        },
+        {
+          "eastM": 0,
+          "northM": 363.2,
+          "elevationM": 0
+        }
+      ],
+      "laneIds": ["L:J02>J12", "L:J12>J02"]
+    },
+    {
+      "id": "R:J10:J11",
+      "endpoints": ["J10", "J11"],
+      "footprint": [
+        {
+          "eastM": 176.8,
+          "northM": 0,
+          "elevationM": 0
+        },
+        {
+          "eastM": 183.2,
+          "northM": 0,
+          "elevationM": 0
+        },
+        {
+          "eastM": 183.2,
+          "northM": 180,
+          "elevationM": 0
+        },
+        {
+          "eastM": 176.8,
+          "northM": 180,
+          "elevationM": 0
+        }
+      ],
+      "laneIds": ["L:J10>J11", "L:J11>J10"]
+    },
+    {
+      "id": "R:J10:J20",
+      "endpoints": ["J10", "J20"],
+      "footprint": [
+        {
+          "eastM": 180,
+          "northM": -3.2,
+          "elevationM": 0
+        },
+        {
+          "eastM": 360,
+          "northM": -3.2,
+          "elevationM": 0
+        },
+        {
+          "eastM": 360,
+          "northM": 3.2,
+          "elevationM": 0
+        },
+        {
+          "eastM": 180,
+          "northM": 3.2,
+          "elevationM": 0
+        }
+      ],
+      "laneIds": ["L:J10>J20", "L:J20>J10"]
+    },
+    {
+      "id": "R:J11:J12",
+      "endpoints": ["J11", "J12"],
+      "footprint": [
+        {
+          "eastM": 176.8,
+          "northM": 180,
+          "elevationM": 0
+        },
+        {
+          "eastM": 183.2,
+          "northM": 180,
+          "elevationM": 0
+        },
+        {
+          "eastM": 183.2,
+          "northM": 360,
+          "elevationM": 0
+        },
+        {
+          "eastM": 176.8,
+          "northM": 360,
+          "elevationM": 0
+        }
+      ],
+      "laneIds": ["L:J11>J12", "L:J12>J11"]
+    },
+    {
+      "id": "R:J11:J21",
+      "endpoints": ["J11", "J21"],
+      "footprint": [
+        {
+          "eastM": 180,
+          "northM": 176.8,
+          "elevationM": 0
+        },
+        {
+          "eastM": 360,
+          "northM": 176.8,
+          "elevationM": 0
+        },
+        {
+          "eastM": 360,
+          "northM": 183.2,
+          "elevationM": 0
+        },
+        {
+          "eastM": 180,
+          "northM": 183.2,
+          "elevationM": 0
+        }
+      ],
+      "laneIds": ["L:J11>J21", "L:J21>J11"]
+    },
+    {
+      "id": "R:J12:J22",
+      "endpoints": ["J12", "J22"],
+      "footprint": [
+        {
+          "eastM": 180,
+          "northM": 356.8,
+          "elevationM": 0
+        },
+        {
+          "eastM": 360,
+          "northM": 356.8,
+          "elevationM": 0
+        },
+        {
+          "eastM": 360,
+          "northM": 363.2,
+          "elevationM": 0
+        },
+        {
+          "eastM": 180,
+          "northM": 363.2,
+          "elevationM": 0
+        }
+      ],
+      "laneIds": ["L:J12>J22", "L:J22>J12"]
+    },
+    {
+      "id": "R:J20:J21",
+      "endpoints": ["J20", "J21"],
+      "footprint": [
+        {
+          "eastM": 356.8,
+          "northM": 0,
+          "elevationM": 0
+        },
+        {
+          "eastM": 363.2,
+          "northM": 0,
+          "elevationM": 0
+        },
+        {
+          "eastM": 363.2,
+          "northM": 180,
+          "elevationM": 0
+        },
+        {
+          "eastM": 356.8,
+          "northM": 180,
+          "elevationM": 0
+        }
+      ],
+      "laneIds": ["L:J20>J21", "L:J21>J20"]
+    },
+    {
+      "id": "R:J20:J30",
+      "endpoints": ["J20", "J30"],
+      "footprint": [
+        {
+          "eastM": 360,
+          "northM": -3.2,
+          "elevationM": 0
+        },
+        {
+          "eastM": 540,
+          "northM": -3.2,
+          "elevationM": 0
+        },
+        {
+          "eastM": 540,
+          "northM": 3.2,
+          "elevationM": 0
+        },
+        {
+          "eastM": 360,
+          "northM": 3.2,
+          "elevationM": 0
+        }
+      ],
+      "laneIds": ["L:J20>J30", "L:J30>J20"]
+    },
+    {
+      "id": "R:J21:J22",
+      "endpoints": ["J21", "J22"],
+      "footprint": [
+        {
+          "eastM": 356.8,
+          "northM": 180,
+          "elevationM": 0
+        },
+        {
+          "eastM": 363.2,
+          "northM": 180,
+          "elevationM": 0
+        },
+        {
+          "eastM": 363.2,
+          "northM": 360,
+          "elevationM": 0
+        },
+        {
+          "eastM": 356.8,
+          "northM": 360,
+          "elevationM": 0
+        }
+      ],
+      "laneIds": ["L:J21>J22", "L:J22>J21"]
+    },
+    {
+      "id": "R:J21:J31",
+      "endpoints": ["J21", "J31"],
+      "footprint": [
+        {
+          "eastM": 360,
+          "northM": 176.8,
+          "elevationM": 0
+        },
+        {
+          "eastM": 540,
+          "northM": 176.8,
+          "elevationM": 0
+        },
+        {
+          "eastM": 540,
+          "northM": 183.2,
+          "elevationM": 0
+        },
+        {
+          "eastM": 360,
+          "northM": 183.2,
+          "elevationM": 0
+        }
+      ],
+      "laneIds": ["L:J21>J31", "L:J31>J21"]
+    },
+    {
+      "id": "R:J22:J32",
+      "endpoints": ["J22", "J32"],
+      "footprint": [
+        {
+          "eastM": 360,
+          "northM": 356.8,
+          "elevationM": 0
+        },
+        {
+          "eastM": 540,
+          "northM": 356.8,
+          "elevationM": 0
+        },
+        {
+          "eastM": 540,
+          "northM": 363.2,
+          "elevationM": 0
+        },
+        {
+          "eastM": 360,
+          "northM": 363.2,
+          "elevationM": 0
+        }
+      ],
+      "laneIds": ["L:J22>J32", "L:J32>J22"]
+    },
+    {
+      "id": "R:J30:J31",
+      "endpoints": ["J30", "J31"],
+      "footprint": [
+        {
+          "eastM": 536.8,
+          "northM": 0,
+          "elevationM": 0
+        },
+        {
+          "eastM": 543.2,
+          "northM": 0,
+          "elevationM": 0
+        },
+        {
+          "eastM": 543.2,
+          "northM": 180,
+          "elevationM": 0
+        },
+        {
+          "eastM": 536.8,
+          "northM": 180,
+          "elevationM": 0
+        }
+      ],
+      "laneIds": ["L:J30>J31", "L:J31>J30"]
+    },
+    {
+      "id": "R:J31:J32",
+      "endpoints": ["J31", "J32"],
+      "footprint": [
+        {
+          "eastM": 536.8,
+          "northM": 180,
+          "elevationM": 0
+        },
+        {
+          "eastM": 543.2,
+          "northM": 180,
+          "elevationM": 0
+        },
+        {
+          "eastM": 543.2,
+          "northM": 360,
+          "elevationM": 0
+        },
+        {
+          "eastM": 536.8,
+          "northM": 360,
+          "elevationM": 0
+        }
+      ],
+      "laneIds": ["L:J31>J32", "L:J32>J31"]
+    }
+  ],
+  "lanes": [
+    {
+      "id": "L:J00>J01",
+      "segmentId": "R:J00:J01",
+      "fromNodeId": "J00",
+      "toNodeId": "J01",
+      "centerline": [
+        {
+          "eastM": 1.6,
+          "northM": 12,
+          "elevationM": 0
+        },
+        {
+          "eastM": 1.6,
+          "northM": 168,
+          "elevationM": 0
+        }
+      ],
+      "lengthM": 156,
+      "widthM": 3.2,
+      "speedLimitMps": 13.889
+    },
+    {
+      "id": "L:J00>J10",
+      "segmentId": "R:J00:J10",
+      "fromNodeId": "J00",
+      "toNodeId": "J10",
+      "centerline": [
+        {
+          "eastM": 12,
+          "northM": -1.6,
+          "elevationM": 0
+        },
+        {
+          "eastM": 168,
+          "northM": -1.6,
+          "elevationM": 0
+        }
+      ],
+      "lengthM": 156,
+      "widthM": 3.2,
+      "speedLimitMps": 13.889
+    },
+    {
+      "id": "L:J01>J00",
+      "segmentId": "R:J00:J01",
+      "fromNodeId": "J01",
+      "toNodeId": "J00",
+      "centerline": [
+        {
+          "eastM": -1.6,
+          "northM": 168,
+          "elevationM": 0
+        },
+        {
+          "eastM": -1.6,
+          "northM": 12,
+          "elevationM": 0
+        }
+      ],
+      "lengthM": 156,
+      "widthM": 3.2,
+      "speedLimitMps": 13.889
+    },
+    {
+      "id": "L:J01>J02",
+      "segmentId": "R:J01:J02",
+      "fromNodeId": "J01",
+      "toNodeId": "J02",
+      "centerline": [
+        {
+          "eastM": 1.6,
+          "northM": 192,
+          "elevationM": 0
+        },
+        {
+          "eastM": 1.6,
+          "northM": 348,
+          "elevationM": 0
+        }
+      ],
+      "lengthM": 156,
+      "widthM": 3.2,
+      "speedLimitMps": 13.889
+    },
+    {
+      "id": "L:J01>J11",
+      "segmentId": "R:J01:J11",
+      "fromNodeId": "J01",
+      "toNodeId": "J11",
+      "centerline": [
+        {
+          "eastM": 12,
+          "northM": 178.4,
+          "elevationM": 0
+        },
+        {
+          "eastM": 168,
+          "northM": 178.4,
+          "elevationM": 0
+        }
+      ],
+      "lengthM": 156,
+      "widthM": 3.2,
+      "speedLimitMps": 13.889
+    },
+    {
+      "id": "L:J02>J01",
+      "segmentId": "R:J01:J02",
+      "fromNodeId": "J02",
+      "toNodeId": "J01",
+      "centerline": [
+        {
+          "eastM": -1.6,
+          "northM": 348,
+          "elevationM": 0
+        },
+        {
+          "eastM": -1.6,
+          "northM": 192,
+          "elevationM": 0
+        }
+      ],
+      "lengthM": 156,
+      "widthM": 3.2,
+      "speedLimitMps": 13.889
+    },
+    {
+      "id": "L:J02>J12",
+      "segmentId": "R:J02:J12",
+      "fromNodeId": "J02",
+      "toNodeId": "J12",
+      "centerline": [
+        {
+          "eastM": 12,
+          "northM": 358.4,
+          "elevationM": 0
+        },
+        {
+          "eastM": 168,
+          "northM": 358.4,
+          "elevationM": 0
+        }
+      ],
+      "lengthM": 156,
+      "widthM": 3.2,
+      "speedLimitMps": 13.889
+    },
+    {
+      "id": "L:J10>J00",
+      "segmentId": "R:J00:J10",
+      "fromNodeId": "J10",
+      "toNodeId": "J00",
+      "centerline": [
+        {
+          "eastM": 168,
+          "northM": 1.6,
+          "elevationM": 0
+        },
+        {
+          "eastM": 12,
+          "northM": 1.6,
+          "elevationM": 0
+        }
+      ],
+      "lengthM": 156,
+      "widthM": 3.2,
+      "speedLimitMps": 13.889
+    },
+    {
+      "id": "L:J10>J11",
+      "segmentId": "R:J10:J11",
+      "fromNodeId": "J10",
+      "toNodeId": "J11",
+      "centerline": [
+        {
+          "eastM": 181.6,
+          "northM": 12,
+          "elevationM": 0
+        },
+        {
+          "eastM": 181.6,
+          "northM": 168,
+          "elevationM": 0
+        }
+      ],
+      "lengthM": 156,
+      "widthM": 3.2,
+      "speedLimitMps": 13.889
+    },
+    {
+      "id": "L:J10>J20",
+      "segmentId": "R:J10:J20",
+      "fromNodeId": "J10",
+      "toNodeId": "J20",
+      "centerline": [
+        {
+          "eastM": 192,
+          "northM": -1.6,
+          "elevationM": 0
+        },
+        {
+          "eastM": 348,
+          "northM": -1.6,
+          "elevationM": 0
+        }
+      ],
+      "lengthM": 156,
+      "widthM": 3.2,
+      "speedLimitMps": 13.889
+    },
+    {
+      "id": "L:J11>J01",
+      "segmentId": "R:J01:J11",
+      "fromNodeId": "J11",
+      "toNodeId": "J01",
+      "centerline": [
+        {
+          "eastM": 168,
+          "northM": 181.6,
+          "elevationM": 0
+        },
+        {
+          "eastM": 12,
+          "northM": 181.6,
+          "elevationM": 0
+        }
+      ],
+      "lengthM": 156,
+      "widthM": 3.2,
+      "speedLimitMps": 13.889
+    },
+    {
+      "id": "L:J11>J10",
+      "segmentId": "R:J10:J11",
+      "fromNodeId": "J11",
+      "toNodeId": "J10",
+      "centerline": [
+        {
+          "eastM": 178.4,
+          "northM": 168,
+          "elevationM": 0
+        },
+        {
+          "eastM": 178.4,
+          "northM": 12,
+          "elevationM": 0
+        }
+      ],
+      "lengthM": 156,
+      "widthM": 3.2,
+      "speedLimitMps": 13.889
+    },
+    {
+      "id": "L:J11>J12",
+      "segmentId": "R:J11:J12",
+      "fromNodeId": "J11",
+      "toNodeId": "J12",
+      "centerline": [
+        {
+          "eastM": 181.6,
+          "northM": 192,
+          "elevationM": 0
+        },
+        {
+          "eastM": 181.6,
+          "northM": 348,
+          "elevationM": 0
+        }
+      ],
+      "lengthM": 156,
+      "widthM": 3.2,
+      "speedLimitMps": 13.889
+    },
+    {
+      "id": "L:J11>J21",
+      "segmentId": "R:J11:J21",
+      "fromNodeId": "J11",
+      "toNodeId": "J21",
+      "centerline": [
+        {
+          "eastM": 192,
+          "northM": 178.4,
+          "elevationM": 0
+        },
+        {
+          "eastM": 348,
+          "northM": 178.4,
+          "elevationM": 0
+        }
+      ],
+      "lengthM": 156,
+      "widthM": 3.2,
+      "speedLimitMps": 13.889
+    },
+    {
+      "id": "L:J12>J02",
+      "segmentId": "R:J02:J12",
+      "fromNodeId": "J12",
+      "toNodeId": "J02",
+      "centerline": [
+        {
+          "eastM": 168,
+          "northM": 361.6,
+          "elevationM": 0
+        },
+        {
+          "eastM": 12,
+          "northM": 361.6,
+          "elevationM": 0
+        }
+      ],
+      "lengthM": 156,
+      "widthM": 3.2,
+      "speedLimitMps": 13.889
+    },
+    {
+      "id": "L:J12>J11",
+      "segmentId": "R:J11:J12",
+      "fromNodeId": "J12",
+      "toNodeId": "J11",
+      "centerline": [
+        {
+          "eastM": 178.4,
+          "northM": 348,
+          "elevationM": 0
+        },
+        {
+          "eastM": 178.4,
+          "northM": 192,
+          "elevationM": 0
+        }
+      ],
+      "lengthM": 156,
+      "widthM": 3.2,
+      "speedLimitMps": 13.889
+    },
+    {
+      "id": "L:J12>J22",
+      "segmentId": "R:J12:J22",
+      "fromNodeId": "J12",
+      "toNodeId": "J22",
+      "centerline": [
+        {
+          "eastM": 192,
+          "northM": 358.4,
+          "elevationM": 0
+        },
+        {
+          "eastM": 348,
+          "northM": 358.4,
+          "elevationM": 0
+        }
+      ],
+      "lengthM": 156,
+      "widthM": 3.2,
+      "speedLimitMps": 13.889
+    },
+    {
+      "id": "L:J20>J10",
+      "segmentId": "R:J10:J20",
+      "fromNodeId": "J20",
+      "toNodeId": "J10",
+      "centerline": [
+        {
+          "eastM": 348,
+          "northM": 1.6,
+          "elevationM": 0
+        },
+        {
+          "eastM": 192,
+          "northM": 1.6,
+          "elevationM": 0
+        }
+      ],
+      "lengthM": 156,
+      "widthM": 3.2,
+      "speedLimitMps": 13.889
+    },
+    {
+      "id": "L:J20>J21",
+      "segmentId": "R:J20:J21",
+      "fromNodeId": "J20",
+      "toNodeId": "J21",
+      "centerline": [
+        {
+          "eastM": 361.6,
+          "northM": 12,
+          "elevationM": 0
+        },
+        {
+          "eastM": 361.6,
+          "northM": 168,
+          "elevationM": 0
+        }
+      ],
+      "lengthM": 156,
+      "widthM": 3.2,
+      "speedLimitMps": 13.889
+    },
+    {
+      "id": "L:J20>J30",
+      "segmentId": "R:J20:J30",
+      "fromNodeId": "J20",
+      "toNodeId": "J30",
+      "centerline": [
+        {
+          "eastM": 372,
+          "northM": -1.6,
+          "elevationM": 0
+        },
+        {
+          "eastM": 528,
+          "northM": -1.6,
+          "elevationM": 0
+        }
+      ],
+      "lengthM": 156,
+      "widthM": 3.2,
+      "speedLimitMps": 13.889
+    },
+    {
+      "id": "L:J21>J11",
+      "segmentId": "R:J11:J21",
+      "fromNodeId": "J21",
+      "toNodeId": "J11",
+      "centerline": [
+        {
+          "eastM": 348,
+          "northM": 181.6,
+          "elevationM": 0
+        },
+        {
+          "eastM": 192,
+          "northM": 181.6,
+          "elevationM": 0
+        }
+      ],
+      "lengthM": 156,
+      "widthM": 3.2,
+      "speedLimitMps": 13.889
+    },
+    {
+      "id": "L:J21>J20",
+      "segmentId": "R:J20:J21",
+      "fromNodeId": "J21",
+      "toNodeId": "J20",
+      "centerline": [
+        {
+          "eastM": 358.4,
+          "northM": 168,
+          "elevationM": 0
+        },
+        {
+          "eastM": 358.4,
+          "northM": 12,
+          "elevationM": 0
+        }
+      ],
+      "lengthM": 156,
+      "widthM": 3.2,
+      "speedLimitMps": 13.889
+    },
+    {
+      "id": "L:J21>J22",
+      "segmentId": "R:J21:J22",
+      "fromNodeId": "J21",
+      "toNodeId": "J22",
+      "centerline": [
+        {
+          "eastM": 361.6,
+          "northM": 192,
+          "elevationM": 0
+        },
+        {
+          "eastM": 361.6,
+          "northM": 348,
+          "elevationM": 0
+        }
+      ],
+      "lengthM": 156,
+      "widthM": 3.2,
+      "speedLimitMps": 13.889
+    },
+    {
+      "id": "L:J21>J31",
+      "segmentId": "R:J21:J31",
+      "fromNodeId": "J21",
+      "toNodeId": "J31",
+      "centerline": [
+        {
+          "eastM": 372,
+          "northM": 178.4,
+          "elevationM": 0
+        },
+        {
+          "eastM": 528,
+          "northM": 178.4,
+          "elevationM": 0
+        }
+      ],
+      "lengthM": 156,
+      "widthM": 3.2,
+      "speedLimitMps": 13.889
+    },
+    {
+      "id": "L:J22>J12",
+      "segmentId": "R:J12:J22",
+      "fromNodeId": "J22",
+      "toNodeId": "J12",
+      "centerline": [
+        {
+          "eastM": 348,
+          "northM": 361.6,
+          "elevationM": 0
+        },
+        {
+          "eastM": 192,
+          "northM": 361.6,
+          "elevationM": 0
+        }
+      ],
+      "lengthM": 156,
+      "widthM": 3.2,
+      "speedLimitMps": 13.889
+    },
+    {
+      "id": "L:J22>J21",
+      "segmentId": "R:J21:J22",
+      "fromNodeId": "J22",
+      "toNodeId": "J21",
+      "centerline": [
+        {
+          "eastM": 358.4,
+          "northM": 348,
+          "elevationM": 0
+        },
+        {
+          "eastM": 358.4,
+          "northM": 192,
+          "elevationM": 0
+        }
+      ],
+      "lengthM": 156,
+      "widthM": 3.2,
+      "speedLimitMps": 13.889
+    },
+    {
+      "id": "L:J22>J32",
+      "segmentId": "R:J22:J32",
+      "fromNodeId": "J22",
+      "toNodeId": "J32",
+      "centerline": [
+        {
+          "eastM": 372,
+          "northM": 358.4,
+          "elevationM": 0
+        },
+        {
+          "eastM": 528,
+          "northM": 358.4,
+          "elevationM": 0
+        }
+      ],
+      "lengthM": 156,
+      "widthM": 3.2,
+      "speedLimitMps": 13.889
+    },
+    {
+      "id": "L:J30>J20",
+      "segmentId": "R:J20:J30",
+      "fromNodeId": "J30",
+      "toNodeId": "J20",
+      "centerline": [
+        {
+          "eastM": 528,
+          "northM": 1.6,
+          "elevationM": 0
+        },
+        {
+          "eastM": 372,
+          "northM": 1.6,
+          "elevationM": 0
+        }
+      ],
+      "lengthM": 156,
+      "widthM": 3.2,
+      "speedLimitMps": 13.889
+    },
+    {
+      "id": "L:J30>J31",
+      "segmentId": "R:J30:J31",
+      "fromNodeId": "J30",
+      "toNodeId": "J31",
+      "centerline": [
+        {
+          "eastM": 541.6,
+          "northM": 12,
+          "elevationM": 0
+        },
+        {
+          "eastM": 541.6,
+          "northM": 168,
+          "elevationM": 0
+        }
+      ],
+      "lengthM": 156,
+      "widthM": 3.2,
+      "speedLimitMps": 13.889
+    },
+    {
+      "id": "L:J31>J21",
+      "segmentId": "R:J21:J31",
+      "fromNodeId": "J31",
+      "toNodeId": "J21",
+      "centerline": [
+        {
+          "eastM": 528,
+          "northM": 181.6,
+          "elevationM": 0
+        },
+        {
+          "eastM": 372,
+          "northM": 181.6,
+          "elevationM": 0
+        }
+      ],
+      "lengthM": 156,
+      "widthM": 3.2,
+      "speedLimitMps": 13.889
+    },
+    {
+      "id": "L:J31>J30",
+      "segmentId": "R:J30:J31",
+      "fromNodeId": "J31",
+      "toNodeId": "J30",
+      "centerline": [
+        {
+          "eastM": 538.4,
+          "northM": 168,
+          "elevationM": 0
+        },
+        {
+          "eastM": 538.4,
+          "northM": 12,
+          "elevationM": 0
+        }
+      ],
+      "lengthM": 156,
+      "widthM": 3.2,
+      "speedLimitMps": 13.889
+    },
+    {
+      "id": "L:J31>J32",
+      "segmentId": "R:J31:J32",
+      "fromNodeId": "J31",
+      "toNodeId": "J32",
+      "centerline": [
+        {
+          "eastM": 541.6,
+          "northM": 192,
+          "elevationM": 0
+        },
+        {
+          "eastM": 541.6,
+          "northM": 348,
+          "elevationM": 0
+        }
+      ],
+      "lengthM": 156,
+      "widthM": 3.2,
+      "speedLimitMps": 13.889
+    },
+    {
+      "id": "L:J32>J22",
+      "segmentId": "R:J22:J32",
+      "fromNodeId": "J32",
+      "toNodeId": "J22",
+      "centerline": [
+        {
+          "eastM": 528,
+          "northM": 361.6,
+          "elevationM": 0
+        },
+        {
+          "eastM": 372,
+          "northM": 361.6,
+          "elevationM": 0
+        }
+      ],
+      "lengthM": 156,
+      "widthM": 3.2,
+      "speedLimitMps": 13.889
+    },
+    {
+      "id": "L:J32>J31",
+      "segmentId": "R:J31:J32",
+      "fromNodeId": "J32",
+      "toNodeId": "J31",
+      "centerline": [
+        {
+          "eastM": 538.4,
+          "northM": 348,
+          "elevationM": 0
+        },
+        {
+          "eastM": 538.4,
+          "northM": 192,
+          "elevationM": 0
+        }
+      ],
+      "lengthM": 156,
+      "widthM": 3.2,
+      "speedLimitMps": 13.889
+    }
+  ],
+  "movements": [
+    {
+      "id": "M:L:J00>J01>L:J01>J02",
+      "incomingLaneId": "L:J00>J01",
+      "outgoingLaneId": "L:J01>J02",
+      "nodeId": "J01",
+      "centerline": [
+        {
+          "eastM": 1.6,
+          "northM": 168,
+          "elevationM": 0
+        },
+        {
+          "eastM": 1.6,
+          "northM": 171,
+          "elevationM": 0
+        },
+        {
+          "eastM": 1.6,
+          "northM": 174,
+          "elevationM": 0
+        },
+        {
+          "eastM": 1.6,
+          "northM": 177,
+          "elevationM": 0
+        },
+        {
+          "eastM": 1.6,
+          "northM": 180,
+          "elevationM": 0
+        },
+        {
+          "eastM": 1.6,
+          "northM": 183,
+          "elevationM": 0
+        },
+        {
+          "eastM": 1.6,
+          "northM": 186,
+          "elevationM": 0
+        },
+        {
+          "eastM": 1.6,
+          "northM": 189,
+          "elevationM": 0
+        },
+        {
+          "eastM": 1.6,
+          "northM": 192,
+          "elevationM": 0
+        }
+      ],
+      "lengthM": 24,
+      "speedLimitMps": 5.556
+    },
+    {
+      "id": "M:L:J00>J01>L:J01>J11",
+      "incomingLaneId": "L:J00>J01",
+      "outgoingLaneId": "L:J01>J11",
+      "nodeId": "J01",
+      "centerline": [
+        {
+          "eastM": 1.6,
+          "northM": 168,
+          "elevationM": 0
+        },
+        {
+          "eastM": 1.7625000000000002,
+          "northM": 170.4375,
+          "elevationM": 0
+        },
+        {
+          "eastM": 2.25,
+          "northM": 172.55,
+          "elevationM": 0
+        },
+        {
+          "eastM": 3.0625,
+          "northM": 174.3375,
+          "elevationM": 0
+        },
+        {
+          "eastM": 4.2,
+          "northM": 175.79999999999998,
+          "elevationM": 0
+        },
+        {
+          "eastM": 5.6625,
+          "northM": 176.9375,
+          "elevationM": 0
+        },
+        {
+          "eastM": 7.45,
+          "northM": 177.75,
+          "elevationM": 0
+        },
+        {
+          "eastM": 9.5625,
+          "northM": 178.2375,
+          "elevationM": 0
+        },
+        {
+          "eastM": 12,
+          "northM": 178.4,
+          "elevationM": 0
+        }
+      ],
+      "lengthM": 16.85442221680269,
+      "speedLimitMps": 5.556
+    },
+    {
+      "id": "M:L:J00>J10>L:J10>J11",
+      "incomingLaneId": "L:J00>J10",
+      "outgoingLaneId": "L:J10>J11",
+      "nodeId": "J10",
+      "centerline": [
+        {
+          "eastM": 168,
+          "northM": -1.6,
+          "elevationM": 0
+        },
+        {
+          "eastM": 171.1875,
+          "northM": -1.3875000000000002,
+          "elevationM": 0
+        },
+        {
+          "eastM": 173.95,
+          "northM": -0.75,
+          "elevationM": 0
+        },
+        {
+          "eastM": 176.2875,
+          "northM": 0.3125,
+          "elevationM": 0
+        },
+        {
+          "eastM": 178.20000000000002,
+          "northM": 1.7999999999999998,
+          "elevationM": 0
+        },
+        {
+          "eastM": 179.6875,
+          "northM": 3.7125,
+          "elevationM": 0
+        },
+        {
+          "eastM": 180.75,
+          "northM": 6.05,
+          "elevationM": 0
+        },
+        {
+          "eastM": 181.3875,
+          "northM": 8.8125,
+          "elevationM": 0
+        },
+        {
+          "eastM": 181.6,
+          "northM": 12,
+          "elevationM": 0
+        }
+      ],
+      "lengthM": 22.040398283511205,
+      "speedLimitMps": 5.556
+    },
+    {
+      "id": "M:L:J00>J10>L:J10>J20",
+      "incomingLaneId": "L:J00>J10",
+      "outgoingLaneId": "L:J10>J20",
+      "nodeId": "J10",
+      "centerline": [
+        {
+          "eastM": 168,
+          "northM": -1.6,
+          "elevationM": 0
+        },
+        {
+          "eastM": 171,
+          "northM": -1.6,
+          "elevationM": 0
+        },
+        {
+          "eastM": 174,
+          "northM": -1.6,
+          "elevationM": 0
+        },
+        {
+          "eastM": 177,
+          "northM": -1.6,
+          "elevationM": 0
+        },
+        {
+          "eastM": 180,
+          "northM": -1.6,
+          "elevationM": 0
+        },
+        {
+          "eastM": 183,
+          "northM": -1.6,
+          "elevationM": 0
+        },
+        {
+          "eastM": 186,
+          "northM": -1.6,
+          "elevationM": 0
+        },
+        {
+          "eastM": 189,
+          "northM": -1.6,
+          "elevationM": 0
+        },
+        {
+          "eastM": 192,
+          "northM": -1.6,
+          "elevationM": 0
+        }
+      ],
+      "lengthM": 24,
+      "speedLimitMps": 5.556
+    },
+    {
+      "id": "M:L:J01>J00>L:J00>J10",
+      "incomingLaneId": "L:J01>J00",
+      "outgoingLaneId": "L:J00>J10",
+      "nodeId": "J00",
+      "centerline": [
+        {
+          "eastM": -1.6,
+          "northM": 12,
+          "elevationM": 0
+        },
+        {
+          "eastM": -1.3875000000000002,
+          "northM": 8.8125,
+          "elevationM": 0
+        },
+        {
+          "eastM": -0.75,
+          "northM": 6.050000000000001,
+          "elevationM": 0
+        },
+        {
+          "eastM": 0.3125,
+          "northM": 3.7125,
+          "elevationM": 0
+        },
+        {
+          "eastM": 1.7999999999999998,
+          "northM": 1.8000000000000003,
+          "elevationM": 0
+        },
+        {
+          "eastM": 3.7125,
+          "northM": 0.3125,
+          "elevationM": 0
+        },
+        {
+          "eastM": 6.05,
+          "northM": -0.7500000000000001,
+          "elevationM": 0
+        },
+        {
+          "eastM": 8.8125,
+          "northM": -1.3875000000000002,
+          "elevationM": 0
+        },
+        {
+          "eastM": 12,
+          "northM": -1.6,
+          "elevationM": 0
+        }
+      ],
+      "lengthM": 22.040398283511205,
+      "speedLimitMps": 5.556
+    },
+    {
+      "id": "M:L:J01>J02>L:J02>J12",
+      "incomingLaneId": "L:J01>J02",
+      "outgoingLaneId": "L:J02>J12",
+      "nodeId": "J02",
+      "centerline": [
+        {
+          "eastM": 1.6,
+          "northM": 348,
+          "elevationM": 0
+        },
+        {
+          "eastM": 1.7625000000000002,
+          "northM": 350.4375,
+          "elevationM": 0
+        },
+        {
+          "eastM": 2.25,
+          "northM": 352.54999999999995,
+          "elevationM": 0
+        },
+        {
+          "eastM": 3.0625,
+          "northM": 354.3375,
+          "elevationM": 0
+        },
+        {
+          "eastM": 4.2,
+          "northM": 355.79999999999995,
+          "elevationM": 0
+        },
+        {
+          "eastM": 5.6625,
+          "northM": 356.9375,
+          "elevationM": 0
+        },
+        {
+          "eastM": 7.45,
+          "northM": 357.75,
+          "elevationM": 0
+        },
+        {
+          "eastM": 9.5625,
+          "northM": 358.23749999999995,
+          "elevationM": 0
+        },
+        {
+          "eastM": 12,
+          "northM": 358.4,
+          "elevationM": 0
+        }
+      ],
+      "lengthM": 16.854422216802668,
+      "speedLimitMps": 5.556
+    },
+    {
+      "id": "M:L:J01>J11>L:J11>J10",
+      "incomingLaneId": "L:J01>J11",
+      "outgoingLaneId": "L:J11>J10",
+      "nodeId": "J11",
+      "centerline": [
+        {
+          "eastM": 168,
+          "northM": 178.4,
+          "elevationM": 0
+        },
+        {
+          "eastM": 170.4375,
+          "northM": 178.2375,
+          "elevationM": 0
+        },
+        {
+          "eastM": 172.55,
+          "northM": 177.75,
+          "elevationM": 0
+        },
+        {
+          "eastM": 174.3375,
+          "northM": 176.9375,
+          "elevationM": 0
+        },
+        {
+          "eastM": 175.79999999999998,
+          "northM": 175.8,
+          "elevationM": 0
+        },
+        {
+          "eastM": 176.9375,
+          "northM": 174.3375,
+          "elevationM": 0
+        },
+        {
+          "eastM": 177.75,
+          "northM": 172.55,
+          "elevationM": 0
+        },
+        {
+          "eastM": 178.2375,
+          "northM": 170.4375,
+          "elevationM": 0
+        },
+        {
+          "eastM": 178.4,
+          "northM": 168,
+          "elevationM": 0
+        }
+      ],
+      "lengthM": 16.854422216802696,
+      "speedLimitMps": 5.556
+    },
+    {
+      "id": "M:L:J01>J11>L:J11>J12",
+      "incomingLaneId": "L:J01>J11",
+      "outgoingLaneId": "L:J11>J12",
+      "nodeId": "J11",
+      "centerline": [
+        {
+          "eastM": 168,
+          "northM": 178.4,
+          "elevationM": 0
+        },
+        {
+          "eastM": 171.1875,
+          "northM": 178.6125,
+          "elevationM": 0
+        },
+        {
+          "eastM": 173.95,
+          "northM": 179.25,
+          "elevationM": 0
+        },
+        {
+          "eastM": 176.2875,
+          "northM": 180.3125,
+          "elevationM": 0
+        },
+        {
+          "eastM": 178.20000000000002,
+          "northM": 181.8,
+          "elevationM": 0
+        },
+        {
+          "eastM": 179.6875,
+          "northM": 183.7125,
+          "elevationM": 0
+        },
+        {
+          "eastM": 180.75,
+          "northM": 186.05,
+          "elevationM": 0
+        },
+        {
+          "eastM": 181.3875,
+          "northM": 188.8125,
+          "elevationM": 0
+        },
+        {
+          "eastM": 181.6,
+          "northM": 192,
+          "elevationM": 0
+        }
+      ],
+      "lengthM": 22.040398283511202,
+      "speedLimitMps": 5.556
+    },
+    {
+      "id": "M:L:J01>J11>L:J11>J21",
+      "incomingLaneId": "L:J01>J11",
+      "outgoingLaneId": "L:J11>J21",
+      "nodeId": "J11",
+      "centerline": [
+        {
+          "eastM": 168,
+          "northM": 178.4,
+          "elevationM": 0
+        },
+        {
+          "eastM": 171,
+          "northM": 178.4,
+          "elevationM": 0
+        },
+        {
+          "eastM": 174,
+          "northM": 178.4,
+          "elevationM": 0
+        },
+        {
+          "eastM": 177,
+          "northM": 178.4,
+          "elevationM": 0
+        },
+        {
+          "eastM": 180,
+          "northM": 178.4,
+          "elevationM": 0
+        },
+        {
+          "eastM": 183,
+          "northM": 178.4,
+          "elevationM": 0
+        },
+        {
+          "eastM": 186,
+          "northM": 178.40000000000003,
+          "elevationM": 0
+        },
+        {
+          "eastM": 189,
+          "northM": 178.4,
+          "elevationM": 0
+        },
+        {
+          "eastM": 192,
+          "northM": 178.4,
+          "elevationM": 0
+        }
+      ],
+      "lengthM": 24,
+      "speedLimitMps": 5.556
+    },
+    {
+      "id": "M:L:J02>J01>L:J01>J00",
+      "incomingLaneId": "L:J02>J01",
+      "outgoingLaneId": "L:J01>J00",
+      "nodeId": "J01",
+      "centerline": [
+        {
+          "eastM": -1.6,
+          "northM": 192,
+          "elevationM": 0
+        },
+        {
+          "eastM": -1.6,
+          "northM": 189,
+          "elevationM": 0
+        },
+        {
+          "eastM": -1.6,
+          "northM": 186,
+          "elevationM": 0
+        },
+        {
+          "eastM": -1.6,
+          "northM": 183,
+          "elevationM": 0
+        },
+        {
+          "eastM": -1.6,
+          "northM": 180,
+          "elevationM": 0
+        },
+        {
+          "eastM": -1.6,
+          "northM": 177,
+          "elevationM": 0
+        },
+        {
+          "eastM": -1.6,
+          "northM": 174,
+          "elevationM": 0
+        },
+        {
+          "eastM": -1.6,
+          "northM": 171,
+          "elevationM": 0
+        },
+        {
+          "eastM": -1.6,
+          "northM": 168,
+          "elevationM": 0
+        }
+      ],
+      "lengthM": 24,
+      "speedLimitMps": 5.556
+    },
+    {
+      "id": "M:L:J02>J01>L:J01>J11",
+      "incomingLaneId": "L:J02>J01",
+      "outgoingLaneId": "L:J01>J11",
+      "nodeId": "J01",
+      "centerline": [
+        {
+          "eastM": -1.6,
+          "northM": 192,
+          "elevationM": 0
+        },
+        {
+          "eastM": -1.3875000000000002,
+          "northM": 188.8125,
+          "elevationM": 0
+        },
+        {
+          "eastM": -0.75,
+          "northM": 186.05,
+          "elevationM": 0
+        },
+        {
+          "eastM": 0.3125,
+          "northM": 183.7125,
+          "elevationM": 0
+        },
+        {
+          "eastM": 1.7999999999999998,
+          "northM": 181.79999999999998,
+          "elevationM": 0
+        },
+        {
+          "eastM": 3.7125,
+          "northM": 180.3125,
+          "elevationM": 0
+        },
+        {
+          "eastM": 6.05,
+          "northM": 179.25,
+          "elevationM": 0
+        },
+        {
+          "eastM": 8.8125,
+          "northM": 178.6125,
+          "elevationM": 0
+        },
+        {
+          "eastM": 12,
+          "northM": 178.4,
+          "elevationM": 0
+        }
+      ],
+      "lengthM": 22.040398283511205,
+      "speedLimitMps": 5.556
+    },
+    {
+      "id": "M:L:J02>J12>L:J12>J11",
+      "incomingLaneId": "L:J02>J12",
+      "outgoingLaneId": "L:J12>J11",
+      "nodeId": "J12",
+      "centerline": [
+        {
+          "eastM": 168,
+          "northM": 358.4,
+          "elevationM": 0
+        },
+        {
+          "eastM": 170.4375,
+          "northM": 358.23749999999995,
+          "elevationM": 0
+        },
+        {
+          "eastM": 172.55,
+          "northM": 357.75,
+          "elevationM": 0
+        },
+        {
+          "eastM": 174.3375,
+          "northM": 356.9375,
+          "elevationM": 0
+        },
+        {
+          "eastM": 175.79999999999998,
+          "northM": 355.79999999999995,
+          "elevationM": 0
+        },
+        {
+          "eastM": 176.9375,
+          "northM": 354.3375,
+          "elevationM": 0
+        },
+        {
+          "eastM": 177.75,
+          "northM": 352.54999999999995,
+          "elevationM": 0
+        },
+        {
+          "eastM": 178.2375,
+          "northM": 350.4375,
+          "elevationM": 0
+        },
+        {
+          "eastM": 178.4,
+          "northM": 348,
+          "elevationM": 0
+        }
+      ],
+      "lengthM": 16.854422216802668,
+      "speedLimitMps": 5.556
+    },
+    {
+      "id": "M:L:J02>J12>L:J12>J22",
+      "incomingLaneId": "L:J02>J12",
+      "outgoingLaneId": "L:J12>J22",
+      "nodeId": "J12",
+      "centerline": [
+        {
+          "eastM": 168,
+          "northM": 358.4,
+          "elevationM": 0
+        },
+        {
+          "eastM": 171,
+          "northM": 358.4,
+          "elevationM": 0
+        },
+        {
+          "eastM": 174,
+          "northM": 358.4,
+          "elevationM": 0
+        },
+        {
+          "eastM": 177,
+          "northM": 358.4,
+          "elevationM": 0
+        },
+        {
+          "eastM": 180,
+          "northM": 358.4,
+          "elevationM": 0
+        },
+        {
+          "eastM": 183,
+          "northM": 358.4,
+          "elevationM": 0
+        },
+        {
+          "eastM": 186,
+          "northM": 358.4,
+          "elevationM": 0
+        },
+        {
+          "eastM": 189,
+          "northM": 358.4,
+          "elevationM": 0
+        },
+        {
+          "eastM": 192,
+          "northM": 358.4,
+          "elevationM": 0
+        }
+      ],
+      "lengthM": 24,
+      "speedLimitMps": 5.556
+    },
+    {
+      "id": "M:L:J10>J00>L:J00>J01",
+      "incomingLaneId": "L:J10>J00",
+      "outgoingLaneId": "L:J00>J01",
+      "nodeId": "J00",
+      "centerline": [
+        {
+          "eastM": 12,
+          "northM": 1.6,
+          "elevationM": 0
+        },
+        {
+          "eastM": 9.5625,
+          "northM": 1.7625000000000002,
+          "elevationM": 0
+        },
+        {
+          "eastM": 7.449999999999999,
+          "northM": 2.25,
+          "elevationM": 0
+        },
+        {
+          "eastM": 5.6625,
+          "northM": 3.0625,
+          "elevationM": 0
+        },
+        {
+          "eastM": 4.2,
+          "northM": 4.2,
+          "elevationM": 0
+        },
+        {
+          "eastM": 3.0625,
+          "northM": 5.6625,
+          "elevationM": 0
+        },
+        {
+          "eastM": 2.25,
+          "northM": 7.45,
+          "elevationM": 0
+        },
+        {
+          "eastM": 1.7625000000000002,
+          "northM": 9.5625,
+          "elevationM": 0
+        },
+        {
+          "eastM": 1.6,
+          "northM": 12,
+          "elevationM": 0
+        }
+      ],
+      "lengthM": 16.85442221680269,
+      "speedLimitMps": 5.556
+    },
+    {
+      "id": "M:L:J10>J11>L:J11>J01",
+      "incomingLaneId": "L:J10>J11",
+      "outgoingLaneId": "L:J11>J01",
+      "nodeId": "J11",
+      "centerline": [
+        {
+          "eastM": 181.6,
+          "northM": 168,
+          "elevationM": 0
+        },
+        {
+          "eastM": 181.3875,
+          "northM": 171.1875,
+          "elevationM": 0
+        },
+        {
+          "eastM": 180.75,
+          "northM": 173.95,
+          "elevationM": 0
+        },
+        {
+          "eastM": 179.6875,
+          "northM": 176.2875,
+          "elevationM": 0
+        },
+        {
+          "eastM": 178.2,
+          "northM": 178.20000000000002,
+          "elevationM": 0
+        },
+        {
+          "eastM": 176.2875,
+          "northM": 179.6875,
+          "elevationM": 0
+        },
+        {
+          "eastM": 173.95,
+          "northM": 180.75,
+          "elevationM": 0
+        },
+        {
+          "eastM": 171.1875,
+          "northM": 181.3875,
+          "elevationM": 0
+        },
+        {
+          "eastM": 168,
+          "northM": 181.6,
+          "elevationM": 0
+        }
+      ],
+      "lengthM": 22.040398283511202,
+      "speedLimitMps": 5.556
+    },
+    {
+      "id": "M:L:J10>J11>L:J11>J12",
+      "incomingLaneId": "L:J10>J11",
+      "outgoingLaneId": "L:J11>J12",
+      "nodeId": "J11",
+      "centerline": [
+        {
+          "eastM": 181.6,
+          "northM": 168,
+          "elevationM": 0
+        },
+        {
+          "eastM": 181.6,
+          "northM": 171,
+          "elevationM": 0
+        },
+        {
+          "eastM": 181.6,
+          "northM": 174,
+          "elevationM": 0
+        },
+        {
+          "eastM": 181.6,
+          "northM": 177,
+          "elevationM": 0
+        },
+        {
+          "eastM": 181.6,
+          "northM": 180,
+          "elevationM": 0
+        },
+        {
+          "eastM": 181.6,
+          "northM": 183,
+          "elevationM": 0
+        },
+        {
+          "eastM": 181.59999999999997,
+          "northM": 186,
+          "elevationM": 0
+        },
+        {
+          "eastM": 181.6,
+          "northM": 189,
+          "elevationM": 0
+        },
+        {
+          "eastM": 181.6,
+          "northM": 192,
+          "elevationM": 0
+        }
+      ],
+      "lengthM": 24,
+      "speedLimitMps": 5.556
+    },
+    {
+      "id": "M:L:J10>J11>L:J11>J21",
+      "incomingLaneId": "L:J10>J11",
+      "outgoingLaneId": "L:J11>J21",
+      "nodeId": "J11",
+      "centerline": [
+        {
+          "eastM": 181.6,
+          "northM": 168,
+          "elevationM": 0
+        },
+        {
+          "eastM": 181.7625,
+          "northM": 170.4375,
+          "elevationM": 0
+        },
+        {
+          "eastM": 182.25,
+          "northM": 172.55,
+          "elevationM": 0
+        },
+        {
+          "eastM": 183.0625,
+          "northM": 174.3375,
+          "elevationM": 0
+        },
+        {
+          "eastM": 184.2,
+          "northM": 175.79999999999998,
+          "elevationM": 0
+        },
+        {
+          "eastM": 185.6625,
+          "northM": 176.9375,
+          "elevationM": 0
+        },
+        {
+          "eastM": 187.45,
+          "northM": 177.75,
+          "elevationM": 0
+        },
+        {
+          "eastM": 189.5625,
+          "northM": 178.2375,
+          "elevationM": 0
+        },
+        {
+          "eastM": 192,
+          "northM": 178.4,
+          "elevationM": 0
+        }
+      ],
+      "lengthM": 16.854422216802696,
+      "speedLimitMps": 5.556
+    },
+    {
+      "id": "M:L:J10>J20>L:J20>J21",
+      "incomingLaneId": "L:J10>J20",
+      "outgoingLaneId": "L:J20>J21",
+      "nodeId": "J20",
+      "centerline": [
+        {
+          "eastM": 348,
+          "northM": -1.6,
+          "elevationM": 0
+        },
+        {
+          "eastM": 351.1875,
+          "northM": -1.3875000000000002,
+          "elevationM": 0
+        },
+        {
+          "eastM": 353.95000000000005,
+          "northM": -0.75,
+          "elevationM": 0
+        },
+        {
+          "eastM": 356.2875,
+          "northM": 0.3125,
+          "elevationM": 0
+        },
+        {
+          "eastM": 358.20000000000005,
+          "northM": 1.7999999999999998,
+          "elevationM": 0
+        },
+        {
+          "eastM": 359.6875,
+          "northM": 3.7125,
+          "elevationM": 0
+        },
+        {
+          "eastM": 360.75,
+          "northM": 6.05,
+          "elevationM": 0
+        },
+        {
+          "eastM": 361.38750000000005,
+          "northM": 8.8125,
+          "elevationM": 0
+        },
+        {
+          "eastM": 361.6,
+          "northM": 12,
+          "elevationM": 0
+        }
+      ],
+      "lengthM": 22.04039828351123,
+      "speedLimitMps": 5.556
+    },
+    {
+      "id": "M:L:J10>J20>L:J20>J30",
+      "incomingLaneId": "L:J10>J20",
+      "outgoingLaneId": "L:J20>J30",
+      "nodeId": "J20",
+      "centerline": [
+        {
+          "eastM": 348,
+          "northM": -1.6,
+          "elevationM": 0
+        },
+        {
+          "eastM": 351,
+          "northM": -1.6,
+          "elevationM": 0
+        },
+        {
+          "eastM": 354,
+          "northM": -1.6,
+          "elevationM": 0
+        },
+        {
+          "eastM": 357,
+          "northM": -1.6,
+          "elevationM": 0
+        },
+        {
+          "eastM": 360,
+          "northM": -1.6,
+          "elevationM": 0
+        },
+        {
+          "eastM": 363,
+          "northM": -1.6,
+          "elevationM": 0
+        },
+        {
+          "eastM": 366,
+          "northM": -1.6,
+          "elevationM": 0
+        },
+        {
+          "eastM": 369,
+          "northM": -1.6,
+          "elevationM": 0
+        },
+        {
+          "eastM": 372,
+          "northM": -1.6,
+          "elevationM": 0
+        }
+      ],
+      "lengthM": 24,
+      "speedLimitMps": 5.556
+    },
+    {
+      "id": "M:L:J11>J01>L:J01>J00",
+      "incomingLaneId": "L:J11>J01",
+      "outgoingLaneId": "L:J01>J00",
+      "nodeId": "J01",
+      "centerline": [
+        {
+          "eastM": 12,
+          "northM": 181.6,
+          "elevationM": 0
+        },
+        {
+          "eastM": 8.8125,
+          "northM": 181.3875,
+          "elevationM": 0
+        },
+        {
+          "eastM": 6.050000000000001,
+          "northM": 180.75,
+          "elevationM": 0
+        },
+        {
+          "eastM": 3.7125,
+          "northM": 179.6875,
+          "elevationM": 0
+        },
+        {
+          "eastM": 1.8000000000000003,
+          "northM": 178.2,
+          "elevationM": 0
+        },
+        {
+          "eastM": 0.3125,
+          "northM": 176.2875,
+          "elevationM": 0
+        },
+        {
+          "eastM": -0.7500000000000001,
+          "northM": 173.95,
+          "elevationM": 0
+        },
+        {
+          "eastM": -1.3875000000000002,
+          "northM": 171.1875,
+          "elevationM": 0
+        },
+        {
+          "eastM": -1.6,
+          "northM": 168,
+          "elevationM": 0
+        }
+      ],
+      "lengthM": 22.040398283511202,
+      "speedLimitMps": 5.556
+    },
+    {
+      "id": "M:L:J11>J01>L:J01>J02",
+      "incomingLaneId": "L:J11>J01",
+      "outgoingLaneId": "L:J01>J02",
+      "nodeId": "J01",
+      "centerline": [
+        {
+          "eastM": 12,
+          "northM": 181.6,
+          "elevationM": 0
+        },
+        {
+          "eastM": 9.5625,
+          "northM": 181.7625,
+          "elevationM": 0
+        },
+        {
+          "eastM": 7.449999999999999,
+          "northM": 182.25,
+          "elevationM": 0
+        },
+        {
+          "eastM": 5.6625,
+          "northM": 183.0625,
+          "elevationM": 0
+        },
+        {
+          "eastM": 4.2,
+          "northM": 184.2,
+          "elevationM": 0
+        },
+        {
+          "eastM": 3.0625,
+          "northM": 185.6625,
+          "elevationM": 0
+        },
+        {
+          "eastM": 2.25,
+          "northM": 187.45,
+          "elevationM": 0
+        },
+        {
+          "eastM": 1.7625000000000002,
+          "northM": 189.5625,
+          "elevationM": 0
+        },
+        {
+          "eastM": 1.6,
+          "northM": 192,
+          "elevationM": 0
+        }
+      ],
+      "lengthM": 16.854422216802693,
+      "speedLimitMps": 5.556
+    },
+    {
+      "id": "M:L:J11>J10>L:J10>J00",
+      "incomingLaneId": "L:J11>J10",
+      "outgoingLaneId": "L:J10>J00",
+      "nodeId": "J10",
+      "centerline": [
+        {
+          "eastM": 178.4,
+          "northM": 12,
+          "elevationM": 0
+        },
+        {
+          "eastM": 178.2375,
+          "northM": 9.5625,
+          "elevationM": 0
+        },
+        {
+          "eastM": 177.75,
+          "northM": 7.449999999999999,
+          "elevationM": 0
+        },
+        {
+          "eastM": 176.9375,
+          "northM": 5.6625,
+          "elevationM": 0
+        },
+        {
+          "eastM": 175.8,
+          "northM": 4.2,
+          "elevationM": 0
+        },
+        {
+          "eastM": 174.3375,
+          "northM": 3.0625,
+          "elevationM": 0
+        },
+        {
+          "eastM": 172.55,
+          "northM": 2.25,
+          "elevationM": 0
+        },
+        {
+          "eastM": 170.4375,
+          "northM": 1.7625000000000002,
+          "elevationM": 0
+        },
+        {
+          "eastM": 168,
+          "northM": 1.6,
+          "elevationM": 0
+        }
+      ],
+      "lengthM": 16.854422216802693,
+      "speedLimitMps": 5.556
+    },
+    {
+      "id": "M:L:J11>J10>L:J10>J20",
+      "incomingLaneId": "L:J11>J10",
+      "outgoingLaneId": "L:J10>J20",
+      "nodeId": "J10",
+      "centerline": [
+        {
+          "eastM": 178.4,
+          "northM": 12,
+          "elevationM": 0
+        },
+        {
+          "eastM": 178.6125,
+          "northM": 8.8125,
+          "elevationM": 0
+        },
+        {
+          "eastM": 179.25,
+          "northM": 6.050000000000001,
+          "elevationM": 0
+        },
+        {
+          "eastM": 180.3125,
+          "northM": 3.7125,
+          "elevationM": 0
+        },
+        {
+          "eastM": 181.8,
+          "northM": 1.8000000000000003,
+          "elevationM": 0
+        },
+        {
+          "eastM": 183.7125,
+          "northM": 0.3125,
+          "elevationM": 0
+        },
+        {
+          "eastM": 186.05,
+          "northM": -0.7500000000000001,
+          "elevationM": 0
+        },
+        {
+          "eastM": 188.8125,
+          "northM": -1.3875000000000002,
+          "elevationM": 0
+        },
+        {
+          "eastM": 192,
+          "northM": -1.6,
+          "elevationM": 0
+        }
+      ],
+      "lengthM": 22.040398283511205,
+      "speedLimitMps": 5.556
+    },
+    {
+      "id": "M:L:J11>J12>L:J12>J02",
+      "incomingLaneId": "L:J11>J12",
+      "outgoingLaneId": "L:J12>J02",
+      "nodeId": "J12",
+      "centerline": [
+        {
+          "eastM": 181.6,
+          "northM": 348,
+          "elevationM": 0
+        },
+        {
+          "eastM": 181.3875,
+          "northM": 351.1875,
+          "elevationM": 0
+        },
+        {
+          "eastM": 180.75,
+          "northM": 353.95000000000005,
+          "elevationM": 0
+        },
+        {
+          "eastM": 179.6875,
+          "northM": 356.2875,
+          "elevationM": 0
+        },
+        {
+          "eastM": 178.2,
+          "northM": 358.20000000000005,
+          "elevationM": 0
+        },
+        {
+          "eastM": 176.2875,
+          "northM": 359.6875,
+          "elevationM": 0
+        },
+        {
+          "eastM": 173.95,
+          "northM": 360.75,
+          "elevationM": 0
+        },
+        {
+          "eastM": 171.1875,
+          "northM": 361.38750000000005,
+          "elevationM": 0
+        },
+        {
+          "eastM": 168,
+          "northM": 361.6,
+          "elevationM": 0
+        }
+      ],
+      "lengthM": 22.040398283511227,
+      "speedLimitMps": 5.556
+    },
+    {
+      "id": "M:L:J11>J12>L:J12>J22",
+      "incomingLaneId": "L:J11>J12",
+      "outgoingLaneId": "L:J12>J22",
+      "nodeId": "J12",
+      "centerline": [
+        {
+          "eastM": 181.6,
+          "northM": 348,
+          "elevationM": 0
+        },
+        {
+          "eastM": 181.7625,
+          "northM": 350.4375,
+          "elevationM": 0
+        },
+        {
+          "eastM": 182.25,
+          "northM": 352.54999999999995,
+          "elevationM": 0
+        },
+        {
+          "eastM": 183.0625,
+          "northM": 354.3375,
+          "elevationM": 0
+        },
+        {
+          "eastM": 184.2,
+          "northM": 355.79999999999995,
+          "elevationM": 0
+        },
+        {
+          "eastM": 185.6625,
+          "northM": 356.9375,
+          "elevationM": 0
+        },
+        {
+          "eastM": 187.45,
+          "northM": 357.75,
+          "elevationM": 0
+        },
+        {
+          "eastM": 189.5625,
+          "northM": 358.23749999999995,
+          "elevationM": 0
+        },
+        {
+          "eastM": 192,
+          "northM": 358.4,
+          "elevationM": 0
+        }
+      ],
+      "lengthM": 16.85442221680267,
+      "speedLimitMps": 5.556
+    },
+    {
+      "id": "M:L:J11>J21>L:J21>J20",
+      "incomingLaneId": "L:J11>J21",
+      "outgoingLaneId": "L:J21>J20",
+      "nodeId": "J21",
+      "centerline": [
+        {
+          "eastM": 348,
+          "northM": 178.4,
+          "elevationM": 0
+        },
+        {
+          "eastM": 350.4375,
+          "northM": 178.2375,
+          "elevationM": 0
+        },
+        {
+          "eastM": 352.54999999999995,
+          "northM": 177.75,
+          "elevationM": 0
+        },
+        {
+          "eastM": 354.3375,
+          "northM": 176.9375,
+          "elevationM": 0
+        },
+        {
+          "eastM": 355.79999999999995,
+          "northM": 175.8,
+          "elevationM": 0
+        },
+        {
+          "eastM": 356.9375,
+          "northM": 174.3375,
+          "elevationM": 0
+        },
+        {
+          "eastM": 357.75,
+          "northM": 172.55,
+          "elevationM": 0
+        },
+        {
+          "eastM": 358.23749999999995,
+          "northM": 170.4375,
+          "elevationM": 0
+        },
+        {
+          "eastM": 358.4,
+          "northM": 168,
+          "elevationM": 0
+        }
+      ],
+      "lengthM": 16.85442221680267,
+      "speedLimitMps": 5.556
+    },
+    {
+      "id": "M:L:J11>J21>L:J21>J22",
+      "incomingLaneId": "L:J11>J21",
+      "outgoingLaneId": "L:J21>J22",
+      "nodeId": "J21",
+      "centerline": [
+        {
+          "eastM": 348,
+          "northM": 178.4,
+          "elevationM": 0
+        },
+        {
+          "eastM": 351.1875,
+          "northM": 178.6125,
+          "elevationM": 0
+        },
+        {
+          "eastM": 353.95000000000005,
+          "northM": 179.25,
+          "elevationM": 0
+        },
+        {
+          "eastM": 356.2875,
+          "northM": 180.3125,
+          "elevationM": 0
+        },
+        {
+          "eastM": 358.20000000000005,
+          "northM": 181.8,
+          "elevationM": 0
+        },
+        {
+          "eastM": 359.6875,
+          "northM": 183.7125,
+          "elevationM": 0
+        },
+        {
+          "eastM": 360.75,
+          "northM": 186.05,
+          "elevationM": 0
+        },
+        {
+          "eastM": 361.38750000000005,
+          "northM": 188.8125,
+          "elevationM": 0
+        },
+        {
+          "eastM": 361.6,
+          "northM": 192,
+          "elevationM": 0
+        }
+      ],
+      "lengthM": 22.040398283511227,
+      "speedLimitMps": 5.556
+    },
+    {
+      "id": "M:L:J11>J21>L:J21>J31",
+      "incomingLaneId": "L:J11>J21",
+      "outgoingLaneId": "L:J21>J31",
+      "nodeId": "J21",
+      "centerline": [
+        {
+          "eastM": 348,
+          "northM": 178.4,
+          "elevationM": 0
+        },
+        {
+          "eastM": 351,
+          "northM": 178.4,
+          "elevationM": 0
+        },
+        {
+          "eastM": 354,
+          "northM": 178.4,
+          "elevationM": 0
+        },
+        {
+          "eastM": 357,
+          "northM": 178.4,
+          "elevationM": 0
+        },
+        {
+          "eastM": 360,
+          "northM": 178.4,
+          "elevationM": 0
+        },
+        {
+          "eastM": 363,
+          "northM": 178.4,
+          "elevationM": 0
+        },
+        {
+          "eastM": 366,
+          "northM": 178.40000000000003,
+          "elevationM": 0
+        },
+        {
+          "eastM": 369,
+          "northM": 178.4,
+          "elevationM": 0
+        },
+        {
+          "eastM": 372,
+          "northM": 178.4,
+          "elevationM": 0
+        }
+      ],
+      "lengthM": 24,
+      "speedLimitMps": 5.556
+    },
+    {
+      "id": "M:L:J12>J02>L:J02>J01",
+      "incomingLaneId": "L:J12>J02",
+      "outgoingLaneId": "L:J02>J01",
+      "nodeId": "J02",
+      "centerline": [
+        {
+          "eastM": 12,
+          "northM": 361.6,
+          "elevationM": 0
+        },
+        {
+          "eastM": 8.8125,
+          "northM": 361.38750000000005,
+          "elevationM": 0
+        },
+        {
+          "eastM": 6.050000000000001,
+          "northM": 360.75,
+          "elevationM": 0
+        },
+        {
+          "eastM": 3.7125,
+          "northM": 359.6875,
+          "elevationM": 0
+        },
+        {
+          "eastM": 1.8000000000000003,
+          "northM": 358.20000000000005,
+          "elevationM": 0
+        },
+        {
+          "eastM": 0.3125,
+          "northM": 356.2875,
+          "elevationM": 0
+        },
+        {
+          "eastM": -0.7500000000000001,
+          "northM": 353.95000000000005,
+          "elevationM": 0
+        },
+        {
+          "eastM": -1.3875000000000002,
+          "northM": 351.1875,
+          "elevationM": 0
+        },
+        {
+          "eastM": -1.6,
+          "northM": 348,
+          "elevationM": 0
+        }
+      ],
+      "lengthM": 22.04039828351123,
+      "speedLimitMps": 5.556
+    },
+    {
+      "id": "M:L:J12>J11>L:J11>J01",
+      "incomingLaneId": "L:J12>J11",
+      "outgoingLaneId": "L:J11>J01",
+      "nodeId": "J11",
+      "centerline": [
+        {
+          "eastM": 178.4,
+          "northM": 192,
+          "elevationM": 0
+        },
+        {
+          "eastM": 178.2375,
+          "northM": 189.5625,
+          "elevationM": 0
+        },
+        {
+          "eastM": 177.75,
+          "northM": 187.45,
+          "elevationM": 0
+        },
+        {
+          "eastM": 176.9375,
+          "northM": 185.6625,
+          "elevationM": 0
+        },
+        {
+          "eastM": 175.8,
+          "northM": 184.20000000000002,
+          "elevationM": 0
+        },
+        {
+          "eastM": 174.3375,
+          "northM": 183.0625,
+          "elevationM": 0
+        },
+        {
+          "eastM": 172.55,
+          "northM": 182.25,
+          "elevationM": 0
+        },
+        {
+          "eastM": 170.4375,
+          "northM": 181.7625,
+          "elevationM": 0
+        },
+        {
+          "eastM": 168,
+          "northM": 181.6,
+          "elevationM": 0
+        }
+      ],
+      "lengthM": 16.854422216802696,
+      "speedLimitMps": 5.556
+    },
+    {
+      "id": "M:L:J12>J11>L:J11>J10",
+      "incomingLaneId": "L:J12>J11",
+      "outgoingLaneId": "L:J11>J10",
+      "nodeId": "J11",
+      "centerline": [
+        {
+          "eastM": 178.4,
+          "northM": 192,
+          "elevationM": 0
+        },
+        {
+          "eastM": 178.4,
+          "northM": 189,
+          "elevationM": 0
+        },
+        {
+          "eastM": 178.4,
+          "northM": 186,
+          "elevationM": 0
+        },
+        {
+          "eastM": 178.4,
+          "northM": 183,
+          "elevationM": 0
+        },
+        {
+          "eastM": 178.4,
+          "northM": 180,
+          "elevationM": 0
+        },
+        {
+          "eastM": 178.4,
+          "northM": 177,
+          "elevationM": 0
+        },
+        {
+          "eastM": 178.40000000000003,
+          "northM": 174,
+          "elevationM": 0
+        },
+        {
+          "eastM": 178.4,
+          "northM": 171,
+          "elevationM": 0
+        },
+        {
+          "eastM": 178.4,
+          "northM": 168,
+          "elevationM": 0
+        }
+      ],
+      "lengthM": 24,
+      "speedLimitMps": 5.556
+    },
+    {
+      "id": "M:L:J12>J11>L:J11>J21",
+      "incomingLaneId": "L:J12>J11",
+      "outgoingLaneId": "L:J11>J21",
+      "nodeId": "J11",
+      "centerline": [
+        {
+          "eastM": 178.4,
+          "northM": 192,
+          "elevationM": 0
+        },
+        {
+          "eastM": 178.6125,
+          "northM": 188.8125,
+          "elevationM": 0
+        },
+        {
+          "eastM": 179.25,
+          "northM": 186.05,
+          "elevationM": 0
+        },
+        {
+          "eastM": 180.3125,
+          "northM": 183.7125,
+          "elevationM": 0
+        },
+        {
+          "eastM": 181.8,
+          "northM": 181.79999999999998,
+          "elevationM": 0
+        },
+        {
+          "eastM": 183.7125,
+          "northM": 180.3125,
+          "elevationM": 0
+        },
+        {
+          "eastM": 186.05,
+          "northM": 179.25,
+          "elevationM": 0
+        },
+        {
+          "eastM": 188.8125,
+          "northM": 178.6125,
+          "elevationM": 0
+        },
+        {
+          "eastM": 192,
+          "northM": 178.4,
+          "elevationM": 0
+        }
+      ],
+      "lengthM": 22.040398283511202,
+      "speedLimitMps": 5.556
+    },
+    {
+      "id": "M:L:J12>J22>L:J22>J21",
+      "incomingLaneId": "L:J12>J22",
+      "outgoingLaneId": "L:J22>J21",
+      "nodeId": "J22",
+      "centerline": [
+        {
+          "eastM": 348,
+          "northM": 358.4,
+          "elevationM": 0
+        },
+        {
+          "eastM": 350.4375,
+          "northM": 358.23749999999995,
+          "elevationM": 0
+        },
+        {
+          "eastM": 352.54999999999995,
+          "northM": 357.75,
+          "elevationM": 0
+        },
+        {
+          "eastM": 354.3375,
+          "northM": 356.9375,
+          "elevationM": 0
+        },
+        {
+          "eastM": 355.79999999999995,
+          "northM": 355.79999999999995,
+          "elevationM": 0
+        },
+        {
+          "eastM": 356.9375,
+          "northM": 354.3375,
+          "elevationM": 0
+        },
+        {
+          "eastM": 357.75,
+          "northM": 352.54999999999995,
+          "elevationM": 0
+        },
+        {
+          "eastM": 358.23749999999995,
+          "northM": 350.4375,
+          "elevationM": 0
+        },
+        {
+          "eastM": 358.4,
+          "northM": 348,
+          "elevationM": 0
+        }
+      ],
+      "lengthM": 16.854422216802643,
+      "speedLimitMps": 5.556
+    },
+    {
+      "id": "M:L:J12>J22>L:J22>J32",
+      "incomingLaneId": "L:J12>J22",
+      "outgoingLaneId": "L:J22>J32",
+      "nodeId": "J22",
+      "centerline": [
+        {
+          "eastM": 348,
+          "northM": 358.4,
+          "elevationM": 0
+        },
+        {
+          "eastM": 351,
+          "northM": 358.4,
+          "elevationM": 0
+        },
+        {
+          "eastM": 354,
+          "northM": 358.4,
+          "elevationM": 0
+        },
+        {
+          "eastM": 357,
+          "northM": 358.4,
+          "elevationM": 0
+        },
+        {
+          "eastM": 360,
+          "northM": 358.4,
+          "elevationM": 0
+        },
+        {
+          "eastM": 363,
+          "northM": 358.4,
+          "elevationM": 0
+        },
+        {
+          "eastM": 366,
+          "northM": 358.4,
+          "elevationM": 0
+        },
+        {
+          "eastM": 369,
+          "northM": 358.4,
+          "elevationM": 0
+        },
+        {
+          "eastM": 372,
+          "northM": 358.4,
+          "elevationM": 0
+        }
+      ],
+      "lengthM": 24,
+      "speedLimitMps": 5.556
+    },
+    {
+      "id": "M:L:J20>J10>L:J10>J00",
+      "incomingLaneId": "L:J20>J10",
+      "outgoingLaneId": "L:J10>J00",
+      "nodeId": "J10",
+      "centerline": [
+        {
+          "eastM": 192,
+          "northM": 1.6,
+          "elevationM": 0
+        },
+        {
+          "eastM": 189,
+          "northM": 1.6,
+          "elevationM": 0
+        },
+        {
+          "eastM": 186,
+          "northM": 1.6,
+          "elevationM": 0
+        },
+        {
+          "eastM": 183,
+          "northM": 1.6,
+          "elevationM": 0
+        },
+        {
+          "eastM": 180,
+          "northM": 1.6,
+          "elevationM": 0
+        },
+        {
+          "eastM": 177,
+          "northM": 1.6,
+          "elevationM": 0
+        },
+        {
+          "eastM": 174,
+          "northM": 1.6,
+          "elevationM": 0
+        },
+        {
+          "eastM": 171,
+          "northM": 1.6,
+          "elevationM": 0
+        },
+        {
+          "eastM": 168,
+          "northM": 1.6,
+          "elevationM": 0
+        }
+      ],
+      "lengthM": 24,
+      "speedLimitMps": 5.556
+    },
+    {
+      "id": "M:L:J20>J10>L:J10>J11",
+      "incomingLaneId": "L:J20>J10",
+      "outgoingLaneId": "L:J10>J11",
+      "nodeId": "J10",
+      "centerline": [
+        {
+          "eastM": 192,
+          "northM": 1.6,
+          "elevationM": 0
+        },
+        {
+          "eastM": 189.5625,
+          "northM": 1.7625000000000002,
+          "elevationM": 0
+        },
+        {
+          "eastM": 187.45,
+          "northM": 2.25,
+          "elevationM": 0
+        },
+        {
+          "eastM": 185.6625,
+          "northM": 3.0625,
+          "elevationM": 0
+        },
+        {
+          "eastM": 184.20000000000002,
+          "northM": 4.2,
+          "elevationM": 0
+        },
+        {
+          "eastM": 183.0625,
+          "northM": 5.6625,
+          "elevationM": 0
+        },
+        {
+          "eastM": 182.25,
+          "northM": 7.45,
+          "elevationM": 0
+        },
+        {
+          "eastM": 181.7625,
+          "northM": 9.5625,
+          "elevationM": 0
+        },
+        {
+          "eastM": 181.6,
+          "northM": 12,
+          "elevationM": 0
+        }
+      ],
+      "lengthM": 16.85442221680269,
+      "speedLimitMps": 5.556
+    },
+    {
+      "id": "M:L:J20>J21>L:J21>J11",
+      "incomingLaneId": "L:J20>J21",
+      "outgoingLaneId": "L:J21>J11",
+      "nodeId": "J21",
+      "centerline": [
+        {
+          "eastM": 361.6,
+          "northM": 168,
+          "elevationM": 0
+        },
+        {
+          "eastM": 361.38750000000005,
+          "northM": 171.1875,
+          "elevationM": 0
+        },
+        {
+          "eastM": 360.75,
+          "northM": 173.95,
+          "elevationM": 0
+        },
+        {
+          "eastM": 359.6875,
+          "northM": 176.2875,
+          "elevationM": 0
+        },
+        {
+          "eastM": 358.20000000000005,
+          "northM": 178.20000000000002,
+          "elevationM": 0
+        },
+        {
+          "eastM": 356.2875,
+          "northM": 179.6875,
+          "elevationM": 0
+        },
+        {
+          "eastM": 353.95000000000005,
+          "northM": 180.75,
+          "elevationM": 0
+        },
+        {
+          "eastM": 351.1875,
+          "northM": 181.3875,
+          "elevationM": 0
+        },
+        {
+          "eastM": 348,
+          "northM": 181.6,
+          "elevationM": 0
+        }
+      ],
+      "lengthM": 22.04039828351123,
+      "speedLimitMps": 5.556
+    },
+    {
+      "id": "M:L:J20>J21>L:J21>J22",
+      "incomingLaneId": "L:J20>J21",
+      "outgoingLaneId": "L:J21>J22",
+      "nodeId": "J21",
+      "centerline": [
+        {
+          "eastM": 361.6,
+          "northM": 168,
+          "elevationM": 0
+        },
+        {
+          "eastM": 361.6,
+          "northM": 171,
+          "elevationM": 0
+        },
+        {
+          "eastM": 361.6,
+          "northM": 174,
+          "elevationM": 0
+        },
+        {
+          "eastM": 361.6,
+          "northM": 177,
+          "elevationM": 0
+        },
+        {
+          "eastM": 361.6,
+          "northM": 180,
+          "elevationM": 0
+        },
+        {
+          "eastM": 361.6,
+          "northM": 183,
+          "elevationM": 0
+        },
+        {
+          "eastM": 361.6,
+          "northM": 186,
+          "elevationM": 0
+        },
+        {
+          "eastM": 361.6,
+          "northM": 189,
+          "elevationM": 0
+        },
+        {
+          "eastM": 361.6,
+          "northM": 192,
+          "elevationM": 0
+        }
+      ],
+      "lengthM": 24,
+      "speedLimitMps": 5.556
+    },
+    {
+      "id": "M:L:J20>J21>L:J21>J31",
+      "incomingLaneId": "L:J20>J21",
+      "outgoingLaneId": "L:J21>J31",
+      "nodeId": "J21",
+      "centerline": [
+        {
+          "eastM": 361.6,
+          "northM": 168,
+          "elevationM": 0
+        },
+        {
+          "eastM": 361.76250000000005,
+          "northM": 170.4375,
+          "elevationM": 0
+        },
+        {
+          "eastM": 362.25,
+          "northM": 172.55,
+          "elevationM": 0
+        },
+        {
+          "eastM": 363.0625,
+          "northM": 174.3375,
+          "elevationM": 0
+        },
+        {
+          "eastM": 364.20000000000005,
+          "northM": 175.79999999999998,
+          "elevationM": 0
+        },
+        {
+          "eastM": 365.6625,
+          "northM": 176.9375,
+          "elevationM": 0
+        },
+        {
+          "eastM": 367.45000000000005,
+          "northM": 177.75,
+          "elevationM": 0
+        },
+        {
+          "eastM": 369.5625,
+          "northM": 178.2375,
+          "elevationM": 0
+        },
+        {
+          "eastM": 372,
+          "northM": 178.4,
+          "elevationM": 0
+        }
+      ],
+      "lengthM": 16.854422216802668,
+      "speedLimitMps": 5.556
+    },
+    {
+      "id": "M:L:J20>J30>L:J30>J31",
+      "incomingLaneId": "L:J20>J30",
+      "outgoingLaneId": "L:J30>J31",
+      "nodeId": "J30",
+      "centerline": [
+        {
+          "eastM": 528,
+          "northM": -1.6,
+          "elevationM": 0
+        },
+        {
+          "eastM": 531.1875,
+          "northM": -1.3875000000000002,
+          "elevationM": 0
+        },
+        {
+          "eastM": 533.95,
+          "northM": -0.75,
+          "elevationM": 0
+        },
+        {
+          "eastM": 536.2875,
+          "northM": 0.3125,
+          "elevationM": 0
+        },
+        {
+          "eastM": 538.2,
+          "northM": 1.7999999999999998,
+          "elevationM": 0
+        },
+        {
+          "eastM": 539.6875,
+          "northM": 3.7125,
+          "elevationM": 0
+        },
+        {
+          "eastM": 540.75,
+          "northM": 6.05,
+          "elevationM": 0
+        },
+        {
+          "eastM": 541.3875,
+          "northM": 8.8125,
+          "elevationM": 0
+        },
+        {
+          "eastM": 541.6,
+          "northM": 12,
+          "elevationM": 0
+        }
+      ],
+      "lengthM": 22.04039828351123,
+      "speedLimitMps": 5.556
+    },
+    {
+      "id": "M:L:J21>J11>L:J11>J01",
+      "incomingLaneId": "L:J21>J11",
+      "outgoingLaneId": "L:J11>J01",
+      "nodeId": "J11",
+      "centerline": [
+        {
+          "eastM": 192,
+          "northM": 181.6,
+          "elevationM": 0
+        },
+        {
+          "eastM": 189,
+          "northM": 181.6,
+          "elevationM": 0
+        },
+        {
+          "eastM": 186,
+          "northM": 181.6,
+          "elevationM": 0
+        },
+        {
+          "eastM": 183,
+          "northM": 181.6,
+          "elevationM": 0
+        },
+        {
+          "eastM": 180,
+          "northM": 181.6,
+          "elevationM": 0
+        },
+        {
+          "eastM": 177,
+          "northM": 181.6,
+          "elevationM": 0
+        },
+        {
+          "eastM": 174,
+          "northM": 181.59999999999997,
+          "elevationM": 0
+        },
+        {
+          "eastM": 171,
+          "northM": 181.6,
+          "elevationM": 0
+        },
+        {
+          "eastM": 168,
+          "northM": 181.6,
+          "elevationM": 0
+        }
+      ],
+      "lengthM": 24,
+      "speedLimitMps": 5.556
+    },
+    {
+      "id": "M:L:J21>J11>L:J11>J10",
+      "incomingLaneId": "L:J21>J11",
+      "outgoingLaneId": "L:J11>J10",
+      "nodeId": "J11",
+      "centerline": [
+        {
+          "eastM": 192,
+          "northM": 181.6,
+          "elevationM": 0
+        },
+        {
+          "eastM": 188.8125,
+          "northM": 181.3875,
+          "elevationM": 0
+        },
+        {
+          "eastM": 186.05,
+          "northM": 180.75,
+          "elevationM": 0
+        },
+        {
+          "eastM": 183.7125,
+          "northM": 179.6875,
+          "elevationM": 0
+        },
+        {
+          "eastM": 181.79999999999998,
+          "northM": 178.2,
+          "elevationM": 0
+        },
+        {
+          "eastM": 180.3125,
+          "northM": 176.2875,
+          "elevationM": 0
+        },
+        {
+          "eastM": 179.25,
+          "northM": 173.95,
+          "elevationM": 0
+        },
+        {
+          "eastM": 178.6125,
+          "northM": 171.1875,
+          "elevationM": 0
+        },
+        {
+          "eastM": 178.4,
+          "northM": 168,
+          "elevationM": 0
+        }
+      ],
+      "lengthM": 22.040398283511202,
+      "speedLimitMps": 5.556
+    },
+    {
+      "id": "M:L:J21>J11>L:J11>J12",
+      "incomingLaneId": "L:J21>J11",
+      "outgoingLaneId": "L:J11>J12",
+      "nodeId": "J11",
+      "centerline": [
+        {
+          "eastM": 192,
+          "northM": 181.6,
+          "elevationM": 0
+        },
+        {
+          "eastM": 189.5625,
+          "northM": 181.7625,
+          "elevationM": 0
+        },
+        {
+          "eastM": 187.45,
+          "northM": 182.25,
+          "elevationM": 0
+        },
+        {
+          "eastM": 185.6625,
+          "northM": 183.0625,
+          "elevationM": 0
+        },
+        {
+          "eastM": 184.20000000000002,
+          "northM": 184.2,
+          "elevationM": 0
+        },
+        {
+          "eastM": 183.0625,
+          "northM": 185.6625,
+          "elevationM": 0
+        },
+        {
+          "eastM": 182.25,
+          "northM": 187.45,
+          "elevationM": 0
+        },
+        {
+          "eastM": 181.7625,
+          "northM": 189.5625,
+          "elevationM": 0
+        },
+        {
+          "eastM": 181.6,
+          "northM": 192,
+          "elevationM": 0
+        }
+      ],
+      "lengthM": 16.854422216802696,
+      "speedLimitMps": 5.556
+    },
+    {
+      "id": "M:L:J21>J20>L:J20>J10",
+      "incomingLaneId": "L:J21>J20",
+      "outgoingLaneId": "L:J20>J10",
+      "nodeId": "J20",
+      "centerline": [
+        {
+          "eastM": 358.4,
+          "northM": 12,
+          "elevationM": 0
+        },
+        {
+          "eastM": 358.23749999999995,
+          "northM": 9.5625,
+          "elevationM": 0
+        },
+        {
+          "eastM": 357.75,
+          "northM": 7.449999999999999,
+          "elevationM": 0
+        },
+        {
+          "eastM": 356.9375,
+          "northM": 5.6625,
+          "elevationM": 0
+        },
+        {
+          "eastM": 355.79999999999995,
+          "northM": 4.2,
+          "elevationM": 0
+        },
+        {
+          "eastM": 354.3375,
+          "northM": 3.0625,
+          "elevationM": 0
+        },
+        {
+          "eastM": 352.54999999999995,
+          "northM": 2.25,
+          "elevationM": 0
+        },
+        {
+          "eastM": 350.4375,
+          "northM": 1.7625000000000002,
+          "elevationM": 0
+        },
+        {
+          "eastM": 348,
+          "northM": 1.6,
+          "elevationM": 0
+        }
+      ],
+      "lengthM": 16.854422216802668,
+      "speedLimitMps": 5.556
+    },
+    {
+      "id": "M:L:J21>J20>L:J20>J30",
+      "incomingLaneId": "L:J21>J20",
+      "outgoingLaneId": "L:J20>J30",
+      "nodeId": "J20",
+      "centerline": [
+        {
+          "eastM": 358.4,
+          "northM": 12,
+          "elevationM": 0
+        },
+        {
+          "eastM": 358.61249999999995,
+          "northM": 8.8125,
+          "elevationM": 0
+        },
+        {
+          "eastM": 359.25,
+          "northM": 6.050000000000001,
+          "elevationM": 0
+        },
+        {
+          "eastM": 360.3125,
+          "northM": 3.7125,
+          "elevationM": 0
+        },
+        {
+          "eastM": 361.79999999999995,
+          "northM": 1.8000000000000003,
+          "elevationM": 0
+        },
+        {
+          "eastM": 363.7125,
+          "northM": 0.3125,
+          "elevationM": 0
+        },
+        {
+          "eastM": 366.04999999999995,
+          "northM": -0.7500000000000001,
+          "elevationM": 0
+        },
+        {
+          "eastM": 368.8125,
+          "northM": -1.3875000000000002,
+          "elevationM": 0
+        },
+        {
+          "eastM": 372,
+          "northM": -1.6,
+          "elevationM": 0
+        }
+      ],
+      "lengthM": 22.04039828351123,
+      "speedLimitMps": 5.556
+    },
+    {
+      "id": "M:L:J21>J22>L:J22>J12",
+      "incomingLaneId": "L:J21>J22",
+      "outgoingLaneId": "L:J22>J12",
+      "nodeId": "J22",
+      "centerline": [
+        {
+          "eastM": 361.6,
+          "northM": 348,
+          "elevationM": 0
+        },
+        {
+          "eastM": 361.38750000000005,
+          "northM": 351.1875,
+          "elevationM": 0
+        },
+        {
+          "eastM": 360.75,
+          "northM": 353.95000000000005,
+          "elevationM": 0
+        },
+        {
+          "eastM": 359.6875,
+          "northM": 356.2875,
+          "elevationM": 0
+        },
+        {
+          "eastM": 358.20000000000005,
+          "northM": 358.20000000000005,
+          "elevationM": 0
+        },
+        {
+          "eastM": 356.2875,
+          "northM": 359.6875,
+          "elevationM": 0
+        },
+        {
+          "eastM": 353.95000000000005,
+          "northM": 360.75,
+          "elevationM": 0
+        },
+        {
+          "eastM": 351.1875,
+          "northM": 361.38750000000005,
+          "elevationM": 0
+        },
+        {
+          "eastM": 348,
+          "northM": 361.6,
+          "elevationM": 0
+        }
+      ],
+      "lengthM": 22.04039828351125,
+      "speedLimitMps": 5.556
+    },
+    {
+      "id": "M:L:J21>J22>L:J22>J32",
+      "incomingLaneId": "L:J21>J22",
+      "outgoingLaneId": "L:J22>J32",
+      "nodeId": "J22",
+      "centerline": [
+        {
+          "eastM": 361.6,
+          "northM": 348,
+          "elevationM": 0
+        },
+        {
+          "eastM": 361.76250000000005,
+          "northM": 350.4375,
+          "elevationM": 0
+        },
+        {
+          "eastM": 362.25,
+          "northM": 352.54999999999995,
+          "elevationM": 0
+        },
+        {
+          "eastM": 363.0625,
+          "northM": 354.3375,
+          "elevationM": 0
+        },
+        {
+          "eastM": 364.20000000000005,
+          "northM": 355.79999999999995,
+          "elevationM": 0
+        },
+        {
+          "eastM": 365.6625,
+          "northM": 356.9375,
+          "elevationM": 0
+        },
+        {
+          "eastM": 367.45000000000005,
+          "northM": 357.75,
+          "elevationM": 0
+        },
+        {
+          "eastM": 369.5625,
+          "northM": 358.23749999999995,
+          "elevationM": 0
+        },
+        {
+          "eastM": 372,
+          "northM": 358.4,
+          "elevationM": 0
+        }
+      ],
+      "lengthM": 16.854422216802643,
+      "speedLimitMps": 5.556
+    },
+    {
+      "id": "M:L:J21>J31>L:J31>J30",
+      "incomingLaneId": "L:J21>J31",
+      "outgoingLaneId": "L:J31>J30",
+      "nodeId": "J31",
+      "centerline": [
+        {
+          "eastM": 528,
+          "northM": 178.4,
+          "elevationM": 0
+        },
+        {
+          "eastM": 530.4375,
+          "northM": 178.2375,
+          "elevationM": 0
+        },
+        {
+          "eastM": 532.55,
+          "northM": 177.75,
+          "elevationM": 0
+        },
+        {
+          "eastM": 534.3375,
+          "northM": 176.9375,
+          "elevationM": 0
+        },
+        {
+          "eastM": 535.8,
+          "northM": 175.8,
+          "elevationM": 0
+        },
+        {
+          "eastM": 536.9375,
+          "northM": 174.3375,
+          "elevationM": 0
+        },
+        {
+          "eastM": 537.75,
+          "northM": 172.55,
+          "elevationM": 0
+        },
+        {
+          "eastM": 538.2375,
+          "northM": 170.4375,
+          "elevationM": 0
+        },
+        {
+          "eastM": 538.4,
+          "northM": 168,
+          "elevationM": 0
+        }
+      ],
+      "lengthM": 16.85442221680267,
+      "speedLimitMps": 5.556
+    },
+    {
+      "id": "M:L:J21>J31>L:J31>J32",
+      "incomingLaneId": "L:J21>J31",
+      "outgoingLaneId": "L:J31>J32",
+      "nodeId": "J31",
+      "centerline": [
+        {
+          "eastM": 528,
+          "northM": 178.4,
+          "elevationM": 0
+        },
+        {
+          "eastM": 531.1875,
+          "northM": 178.6125,
+          "elevationM": 0
+        },
+        {
+          "eastM": 533.95,
+          "northM": 179.25,
+          "elevationM": 0
+        },
+        {
+          "eastM": 536.2875,
+          "northM": 180.3125,
+          "elevationM": 0
+        },
+        {
+          "eastM": 538.2,
+          "northM": 181.8,
+          "elevationM": 0
+        },
+        {
+          "eastM": 539.6875,
+          "northM": 183.7125,
+          "elevationM": 0
+        },
+        {
+          "eastM": 540.75,
+          "northM": 186.05,
+          "elevationM": 0
+        },
+        {
+          "eastM": 541.3875,
+          "northM": 188.8125,
+          "elevationM": 0
+        },
+        {
+          "eastM": 541.6,
+          "northM": 192,
+          "elevationM": 0
+        }
+      ],
+      "lengthM": 22.040398283511227,
+      "speedLimitMps": 5.556
+    },
+    {
+      "id": "M:L:J22>J12>L:J12>J02",
+      "incomingLaneId": "L:J22>J12",
+      "outgoingLaneId": "L:J12>J02",
+      "nodeId": "J12",
+      "centerline": [
+        {
+          "eastM": 192,
+          "northM": 361.6,
+          "elevationM": 0
+        },
+        {
+          "eastM": 189,
+          "northM": 361.6,
+          "elevationM": 0
+        },
+        {
+          "eastM": 186,
+          "northM": 361.6,
+          "elevationM": 0
+        },
+        {
+          "eastM": 183,
+          "northM": 361.6,
+          "elevationM": 0
+        },
+        {
+          "eastM": 180,
+          "northM": 361.6,
+          "elevationM": 0
+        },
+        {
+          "eastM": 177,
+          "northM": 361.6,
+          "elevationM": 0
+        },
+        {
+          "eastM": 174,
+          "northM": 361.6,
+          "elevationM": 0
+        },
+        {
+          "eastM": 171,
+          "northM": 361.6,
+          "elevationM": 0
+        },
+        {
+          "eastM": 168,
+          "northM": 361.6,
+          "elevationM": 0
+        }
+      ],
+      "lengthM": 24,
+      "speedLimitMps": 5.556
+    },
+    {
+      "id": "M:L:J22>J12>L:J12>J11",
+      "incomingLaneId": "L:J22>J12",
+      "outgoingLaneId": "L:J12>J11",
+      "nodeId": "J12",
+      "centerline": [
+        {
+          "eastM": 192,
+          "northM": 361.6,
+          "elevationM": 0
+        },
+        {
+          "eastM": 188.8125,
+          "northM": 361.38750000000005,
+          "elevationM": 0
+        },
+        {
+          "eastM": 186.05,
+          "northM": 360.75,
+          "elevationM": 0
+        },
+        {
+          "eastM": 183.7125,
+          "northM": 359.6875,
+          "elevationM": 0
+        },
+        {
+          "eastM": 181.79999999999998,
+          "northM": 358.20000000000005,
+          "elevationM": 0
+        },
+        {
+          "eastM": 180.3125,
+          "northM": 356.2875,
+          "elevationM": 0
+        },
+        {
+          "eastM": 179.25,
+          "northM": 353.95000000000005,
+          "elevationM": 0
+        },
+        {
+          "eastM": 178.6125,
+          "northM": 351.1875,
+          "elevationM": 0
+        },
+        {
+          "eastM": 178.4,
+          "northM": 348,
+          "elevationM": 0
+        }
+      ],
+      "lengthM": 22.04039828351123,
+      "speedLimitMps": 5.556
+    },
+    {
+      "id": "M:L:J22>J21>L:J21>J11",
+      "incomingLaneId": "L:J22>J21",
+      "outgoingLaneId": "L:J21>J11",
+      "nodeId": "J21",
+      "centerline": [
+        {
+          "eastM": 358.4,
+          "northM": 192,
+          "elevationM": 0
+        },
+        {
+          "eastM": 358.23749999999995,
+          "northM": 189.5625,
+          "elevationM": 0
+        },
+        {
+          "eastM": 357.75,
+          "northM": 187.45,
+          "elevationM": 0
+        },
+        {
+          "eastM": 356.9375,
+          "northM": 185.6625,
+          "elevationM": 0
+        },
+        {
+          "eastM": 355.79999999999995,
+          "northM": 184.20000000000002,
+          "elevationM": 0
+        },
+        {
+          "eastM": 354.3375,
+          "northM": 183.0625,
+          "elevationM": 0
+        },
+        {
+          "eastM": 352.54999999999995,
+          "northM": 182.25,
+          "elevationM": 0
+        },
+        {
+          "eastM": 350.4375,
+          "northM": 181.7625,
+          "elevationM": 0
+        },
+        {
+          "eastM": 348,
+          "northM": 181.6,
+          "elevationM": 0
+        }
+      ],
+      "lengthM": 16.854422216802668,
+      "speedLimitMps": 5.556
+    },
+    {
+      "id": "M:L:J22>J21>L:J21>J20",
+      "incomingLaneId": "L:J22>J21",
+      "outgoingLaneId": "L:J21>J20",
+      "nodeId": "J21",
+      "centerline": [
+        {
+          "eastM": 358.4,
+          "northM": 192,
+          "elevationM": 0
+        },
+        {
+          "eastM": 358.4,
+          "northM": 189,
+          "elevationM": 0
+        },
+        {
+          "eastM": 358.4,
+          "northM": 186,
+          "elevationM": 0
+        },
+        {
+          "eastM": 358.4,
+          "northM": 183,
+          "elevationM": 0
+        },
+        {
+          "eastM": 358.4,
+          "northM": 180,
+          "elevationM": 0
+        },
+        {
+          "eastM": 358.4,
+          "northM": 177,
+          "elevationM": 0
+        },
+        {
+          "eastM": 358.4,
+          "northM": 174,
+          "elevationM": 0
+        },
+        {
+          "eastM": 358.4,
+          "northM": 171,
+          "elevationM": 0
+        },
+        {
+          "eastM": 358.4,
+          "northM": 168,
+          "elevationM": 0
+        }
+      ],
+      "lengthM": 24,
+      "speedLimitMps": 5.556
+    },
+    {
+      "id": "M:L:J22>J21>L:J21>J31",
+      "incomingLaneId": "L:J22>J21",
+      "outgoingLaneId": "L:J21>J31",
+      "nodeId": "J21",
+      "centerline": [
+        {
+          "eastM": 358.4,
+          "northM": 192,
+          "elevationM": 0
+        },
+        {
+          "eastM": 358.61249999999995,
+          "northM": 188.8125,
+          "elevationM": 0
+        },
+        {
+          "eastM": 359.25,
+          "northM": 186.05,
+          "elevationM": 0
+        },
+        {
+          "eastM": 360.3125,
+          "northM": 183.7125,
+          "elevationM": 0
+        },
+        {
+          "eastM": 361.79999999999995,
+          "northM": 181.79999999999998,
+          "elevationM": 0
+        },
+        {
+          "eastM": 363.7125,
+          "northM": 180.3125,
+          "elevationM": 0
+        },
+        {
+          "eastM": 366.04999999999995,
+          "northM": 179.25,
+          "elevationM": 0
+        },
+        {
+          "eastM": 368.8125,
+          "northM": 178.6125,
+          "elevationM": 0
+        },
+        {
+          "eastM": 372,
+          "northM": 178.4,
+          "elevationM": 0
+        }
+      ],
+      "lengthM": 22.04039828351123,
+      "speedLimitMps": 5.556
+    },
+    {
+      "id": "M:L:J22>J32>L:J32>J31",
+      "incomingLaneId": "L:J22>J32",
+      "outgoingLaneId": "L:J32>J31",
+      "nodeId": "J32",
+      "centerline": [
+        {
+          "eastM": 528,
+          "northM": 358.4,
+          "elevationM": 0
+        },
+        {
+          "eastM": 530.4375,
+          "northM": 358.23749999999995,
+          "elevationM": 0
+        },
+        {
+          "eastM": 532.55,
+          "northM": 357.75,
+          "elevationM": 0
+        },
+        {
+          "eastM": 534.3375,
+          "northM": 356.9375,
+          "elevationM": 0
+        },
+        {
+          "eastM": 535.8,
+          "northM": 355.79999999999995,
+          "elevationM": 0
+        },
+        {
+          "eastM": 536.9375,
+          "northM": 354.3375,
+          "elevationM": 0
+        },
+        {
+          "eastM": 537.75,
+          "northM": 352.54999999999995,
+          "elevationM": 0
+        },
+        {
+          "eastM": 538.2375,
+          "northM": 350.4375,
+          "elevationM": 0
+        },
+        {
+          "eastM": 538.4,
+          "northM": 348,
+          "elevationM": 0
+        }
+      ],
+      "lengthM": 16.854422216802643,
+      "speedLimitMps": 5.556
+    },
+    {
+      "id": "M:L:J30>J20>L:J20>J10",
+      "incomingLaneId": "L:J30>J20",
+      "outgoingLaneId": "L:J20>J10",
+      "nodeId": "J20",
+      "centerline": [
+        {
+          "eastM": 372,
+          "northM": 1.6,
+          "elevationM": 0
+        },
+        {
+          "eastM": 369,
+          "northM": 1.6,
+          "elevationM": 0
+        },
+        {
+          "eastM": 366,
+          "northM": 1.6,
+          "elevationM": 0
+        },
+        {
+          "eastM": 363,
+          "northM": 1.6,
+          "elevationM": 0
+        },
+        {
+          "eastM": 360,
+          "northM": 1.6,
+          "elevationM": 0
+        },
+        {
+          "eastM": 357,
+          "northM": 1.6,
+          "elevationM": 0
+        },
+        {
+          "eastM": 354,
+          "northM": 1.6,
+          "elevationM": 0
+        },
+        {
+          "eastM": 351,
+          "northM": 1.6,
+          "elevationM": 0
+        },
+        {
+          "eastM": 348,
+          "northM": 1.6,
+          "elevationM": 0
+        }
+      ],
+      "lengthM": 24,
+      "speedLimitMps": 5.556
+    },
+    {
+      "id": "M:L:J30>J20>L:J20>J21",
+      "incomingLaneId": "L:J30>J20",
+      "outgoingLaneId": "L:J20>J21",
+      "nodeId": "J20",
+      "centerline": [
+        {
+          "eastM": 372,
+          "northM": 1.6,
+          "elevationM": 0
+        },
+        {
+          "eastM": 369.5625,
+          "northM": 1.7625000000000002,
+          "elevationM": 0
+        },
+        {
+          "eastM": 367.45000000000005,
+          "northM": 2.25,
+          "elevationM": 0
+        },
+        {
+          "eastM": 365.6625,
+          "northM": 3.0625,
+          "elevationM": 0
+        },
+        {
+          "eastM": 364.20000000000005,
+          "northM": 4.2,
+          "elevationM": 0
+        },
+        {
+          "eastM": 363.0625,
+          "northM": 5.6625,
+          "elevationM": 0
+        },
+        {
+          "eastM": 362.25,
+          "northM": 7.45,
+          "elevationM": 0
+        },
+        {
+          "eastM": 361.76250000000005,
+          "northM": 9.5625,
+          "elevationM": 0
+        },
+        {
+          "eastM": 361.6,
+          "northM": 12,
+          "elevationM": 0
+        }
+      ],
+      "lengthM": 16.854422216802668,
+      "speedLimitMps": 5.556
+    },
+    {
+      "id": "M:L:J30>J31>L:J31>J21",
+      "incomingLaneId": "L:J30>J31",
+      "outgoingLaneId": "L:J31>J21",
+      "nodeId": "J31",
+      "centerline": [
+        {
+          "eastM": 541.6,
+          "northM": 168,
+          "elevationM": 0
+        },
+        {
+          "eastM": 541.3875,
+          "northM": 171.1875,
+          "elevationM": 0
+        },
+        {
+          "eastM": 540.75,
+          "northM": 173.95,
+          "elevationM": 0
+        },
+        {
+          "eastM": 539.6875,
+          "northM": 176.2875,
+          "elevationM": 0
+        },
+        {
+          "eastM": 538.2,
+          "northM": 178.20000000000002,
+          "elevationM": 0
+        },
+        {
+          "eastM": 536.2875,
+          "northM": 179.6875,
+          "elevationM": 0
+        },
+        {
+          "eastM": 533.95,
+          "northM": 180.75,
+          "elevationM": 0
+        },
+        {
+          "eastM": 531.1875,
+          "northM": 181.3875,
+          "elevationM": 0
+        },
+        {
+          "eastM": 528,
+          "northM": 181.6,
+          "elevationM": 0
+        }
+      ],
+      "lengthM": 22.04039828351123,
+      "speedLimitMps": 5.556
+    },
+    {
+      "id": "M:L:J30>J31>L:J31>J32",
+      "incomingLaneId": "L:J30>J31",
+      "outgoingLaneId": "L:J31>J32",
+      "nodeId": "J31",
+      "centerline": [
+        {
+          "eastM": 541.6,
+          "northM": 168,
+          "elevationM": 0
+        },
+        {
+          "eastM": 541.6,
+          "northM": 171,
+          "elevationM": 0
+        },
+        {
+          "eastM": 541.6,
+          "northM": 174,
+          "elevationM": 0
+        },
+        {
+          "eastM": 541.6,
+          "northM": 177,
+          "elevationM": 0
+        },
+        {
+          "eastM": 541.6,
+          "northM": 180,
+          "elevationM": 0
+        },
+        {
+          "eastM": 541.6,
+          "northM": 183,
+          "elevationM": 0
+        },
+        {
+          "eastM": 541.6,
+          "northM": 186,
+          "elevationM": 0
+        },
+        {
+          "eastM": 541.6,
+          "northM": 189,
+          "elevationM": 0
+        },
+        {
+          "eastM": 541.6,
+          "northM": 192,
+          "elevationM": 0
+        }
+      ],
+      "lengthM": 24,
+      "speedLimitMps": 5.556
+    },
+    {
+      "id": "M:L:J31>J21>L:J21>J11",
+      "incomingLaneId": "L:J31>J21",
+      "outgoingLaneId": "L:J21>J11",
+      "nodeId": "J21",
+      "centerline": [
+        {
+          "eastM": 372,
+          "northM": 181.6,
+          "elevationM": 0
+        },
+        {
+          "eastM": 369,
+          "northM": 181.6,
+          "elevationM": 0
+        },
+        {
+          "eastM": 366,
+          "northM": 181.6,
+          "elevationM": 0
+        },
+        {
+          "eastM": 363,
+          "northM": 181.6,
+          "elevationM": 0
+        },
+        {
+          "eastM": 360,
+          "northM": 181.6,
+          "elevationM": 0
+        },
+        {
+          "eastM": 357,
+          "northM": 181.6,
+          "elevationM": 0
+        },
+        {
+          "eastM": 354,
+          "northM": 181.59999999999997,
+          "elevationM": 0
+        },
+        {
+          "eastM": 351,
+          "northM": 181.6,
+          "elevationM": 0
+        },
+        {
+          "eastM": 348,
+          "northM": 181.6,
+          "elevationM": 0
+        }
+      ],
+      "lengthM": 24,
+      "speedLimitMps": 5.556
+    },
+    {
+      "id": "M:L:J31>J21>L:J21>J20",
+      "incomingLaneId": "L:J31>J21",
+      "outgoingLaneId": "L:J21>J20",
+      "nodeId": "J21",
+      "centerline": [
+        {
+          "eastM": 372,
+          "northM": 181.6,
+          "elevationM": 0
+        },
+        {
+          "eastM": 368.8125,
+          "northM": 181.3875,
+          "elevationM": 0
+        },
+        {
+          "eastM": 366.04999999999995,
+          "northM": 180.75,
+          "elevationM": 0
+        },
+        {
+          "eastM": 363.7125,
+          "northM": 179.6875,
+          "elevationM": 0
+        },
+        {
+          "eastM": 361.79999999999995,
+          "northM": 178.2,
+          "elevationM": 0
+        },
+        {
+          "eastM": 360.3125,
+          "northM": 176.2875,
+          "elevationM": 0
+        },
+        {
+          "eastM": 359.25,
+          "northM": 173.95,
+          "elevationM": 0
+        },
+        {
+          "eastM": 358.61249999999995,
+          "northM": 171.1875,
+          "elevationM": 0
+        },
+        {
+          "eastM": 358.4,
+          "northM": 168,
+          "elevationM": 0
+        }
+      ],
+      "lengthM": 22.040398283511227,
+      "speedLimitMps": 5.556
+    },
+    {
+      "id": "M:L:J31>J21>L:J21>J22",
+      "incomingLaneId": "L:J31>J21",
+      "outgoingLaneId": "L:J21>J22",
+      "nodeId": "J21",
+      "centerline": [
+        {
+          "eastM": 372,
+          "northM": 181.6,
+          "elevationM": 0
+        },
+        {
+          "eastM": 369.5625,
+          "northM": 181.7625,
+          "elevationM": 0
+        },
+        {
+          "eastM": 367.45000000000005,
+          "northM": 182.25,
+          "elevationM": 0
+        },
+        {
+          "eastM": 365.6625,
+          "northM": 183.0625,
+          "elevationM": 0
+        },
+        {
+          "eastM": 364.20000000000005,
+          "northM": 184.2,
+          "elevationM": 0
+        },
+        {
+          "eastM": 363.0625,
+          "northM": 185.6625,
+          "elevationM": 0
+        },
+        {
+          "eastM": 362.25,
+          "northM": 187.45,
+          "elevationM": 0
+        },
+        {
+          "eastM": 361.76250000000005,
+          "northM": 189.5625,
+          "elevationM": 0
+        },
+        {
+          "eastM": 361.6,
+          "northM": 192,
+          "elevationM": 0
+        }
+      ],
+      "lengthM": 16.85442221680267,
+      "speedLimitMps": 5.556
+    },
+    {
+      "id": "M:L:J31>J30>L:J30>J20",
+      "incomingLaneId": "L:J31>J30",
+      "outgoingLaneId": "L:J30>J20",
+      "nodeId": "J30",
+      "centerline": [
+        {
+          "eastM": 538.4,
+          "northM": 12,
+          "elevationM": 0
+        },
+        {
+          "eastM": 538.2375,
+          "northM": 9.5625,
+          "elevationM": 0
+        },
+        {
+          "eastM": 537.75,
+          "northM": 7.449999999999999,
+          "elevationM": 0
+        },
+        {
+          "eastM": 536.9375,
+          "northM": 5.6625,
+          "elevationM": 0
+        },
+        {
+          "eastM": 535.8,
+          "northM": 4.2,
+          "elevationM": 0
+        },
+        {
+          "eastM": 534.3375,
+          "northM": 3.0625,
+          "elevationM": 0
+        },
+        {
+          "eastM": 532.55,
+          "northM": 2.25,
+          "elevationM": 0
+        },
+        {
+          "eastM": 530.4375,
+          "northM": 1.7625000000000002,
+          "elevationM": 0
+        },
+        {
+          "eastM": 528,
+          "northM": 1.6,
+          "elevationM": 0
+        }
+      ],
+      "lengthM": 16.854422216802668,
+      "speedLimitMps": 5.556
+    },
+    {
+      "id": "M:L:J31>J32>L:J32>J22",
+      "incomingLaneId": "L:J31>J32",
+      "outgoingLaneId": "L:J32>J22",
+      "nodeId": "J32",
+      "centerline": [
+        {
+          "eastM": 541.6,
+          "northM": 348,
+          "elevationM": 0
+        },
+        {
+          "eastM": 541.3875,
+          "northM": 351.1875,
+          "elevationM": 0
+        },
+        {
+          "eastM": 540.75,
+          "northM": 353.95000000000005,
+          "elevationM": 0
+        },
+        {
+          "eastM": 539.6875,
+          "northM": 356.2875,
+          "elevationM": 0
+        },
+        {
+          "eastM": 538.2,
+          "northM": 358.20000000000005,
+          "elevationM": 0
+        },
+        {
+          "eastM": 536.2875,
+          "northM": 359.6875,
+          "elevationM": 0
+        },
+        {
+          "eastM": 533.95,
+          "northM": 360.75,
+          "elevationM": 0
+        },
+        {
+          "eastM": 531.1875,
+          "northM": 361.38750000000005,
+          "elevationM": 0
+        },
+        {
+          "eastM": 528,
+          "northM": 361.6,
+          "elevationM": 0
+        }
+      ],
+      "lengthM": 22.04039828351125,
+      "speedLimitMps": 5.556
+    },
+    {
+      "id": "M:L:J32>J22>L:J22>J12",
+      "incomingLaneId": "L:J32>J22",
+      "outgoingLaneId": "L:J22>J12",
+      "nodeId": "J22",
+      "centerline": [
+        {
+          "eastM": 372,
+          "northM": 361.6,
+          "elevationM": 0
+        },
+        {
+          "eastM": 369,
+          "northM": 361.6,
+          "elevationM": 0
+        },
+        {
+          "eastM": 366,
+          "northM": 361.6,
+          "elevationM": 0
+        },
+        {
+          "eastM": 363,
+          "northM": 361.6,
+          "elevationM": 0
+        },
+        {
+          "eastM": 360,
+          "northM": 361.6,
+          "elevationM": 0
+        },
+        {
+          "eastM": 357,
+          "northM": 361.6,
+          "elevationM": 0
+        },
+        {
+          "eastM": 354,
+          "northM": 361.6,
+          "elevationM": 0
+        },
+        {
+          "eastM": 351,
+          "northM": 361.6,
+          "elevationM": 0
+        },
+        {
+          "eastM": 348,
+          "northM": 361.6,
+          "elevationM": 0
+        }
+      ],
+      "lengthM": 24,
+      "speedLimitMps": 5.556
+    },
+    {
+      "id": "M:L:J32>J22>L:J22>J21",
+      "incomingLaneId": "L:J32>J22",
+      "outgoingLaneId": "L:J22>J21",
+      "nodeId": "J22",
+      "centerline": [
+        {
+          "eastM": 372,
+          "northM": 361.6,
+          "elevationM": 0
+        },
+        {
+          "eastM": 368.8125,
+          "northM": 361.38750000000005,
+          "elevationM": 0
+        },
+        {
+          "eastM": 366.04999999999995,
+          "northM": 360.75,
+          "elevationM": 0
+        },
+        {
+          "eastM": 363.7125,
+          "northM": 359.6875,
+          "elevationM": 0
+        },
+        {
+          "eastM": 361.79999999999995,
+          "northM": 358.20000000000005,
+          "elevationM": 0
+        },
+        {
+          "eastM": 360.3125,
+          "northM": 356.2875,
+          "elevationM": 0
+        },
+        {
+          "eastM": 359.25,
+          "northM": 353.95000000000005,
+          "elevationM": 0
+        },
+        {
+          "eastM": 358.61249999999995,
+          "northM": 351.1875,
+          "elevationM": 0
+        },
+        {
+          "eastM": 358.4,
+          "northM": 348,
+          "elevationM": 0
+        }
+      ],
+      "lengthM": 22.04039828351125,
+      "speedLimitMps": 5.556
+    },
+    {
+      "id": "M:L:J32>J31>L:J31>J21",
+      "incomingLaneId": "L:J32>J31",
+      "outgoingLaneId": "L:J31>J21",
+      "nodeId": "J31",
+      "centerline": [
+        {
+          "eastM": 538.4,
+          "northM": 192,
+          "elevationM": 0
+        },
+        {
+          "eastM": 538.2375,
+          "northM": 189.5625,
+          "elevationM": 0
+        },
+        {
+          "eastM": 537.75,
+          "northM": 187.45,
+          "elevationM": 0
+        },
+        {
+          "eastM": 536.9375,
+          "northM": 185.6625,
+          "elevationM": 0
+        },
+        {
+          "eastM": 535.8,
+          "northM": 184.20000000000002,
+          "elevationM": 0
+        },
+        {
+          "eastM": 534.3375,
+          "northM": 183.0625,
+          "elevationM": 0
+        },
+        {
+          "eastM": 532.55,
+          "northM": 182.25,
+          "elevationM": 0
+        },
+        {
+          "eastM": 530.4375,
+          "northM": 181.7625,
+          "elevationM": 0
+        },
+        {
+          "eastM": 528,
+          "northM": 181.6,
+          "elevationM": 0
+        }
+      ],
+      "lengthM": 16.854422216802668,
+      "speedLimitMps": 5.556
+    },
+    {
+      "id": "M:L:J32>J31>L:J31>J30",
+      "incomingLaneId": "L:J32>J31",
+      "outgoingLaneId": "L:J31>J30",
+      "nodeId": "J31",
+      "centerline": [
+        {
+          "eastM": 538.4,
+          "northM": 192,
+          "elevationM": 0
+        },
+        {
+          "eastM": 538.4,
+          "northM": 189,
+          "elevationM": 0
+        },
+        {
+          "eastM": 538.4,
+          "northM": 186,
+          "elevationM": 0
+        },
+        {
+          "eastM": 538.4,
+          "northM": 183,
+          "elevationM": 0
+        },
+        {
+          "eastM": 538.4,
+          "northM": 180,
+          "elevationM": 0
+        },
+        {
+          "eastM": 538.4,
+          "northM": 177,
+          "elevationM": 0
+        },
+        {
+          "eastM": 538.4,
+          "northM": 174,
+          "elevationM": 0
+        },
+        {
+          "eastM": 538.4,
+          "northM": 171,
+          "elevationM": 0
+        },
+        {
+          "eastM": 538.4,
+          "northM": 168,
+          "elevationM": 0
+        }
+      ],
+      "lengthM": 24,
+      "speedLimitMps": 5.556
+    }
+  ],
+  "intersections": [
+    {
+      "nodeId": "J00",
+      "approaches": ["N", "E"],
+      "movementIds": ["M:L:J01>J00>L:J00>J10", "M:L:J10>J00>L:J00>J01"],
+      "signalId": "S:J00"
+    },
+    {
+      "nodeId": "J01",
+      "approaches": ["N", "E", "S"],
+      "movementIds": [
+        "M:L:J00>J01>L:J01>J02",
+        "M:L:J00>J01>L:J01>J11",
+        "M:L:J02>J01>L:J01>J00",
+        "M:L:J02>J01>L:J01>J11",
+        "M:L:J11>J01>L:J01>J00",
+        "M:L:J11>J01>L:J01>J02"
+      ],
+      "signalId": "S:J01"
+    },
+    {
+      "nodeId": "J02",
+      "approaches": ["E", "S"],
+      "movementIds": ["M:L:J01>J02>L:J02>J12", "M:L:J12>J02>L:J02>J01"],
+      "signalId": "S:J02"
+    },
+    {
+      "nodeId": "J10",
+      "approaches": ["N", "E", "W"],
+      "movementIds": [
+        "M:L:J00>J10>L:J10>J11",
+        "M:L:J00>J10>L:J10>J20",
+        "M:L:J11>J10>L:J10>J00",
+        "M:L:J11>J10>L:J10>J20",
+        "M:L:J20>J10>L:J10>J00",
+        "M:L:J20>J10>L:J10>J11"
+      ],
+      "signalId": "S:J10"
+    },
+    {
+      "nodeId": "J11",
+      "approaches": ["N", "E", "S", "W"],
+      "movementIds": [
+        "M:L:J01>J11>L:J11>J10",
+        "M:L:J01>J11>L:J11>J12",
+        "M:L:J01>J11>L:J11>J21",
+        "M:L:J10>J11>L:J11>J01",
+        "M:L:J10>J11>L:J11>J12",
+        "M:L:J10>J11>L:J11>J21",
+        "M:L:J12>J11>L:J11>J01",
+        "M:L:J12>J11>L:J11>J10",
+        "M:L:J12>J11>L:J11>J21",
+        "M:L:J21>J11>L:J11>J01",
+        "M:L:J21>J11>L:J11>J10",
+        "M:L:J21>J11>L:J11>J12"
+      ],
+      "signalId": "S:J11"
+    },
+    {
+      "nodeId": "J12",
+      "approaches": ["E", "S", "W"],
+      "movementIds": [
+        "M:L:J02>J12>L:J12>J11",
+        "M:L:J02>J12>L:J12>J22",
+        "M:L:J11>J12>L:J12>J02",
+        "M:L:J11>J12>L:J12>J22",
+        "M:L:J22>J12>L:J12>J02",
+        "M:L:J22>J12>L:J12>J11"
+      ],
+      "signalId": "S:J12"
+    },
+    {
+      "nodeId": "J20",
+      "approaches": ["N", "E", "W"],
+      "movementIds": [
+        "M:L:J10>J20>L:J20>J21",
+        "M:L:J10>J20>L:J20>J30",
+        "M:L:J21>J20>L:J20>J10",
+        "M:L:J21>J20>L:J20>J30",
+        "M:L:J30>J20>L:J20>J10",
+        "M:L:J30>J20>L:J20>J21"
+      ],
+      "signalId": "S:J20"
+    },
+    {
+      "nodeId": "J21",
+      "approaches": ["N", "E", "S", "W"],
+      "movementIds": [
+        "M:L:J11>J21>L:J21>J20",
+        "M:L:J11>J21>L:J21>J22",
+        "M:L:J11>J21>L:J21>J31",
+        "M:L:J20>J21>L:J21>J11",
+        "M:L:J20>J21>L:J21>J22",
+        "M:L:J20>J21>L:J21>J31",
+        "M:L:J22>J21>L:J21>J11",
+        "M:L:J22>J21>L:J21>J20",
+        "M:L:J22>J21>L:J21>J31",
+        "M:L:J31>J21>L:J21>J11",
+        "M:L:J31>J21>L:J21>J20",
+        "M:L:J31>J21>L:J21>J22"
+      ],
+      "signalId": "S:J21"
+    },
+    {
+      "nodeId": "J22",
+      "approaches": ["E", "S", "W"],
+      "movementIds": [
+        "M:L:J12>J22>L:J22>J21",
+        "M:L:J12>J22>L:J22>J32",
+        "M:L:J21>J22>L:J22>J12",
+        "M:L:J21>J22>L:J22>J32",
+        "M:L:J32>J22>L:J22>J12",
+        "M:L:J32>J22>L:J22>J21"
+      ],
+      "signalId": "S:J22"
+    },
+    {
+      "nodeId": "J30",
+      "approaches": ["N", "W"],
+      "movementIds": ["M:L:J20>J30>L:J30>J31", "M:L:J31>J30>L:J30>J20"],
+      "signalId": "S:J30"
+    },
+    {
+      "nodeId": "J31",
+      "approaches": ["N", "S", "W"],
+      "movementIds": [
+        "M:L:J21>J31>L:J31>J30",
+        "M:L:J21>J31>L:J31>J32",
+        "M:L:J30>J31>L:J31>J21",
+        "M:L:J30>J31>L:J31>J32",
+        "M:L:J32>J31>L:J31>J21",
+        "M:L:J32>J31>L:J31>J30"
+      ],
+      "signalId": "S:J31"
+    },
+    {
+      "nodeId": "J32",
+      "approaches": ["S", "W"],
+      "movementIds": ["M:L:J22>J32>L:J32>J31", "M:L:J31>J32>L:J32>J22"],
+      "signalId": "S:J32"
+    }
+  ],
+  "signals": [
+    {
+      "id": "S:J00",
+      "nodeId": "J00",
+      "greenTicks": 120,
+      "amberTicks": 30,
+      "allRedTicks": 20,
+      "initialApproach": "N",
+      "initialOffsetTicks": 0
+    },
+    {
+      "id": "S:J01",
+      "nodeId": "J01",
+      "greenTicks": 120,
+      "amberTicks": 30,
+      "allRedTicks": 20,
+      "initialApproach": "N",
+      "initialOffsetTicks": 0
+    },
+    {
+      "id": "S:J02",
+      "nodeId": "J02",
+      "greenTicks": 120,
+      "amberTicks": 30,
+      "allRedTicks": 20,
+      "initialApproach": "E",
+      "initialOffsetTicks": 0
+    },
+    {
+      "id": "S:J10",
+      "nodeId": "J10",
+      "greenTicks": 120,
+      "amberTicks": 30,
+      "allRedTicks": 20,
+      "initialApproach": "N",
+      "initialOffsetTicks": 0
+    },
+    {
+      "id": "S:J11",
+      "nodeId": "J11",
+      "greenTicks": 120,
+      "amberTicks": 30,
+      "allRedTicks": 20,
+      "initialApproach": "N",
+      "initialOffsetTicks": 0
+    },
+    {
+      "id": "S:J12",
+      "nodeId": "J12",
+      "greenTicks": 120,
+      "amberTicks": 30,
+      "allRedTicks": 20,
+      "initialApproach": "E",
+      "initialOffsetTicks": 0
+    },
+    {
+      "id": "S:J20",
+      "nodeId": "J20",
+      "greenTicks": 120,
+      "amberTicks": 30,
+      "allRedTicks": 20,
+      "initialApproach": "N",
+      "initialOffsetTicks": 0
+    },
+    {
+      "id": "S:J21",
+      "nodeId": "J21",
+      "greenTicks": 120,
+      "amberTicks": 30,
+      "allRedTicks": 20,
+      "initialApproach": "N",
+      "initialOffsetTicks": 0
+    },
+    {
+      "id": "S:J22",
+      "nodeId": "J22",
+      "greenTicks": 120,
+      "amberTicks": 30,
+      "allRedTicks": 20,
+      "initialApproach": "E",
+      "initialOffsetTicks": 0
+    },
+    {
+      "id": "S:J30",
+      "nodeId": "J30",
+      "greenTicks": 120,
+      "amberTicks": 30,
+      "allRedTicks": 20,
+      "initialApproach": "N",
+      "initialOffsetTicks": 0
+    },
+    {
+      "id": "S:J31",
+      "nodeId": "J31",
+      "greenTicks": 120,
+      "amberTicks": 30,
+      "allRedTicks": 20,
+      "initialApproach": "N",
+      "initialOffsetTicks": 0
+    },
+    {
+      "id": "S:J32",
+      "nodeId": "J32",
+      "greenTicks": 120,
+      "amberTicks": 30,
+      "allRedTicks": 20,
+      "initialApproach": "S",
+      "initialOffsetTicks": 0
+    }
+  ],
+  "districts": [
+    {
+      "id": "D0",
+      "name": "Kiln Quarter",
+      "polygon": [
+        {
+          "eastM": -90,
+          "northM": -90,
+          "elevationM": 0
+        },
+        {
+          "eastM": 150,
+          "northM": -90,
+          "elevationM": 0
+        },
+        {
+          "eastM": 150,
+          "northM": 450,
+          "elevationM": 0
+        },
+        {
+          "eastM": -90,
+          "northM": 450,
+          "elevationM": 0
+        }
+      ],
+      "landUse": "RESIDENTIAL",
+      "syntheticPopulationProfileId": null
+    },
+    {
+      "id": "D1",
+      "name": "Exchange",
+      "polygon": [
+        {
+          "eastM": 150,
+          "northM": -90,
+          "elevationM": 0
+        },
+        {
+          "eastM": 390,
+          "northM": -90,
+          "elevationM": 0
+        },
+        {
+          "eastM": 390,
+          "northM": 450,
+          "elevationM": 0
+        },
+        {
+          "eastM": 150,
+          "northM": 450,
+          "elevationM": 0
+        }
+      ],
+      "landUse": "MIXED",
+      "syntheticPopulationProfileId": null
+    },
+    {
+      "id": "D2",
+      "name": "Foundry Reach",
+      "polygon": [
+        {
+          "eastM": 390,
+          "northM": -90,
+          "elevationM": 0
+        },
+        {
+          "eastM": 630,
+          "northM": -90,
+          "elevationM": 0
+        },
+        {
+          "eastM": 630,
+          "northM": 450,
+          "elevationM": 0
+        },
+        {
+          "eastM": 390,
+          "northM": 450,
+          "elevationM": 0
+        }
+      ],
+      "landUse": "WORKSHOP",
+      "syntheticPopulationProfileId": null
+    }
+  ],
+  "buildings": [
+    {
+      "id": "B000",
+      "districtId": "D0",
+      "footprint": [
+        {
+          "eastM": -69,
+          "northM": -60,
+          "elevationM": 0
+        },
+        {
+          "eastM": -51,
+          "northM": -60,
+          "elevationM": 0
+        },
+        {
+          "eastM": -51,
+          "northM": -36,
+          "elevationM": 0
+        },
+        {
+          "eastM": -69,
+          "northM": -36,
+          "elevationM": 0
+        }
+      ],
+      "elevationM": 0,
+      "floors": 3,
+      "floorHeightM": 3.2,
+      "use": "RESIDENTIAL",
+      "gatewayNodeId": "J00",
+      "energyProfileId": null
+    },
+    {
+      "id": "B001",
+      "districtId": "D0",
+      "footprint": [
+        {
+          "eastM": -69,
+          "northM": 48,
+          "elevationM": 0
+        },
+        {
+          "eastM": -51,
+          "northM": 48,
+          "elevationM": 0
+        },
+        {
+          "eastM": -51,
+          "northM": 72,
+          "elevationM": 0
+        },
+        {
+          "eastM": -69,
+          "northM": 72,
+          "elevationM": 0
+        }
+      ],
+      "elevationM": 0,
+      "floors": 4,
+      "floorHeightM": 3.2,
+      "use": "RESIDENTIAL",
+      "gatewayNodeId": "J00",
+      "energyProfileId": null
+    },
+    {
+      "id": "B002",
+      "districtId": "D0",
+      "footprint": [
+        {
+          "eastM": -69,
+          "northM": 252,
+          "elevationM": 0
+        },
+        {
+          "eastM": -51,
+          "northM": 252,
+          "elevationM": 0
+        },
+        {
+          "eastM": -51,
+          "northM": 276,
+          "elevationM": 0
+        },
+        {
+          "eastM": -69,
+          "northM": 276,
+          "elevationM": 0
+        }
+      ],
+      "elevationM": 0,
+      "floors": 5,
+      "floorHeightM": 3.2,
+      "use": "RESIDENTIAL",
+      "gatewayNodeId": "J01",
+      "energyProfileId": null
+    },
+    {
+      "id": "B003",
+      "districtId": "D0",
+      "footprint": [
+        {
+          "eastM": -69,
+          "northM": 396,
+          "elevationM": 0
+        },
+        {
+          "eastM": -51,
+          "northM": 396,
+          "elevationM": 0
+        },
+        {
+          "eastM": -51,
+          "northM": 420,
+          "elevationM": 0
+        },
+        {
+          "eastM": -69,
+          "northM": 420,
+          "elevationM": 0
+        }
+      ],
+      "elevationM": 0,
+      "floors": 6,
+      "floorHeightM": 3.2,
+      "use": "RESIDENTIAL",
+      "gatewayNodeId": "J02",
+      "energyProfileId": null
+    },
+    {
+      "id": "B004",
+      "districtId": "D0",
+      "footprint": [
+        {
+          "eastM": -33,
+          "northM": -60,
+          "elevationM": 0
+        },
+        {
+          "eastM": -15,
+          "northM": -60,
+          "elevationM": 0
+        },
+        {
+          "eastM": -15,
+          "northM": -36,
+          "elevationM": 0
+        },
+        {
+          "eastM": -33,
+          "northM": -36,
+          "elevationM": 0
+        }
+      ],
+      "elevationM": 0,
+      "floors": 7,
+      "floorHeightM": 3.2,
+      "use": "RESIDENTIAL",
+      "gatewayNodeId": "J00",
+      "energyProfileId": null
+    },
+    {
+      "id": "B005",
+      "districtId": "D0",
+      "footprint": [
+        {
+          "eastM": -33,
+          "northM": 48,
+          "elevationM": 0
+        },
+        {
+          "eastM": -15,
+          "northM": 48,
+          "elevationM": 0
+        },
+        {
+          "eastM": -15,
+          "northM": 72,
+          "elevationM": 0
+        },
+        {
+          "eastM": -33,
+          "northM": 72,
+          "elevationM": 0
+        }
+      ],
+      "elevationM": 0,
+      "floors": 8,
+      "floorHeightM": 3.2,
+      "use": "RESIDENTIAL",
+      "gatewayNodeId": "J00",
+      "energyProfileId": null
+    },
+    {
+      "id": "B006",
+      "districtId": "D0",
+      "footprint": [
+        {
+          "eastM": -33,
+          "northM": 252,
+          "elevationM": 0
+        },
+        {
+          "eastM": -15,
+          "northM": 252,
+          "elevationM": 0
+        },
+        {
+          "eastM": -15,
+          "northM": 276,
+          "elevationM": 0
+        },
+        {
+          "eastM": -33,
+          "northM": 276,
+          "elevationM": 0
+        }
+      ],
+      "elevationM": 0,
+      "floors": 3,
+      "floorHeightM": 3.2,
+      "use": "RESIDENTIAL",
+      "gatewayNodeId": "J01",
+      "energyProfileId": null
+    },
+    {
+      "id": "B007",
+      "districtId": "D0",
+      "footprint": [
+        {
+          "eastM": -33,
+          "northM": 396,
+          "elevationM": 0
+        },
+        {
+          "eastM": -15,
+          "northM": 396,
+          "elevationM": 0
+        },
+        {
+          "eastM": -15,
+          "northM": 420,
+          "elevationM": 0
+        },
+        {
+          "eastM": -33,
+          "northM": 420,
+          "elevationM": 0
+        }
+      ],
+      "elevationM": 0,
+      "floors": 4,
+      "floorHeightM": 3.2,
+      "use": "RESIDENTIAL",
+      "gatewayNodeId": "J02",
+      "energyProfileId": null
+    },
+    {
+      "id": "B008",
+      "districtId": "D0",
+      "footprint": [
+        {
+          "eastM": 39,
+          "northM": -60,
+          "elevationM": 0
+        },
+        {
+          "eastM": 57,
+          "northM": -60,
+          "elevationM": 0
+        },
+        {
+          "eastM": 57,
+          "northM": -36,
+          "elevationM": 0
+        },
+        {
+          "eastM": 39,
+          "northM": -36,
+          "elevationM": 0
+        }
+      ],
+      "elevationM": 0,
+      "floors": 5,
+      "floorHeightM": 3.2,
+      "use": "RESIDENTIAL",
+      "gatewayNodeId": "J00",
+      "energyProfileId": null
+    },
+    {
+      "id": "B009",
+      "districtId": "D0",
+      "footprint": [
+        {
+          "eastM": 39,
+          "northM": 48,
+          "elevationM": 0
+        },
+        {
+          "eastM": 57,
+          "northM": 48,
+          "elevationM": 0
+        },
+        {
+          "eastM": 57,
+          "northM": 72,
+          "elevationM": 0
+        },
+        {
+          "eastM": 39,
+          "northM": 72,
+          "elevationM": 0
+        }
+      ],
+      "elevationM": 0,
+      "floors": 6,
+      "floorHeightM": 3.2,
+      "use": "RESIDENTIAL",
+      "gatewayNodeId": "J00",
+      "energyProfileId": null
+    },
+    {
+      "id": "B010",
+      "districtId": "D0",
+      "footprint": [
+        {
+          "eastM": 39,
+          "northM": 252,
+          "elevationM": 0
+        },
+        {
+          "eastM": 57,
+          "northM": 252,
+          "elevationM": 0
+        },
+        {
+          "eastM": 57,
+          "northM": 276,
+          "elevationM": 0
+        },
+        {
+          "eastM": 39,
+          "northM": 276,
+          "elevationM": 0
+        }
+      ],
+      "elevationM": 0,
+      "floors": 7,
+      "floorHeightM": 3.2,
+      "use": "RESIDENTIAL",
+      "gatewayNodeId": "J01",
+      "energyProfileId": null
+    },
+    {
+      "id": "B011",
+      "districtId": "D0",
+      "footprint": [
+        {
+          "eastM": 39,
+          "northM": 396,
+          "elevationM": 0
+        },
+        {
+          "eastM": 57,
+          "northM": 396,
+          "elevationM": 0
+        },
+        {
+          "eastM": 57,
+          "northM": 420,
+          "elevationM": 0
+        },
+        {
+          "eastM": 39,
+          "northM": 420,
+          "elevationM": 0
+        }
+      ],
+      "elevationM": 0,
+      "floors": 8,
+      "floorHeightM": 3.2,
+      "use": "RESIDENTIAL",
+      "gatewayNodeId": "J02",
+      "energyProfileId": null
+    },
+    {
+      "id": "B012",
+      "districtId": "D0",
+      "footprint": [
+        {
+          "eastM": 103,
+          "northM": -60,
+          "elevationM": 0
+        },
+        {
+          "eastM": 121,
+          "northM": -60,
+          "elevationM": 0
+        },
+        {
+          "eastM": 121,
+          "northM": -36,
+          "elevationM": 0
+        },
+        {
+          "eastM": 103,
+          "northM": -36,
+          "elevationM": 0
+        }
+      ],
+      "elevationM": 0,
+      "floors": 3,
+      "floorHeightM": 3.2,
+      "use": "RESIDENTIAL",
+      "gatewayNodeId": "J10",
+      "energyProfileId": null
+    },
+    {
+      "id": "B013",
+      "districtId": "D0",
+      "footprint": [
+        {
+          "eastM": 103,
+          "northM": 48,
+          "elevationM": 0
+        },
+        {
+          "eastM": 121,
+          "northM": 48,
+          "elevationM": 0
+        },
+        {
+          "eastM": 121,
+          "northM": 72,
+          "elevationM": 0
+        },
+        {
+          "eastM": 103,
+          "northM": 72,
+          "elevationM": 0
+        }
+      ],
+      "elevationM": 0,
+      "floors": 4,
+      "floorHeightM": 3.2,
+      "use": "RESIDENTIAL",
+      "gatewayNodeId": "J10",
+      "energyProfileId": null
+    },
+    {
+      "id": "B014",
+      "districtId": "D0",
+      "footprint": [
+        {
+          "eastM": 103,
+          "northM": 252,
+          "elevationM": 0
+        },
+        {
+          "eastM": 121,
+          "northM": 252,
+          "elevationM": 0
+        },
+        {
+          "eastM": 121,
+          "northM": 276,
+          "elevationM": 0
+        },
+        {
+          "eastM": 103,
+          "northM": 276,
+          "elevationM": 0
+        }
+      ],
+      "elevationM": 0,
+      "floors": 5,
+      "floorHeightM": 3.2,
+      "use": "RESIDENTIAL",
+      "gatewayNodeId": "J11",
+      "energyProfileId": null
+    },
+    {
+      "id": "B015",
+      "districtId": "D0",
+      "footprint": [
+        {
+          "eastM": 103,
+          "northM": 396,
+          "elevationM": 0
+        },
+        {
+          "eastM": 121,
+          "northM": 396,
+          "elevationM": 0
+        },
+        {
+          "eastM": 121,
+          "northM": 420,
+          "elevationM": 0
+        },
+        {
+          "eastM": 103,
+          "northM": 420,
+          "elevationM": 0
+        }
+      ],
+      "elevationM": 0,
+      "floors": 6,
+      "floorHeightM": 3.2,
+      "use": "RESIDENTIAL",
+      "gatewayNodeId": "J12",
+      "energyProfileId": null
+    },
+    {
+      "id": "B100",
+      "districtId": "D1",
+      "footprint": [
+        {
+          "eastM": 203,
+          "northM": -60,
+          "elevationM": 0
+        },
+        {
+          "eastM": 221,
+          "northM": -60,
+          "elevationM": 0
+        },
+        {
+          "eastM": 221,
+          "northM": -36,
+          "elevationM": 0
+        },
+        {
+          "eastM": 203,
+          "northM": -36,
+          "elevationM": 0
+        }
+      ],
+      "elevationM": 0,
+      "floors": 6,
+      "floorHeightM": 3.2,
+      "use": "OFFICE",
+      "gatewayNodeId": "J10",
+      "energyProfileId": null
+    },
+    {
+      "id": "B101",
+      "districtId": "D1",
+      "footprint": [
+        {
+          "eastM": 203,
+          "northM": 48,
+          "elevationM": 0
+        },
+        {
+          "eastM": 221,
+          "northM": 48,
+          "elevationM": 0
+        },
+        {
+          "eastM": 221,
+          "northM": 72,
+          "elevationM": 0
+        },
+        {
+          "eastM": 203,
+          "northM": 72,
+          "elevationM": 0
+        }
+      ],
+      "elevationM": 0,
+      "floors": 7,
+      "floorHeightM": 3.2,
+      "use": "OFFICE",
+      "gatewayNodeId": "J10",
+      "energyProfileId": null
+    },
+    {
+      "id": "B102",
+      "districtId": "D1",
+      "footprint": [
+        {
+          "eastM": 203,
+          "northM": 252,
+          "elevationM": 0
+        },
+        {
+          "eastM": 221,
+          "northM": 252,
+          "elevationM": 0
+        },
+        {
+          "eastM": 221,
+          "northM": 276,
+          "elevationM": 0
+        },
+        {
+          "eastM": 203,
+          "northM": 276,
+          "elevationM": 0
+        }
+      ],
+      "elevationM": 0,
+      "floors": 8,
+      "floorHeightM": 3.2,
+      "use": "OFFICE",
+      "gatewayNodeId": "J11",
+      "energyProfileId": null
+    },
+    {
+      "id": "B103",
+      "districtId": "D1",
+      "footprint": [
+        {
+          "eastM": 203,
+          "northM": 396,
+          "elevationM": 0
+        },
+        {
+          "eastM": 221,
+          "northM": 396,
+          "elevationM": 0
+        },
+        {
+          "eastM": 221,
+          "northM": 420,
+          "elevationM": 0
+        },
+        {
+          "eastM": 203,
+          "northM": 420,
+          "elevationM": 0
+        }
+      ],
+      "elevationM": 0,
+      "floors": 9,
+      "floorHeightM": 3.2,
+      "use": "OFFICE",
+      "gatewayNodeId": "J12",
+      "energyProfileId": null
+    },
+    {
+      "id": "B104",
+      "districtId": "D1",
+      "footprint": [
+        {
+          "eastM": 239,
+          "northM": -60,
+          "elevationM": 0
+        },
+        {
+          "eastM": 257,
+          "northM": -60,
+          "elevationM": 0
+        },
+        {
+          "eastM": 257,
+          "northM": -36,
+          "elevationM": 0
+        },
+        {
+          "eastM": 239,
+          "northM": -36,
+          "elevationM": 0
+        }
+      ],
+      "elevationM": 0,
+      "floors": 10,
+      "floorHeightM": 3.2,
+      "use": "OFFICE",
+      "gatewayNodeId": "J10",
+      "energyProfileId": null
+    },
+    {
+      "id": "B105",
+      "districtId": "D1",
+      "footprint": [
+        {
+          "eastM": 239,
+          "northM": 48,
+          "elevationM": 0
+        },
+        {
+          "eastM": 257,
+          "northM": 48,
+          "elevationM": 0
+        },
+        {
+          "eastM": 257,
+          "northM": 72,
+          "elevationM": 0
+        },
+        {
+          "eastM": 239,
+          "northM": 72,
+          "elevationM": 0
+        }
+      ],
+      "elevationM": 0,
+      "floors": 11,
+      "floorHeightM": 3.2,
+      "use": "OFFICE",
+      "gatewayNodeId": "J10",
+      "energyProfileId": null
+    },
+    {
+      "id": "B106",
+      "districtId": "D1",
+      "footprint": [
+        {
+          "eastM": 239,
+          "northM": 252,
+          "elevationM": 0
+        },
+        {
+          "eastM": 257,
+          "northM": 252,
+          "elevationM": 0
+        },
+        {
+          "eastM": 257,
+          "northM": 276,
+          "elevationM": 0
+        },
+        {
+          "eastM": 239,
+          "northM": 276,
+          "elevationM": 0
+        }
+      ],
+      "elevationM": 0,
+      "floors": 12,
+      "floorHeightM": 3.2,
+      "use": "OFFICE",
+      "gatewayNodeId": "J11",
+      "energyProfileId": null
+    },
+    {
+      "id": "B107",
+      "districtId": "D1",
+      "footprint": [
+        {
+          "eastM": 239,
+          "northM": 396,
+          "elevationM": 0
+        },
+        {
+          "eastM": 257,
+          "northM": 396,
+          "elevationM": 0
+        },
+        {
+          "eastM": 257,
+          "northM": 420,
+          "elevationM": 0
+        },
+        {
+          "eastM": 239,
+          "northM": 420,
+          "elevationM": 0
+        }
+      ],
+      "elevationM": 0,
+      "floors": 13,
+      "floorHeightM": 3.2,
+      "use": "OFFICE",
+      "gatewayNodeId": "J12",
+      "energyProfileId": null
+    },
+    {
+      "id": "B108",
+      "districtId": "D1",
+      "footprint": [
+        {
+          "eastM": 283,
+          "northM": -60,
+          "elevationM": 0
+        },
+        {
+          "eastM": 301,
+          "northM": -60,
+          "elevationM": 0
+        },
+        {
+          "eastM": 301,
+          "northM": -36,
+          "elevationM": 0
+        },
+        {
+          "eastM": 283,
+          "northM": -36,
+          "elevationM": 0
+        }
+      ],
+      "elevationM": 0,
+      "floors": 6,
+      "floorHeightM": 3.2,
+      "use": "OFFICE",
+      "gatewayNodeId": "J20",
+      "energyProfileId": null
+    },
+    {
+      "id": "B109",
+      "districtId": "D1",
+      "footprint": [
+        {
+          "eastM": 283,
+          "northM": 48,
+          "elevationM": 0
+        },
+        {
+          "eastM": 301,
+          "northM": 48,
+          "elevationM": 0
+        },
+        {
+          "eastM": 301,
+          "northM": 72,
+          "elevationM": 0
+        },
+        {
+          "eastM": 283,
+          "northM": 72,
+          "elevationM": 0
+        }
+      ],
+      "elevationM": 0,
+      "floors": 7,
+      "floorHeightM": 3.2,
+      "use": "OFFICE",
+      "gatewayNodeId": "J20",
+      "energyProfileId": null
+    },
+    {
+      "id": "B110",
+      "districtId": "D1",
+      "footprint": [
+        {
+          "eastM": 283,
+          "northM": 252,
+          "elevationM": 0
+        },
+        {
+          "eastM": 301,
+          "northM": 252,
+          "elevationM": 0
+        },
+        {
+          "eastM": 301,
+          "northM": 276,
+          "elevationM": 0
+        },
+        {
+          "eastM": 283,
+          "northM": 276,
+          "elevationM": 0
+        }
+      ],
+      "elevationM": 0,
+      "floors": 8,
+      "floorHeightM": 3.2,
+      "use": "OFFICE",
+      "gatewayNodeId": "J21",
+      "energyProfileId": null
+    },
+    {
+      "id": "B111",
+      "districtId": "D1",
+      "footprint": [
+        {
+          "eastM": 283,
+          "northM": 396,
+          "elevationM": 0
+        },
+        {
+          "eastM": 301,
+          "northM": 396,
+          "elevationM": 0
+        },
+        {
+          "eastM": 301,
+          "northM": 420,
+          "elevationM": 0
+        },
+        {
+          "eastM": 283,
+          "northM": 420,
+          "elevationM": 0
+        }
+      ],
+      "elevationM": 0,
+      "floors": 9,
+      "floorHeightM": 3.2,
+      "use": "OFFICE",
+      "gatewayNodeId": "J22",
+      "energyProfileId": null
+    },
+    {
+      "id": "B112",
+      "districtId": "D1",
+      "footprint": [
+        {
+          "eastM": 319,
+          "northM": -60,
+          "elevationM": 0
+        },
+        {
+          "eastM": 337,
+          "northM": -60,
+          "elevationM": 0
+        },
+        {
+          "eastM": 337,
+          "northM": -36,
+          "elevationM": 0
+        },
+        {
+          "eastM": 319,
+          "northM": -36,
+          "elevationM": 0
+        }
+      ],
+      "elevationM": 0,
+      "floors": 10,
+      "floorHeightM": 3.2,
+      "use": "OFFICE",
+      "gatewayNodeId": "J20",
+      "energyProfileId": null
+    },
+    {
+      "id": "B113",
+      "districtId": "D1",
+      "footprint": [
+        {
+          "eastM": 319,
+          "northM": 48,
+          "elevationM": 0
+        },
+        {
+          "eastM": 337,
+          "northM": 48,
+          "elevationM": 0
+        },
+        {
+          "eastM": 337,
+          "northM": 72,
+          "elevationM": 0
+        },
+        {
+          "eastM": 319,
+          "northM": 72,
+          "elevationM": 0
+        }
+      ],
+      "elevationM": 0,
+      "floors": 11,
+      "floorHeightM": 3.2,
+      "use": "OFFICE",
+      "gatewayNodeId": "J20",
+      "energyProfileId": null
+    },
+    {
+      "id": "B114",
+      "districtId": "D1",
+      "footprint": [
+        {
+          "eastM": 319,
+          "northM": 252,
+          "elevationM": 0
+        },
+        {
+          "eastM": 337,
+          "northM": 252,
+          "elevationM": 0
+        },
+        {
+          "eastM": 337,
+          "northM": 276,
+          "elevationM": 0
+        },
+        {
+          "eastM": 319,
+          "northM": 276,
+          "elevationM": 0
+        }
+      ],
+      "elevationM": 0,
+      "floors": 12,
+      "floorHeightM": 3.2,
+      "use": "OFFICE",
+      "gatewayNodeId": "J21",
+      "energyProfileId": null
+    },
+    {
+      "id": "B115",
+      "districtId": "D1",
+      "footprint": [
+        {
+          "eastM": 319,
+          "northM": 396,
+          "elevationM": 0
+        },
+        {
+          "eastM": 337,
+          "northM": 396,
+          "elevationM": 0
+        },
+        {
+          "eastM": 337,
+          "northM": 420,
+          "elevationM": 0
+        },
+        {
+          "eastM": 319,
+          "northM": 420,
+          "elevationM": 0
+        }
+      ],
+      "elevationM": 0,
+      "floors": 13,
+      "floorHeightM": 3.2,
+      "use": "OFFICE",
+      "gatewayNodeId": "J22",
+      "energyProfileId": null
+    },
+    {
+      "id": "B200",
+      "districtId": "D2",
+      "footprint": [
+        {
+          "eastM": 413,
+          "northM": -60,
+          "elevationM": 0
+        },
+        {
+          "eastM": 431,
+          "northM": -60,
+          "elevationM": 0
+        },
+        {
+          "eastM": 431,
+          "northM": -36,
+          "elevationM": 0
+        },
+        {
+          "eastM": 413,
+          "northM": -36,
+          "elevationM": 0
+        }
+      ],
+      "elevationM": 0,
+      "floors": 2,
+      "floorHeightM": 3.2,
+      "use": "WORKSHOP",
+      "gatewayNodeId": "J20",
+      "energyProfileId": null
+    },
+    {
+      "id": "B201",
+      "districtId": "D2",
+      "footprint": [
+        {
+          "eastM": 413,
+          "northM": 48,
+          "elevationM": 0
+        },
+        {
+          "eastM": 431,
+          "northM": 48,
+          "elevationM": 0
+        },
+        {
+          "eastM": 431,
+          "northM": 72,
+          "elevationM": 0
+        },
+        {
+          "eastM": 413,
+          "northM": 72,
+          "elevationM": 0
+        }
+      ],
+      "elevationM": 0,
+      "floors": 3,
+      "floorHeightM": 3.2,
+      "use": "WORKSHOP",
+      "gatewayNodeId": "J20",
+      "energyProfileId": null
+    },
+    {
+      "id": "B202",
+      "districtId": "D2",
+      "footprint": [
+        {
+          "eastM": 413,
+          "northM": 252,
+          "elevationM": 0
+        },
+        {
+          "eastM": 431,
+          "northM": 252,
+          "elevationM": 0
+        },
+        {
+          "eastM": 431,
+          "northM": 276,
+          "elevationM": 0
+        },
+        {
+          "eastM": 413,
+          "northM": 276,
+          "elevationM": 0
+        }
+      ],
+      "elevationM": 0,
+      "floors": 4,
+      "floorHeightM": 3.2,
+      "use": "WORKSHOP",
+      "gatewayNodeId": "J21",
+      "energyProfileId": null
+    },
+    {
+      "id": "B203",
+      "districtId": "D2",
+      "footprint": [
+        {
+          "eastM": 413,
+          "northM": 396,
+          "elevationM": 0
+        },
+        {
+          "eastM": 431,
+          "northM": 396,
+          "elevationM": 0
+        },
+        {
+          "eastM": 431,
+          "northM": 420,
+          "elevationM": 0
+        },
+        {
+          "eastM": 413,
+          "northM": 420,
+          "elevationM": 0
+        }
+      ],
+      "elevationM": 0,
+      "floors": 5,
+      "floorHeightM": 3.2,
+      "use": "WORKSHOP",
+      "gatewayNodeId": "J22",
+      "energyProfileId": null
+    },
+    {
+      "id": "B204",
+      "districtId": "D2",
+      "footprint": [
+        {
+          "eastM": 461,
+          "northM": -60,
+          "elevationM": 0
+        },
+        {
+          "eastM": 479,
+          "northM": -60,
+          "elevationM": 0
+        },
+        {
+          "eastM": 479,
+          "northM": -36,
+          "elevationM": 0
+        },
+        {
+          "eastM": 461,
+          "northM": -36,
+          "elevationM": 0
+        }
+      ],
+      "elevationM": 0,
+      "floors": 6,
+      "floorHeightM": 3.2,
+      "use": "WORKSHOP",
+      "gatewayNodeId": "J30",
+      "energyProfileId": null
+    },
+    {
+      "id": "B205",
+      "districtId": "D2",
+      "footprint": [
+        {
+          "eastM": 461,
+          "northM": 48,
+          "elevationM": 0
+        },
+        {
+          "eastM": 479,
+          "northM": 48,
+          "elevationM": 0
+        },
+        {
+          "eastM": 479,
+          "northM": 72,
+          "elevationM": 0
+        },
+        {
+          "eastM": 461,
+          "northM": 72,
+          "elevationM": 0
+        }
+      ],
+      "elevationM": 0,
+      "floors": 2,
+      "floorHeightM": 3.2,
+      "use": "WORKSHOP",
+      "gatewayNodeId": "J30",
+      "energyProfileId": null
+    },
+    {
+      "id": "B206",
+      "districtId": "D2",
+      "footprint": [
+        {
+          "eastM": 461,
+          "northM": 252,
+          "elevationM": 0
+        },
+        {
+          "eastM": 479,
+          "northM": 252,
+          "elevationM": 0
+        },
+        {
+          "eastM": 479,
+          "northM": 276,
+          "elevationM": 0
+        },
+        {
+          "eastM": 461,
+          "northM": 276,
+          "elevationM": 0
+        }
+      ],
+      "elevationM": 0,
+      "floors": 3,
+      "floorHeightM": 3.2,
+      "use": "WORKSHOP",
+      "gatewayNodeId": "J31",
+      "energyProfileId": null
+    },
+    {
+      "id": "B207",
+      "districtId": "D2",
+      "footprint": [
+        {
+          "eastM": 461,
+          "northM": 396,
+          "elevationM": 0
+        },
+        {
+          "eastM": 479,
+          "northM": 396,
+          "elevationM": 0
+        },
+        {
+          "eastM": 479,
+          "northM": 420,
+          "elevationM": 0
+        },
+        {
+          "eastM": 461,
+          "northM": 420,
+          "elevationM": 0
+        }
+      ],
+      "elevationM": 0,
+      "floors": 4,
+      "floorHeightM": 3.2,
+      "use": "WORKSHOP",
+      "gatewayNodeId": "J32",
+      "energyProfileId": null
+    },
+    {
+      "id": "B208",
+      "districtId": "D2",
+      "footprint": [
+        {
+          "eastM": 575,
+          "northM": -60,
+          "elevationM": 0
+        },
+        {
+          "eastM": 593,
+          "northM": -60,
+          "elevationM": 0
+        },
+        {
+          "eastM": 593,
+          "northM": -36,
+          "elevationM": 0
+        },
+        {
+          "eastM": 575,
+          "northM": -36,
+          "elevationM": 0
+        }
+      ],
+      "elevationM": 0,
+      "floors": 5,
+      "floorHeightM": 3.2,
+      "use": "WORKSHOP",
+      "gatewayNodeId": "J30",
+      "energyProfileId": null
+    },
+    {
+      "id": "B209",
+      "districtId": "D2",
+      "footprint": [
+        {
+          "eastM": 575,
+          "northM": 48,
+          "elevationM": 0
+        },
+        {
+          "eastM": 593,
+          "northM": 48,
+          "elevationM": 0
+        },
+        {
+          "eastM": 593,
+          "northM": 72,
+          "elevationM": 0
+        },
+        {
+          "eastM": 575,
+          "northM": 72,
+          "elevationM": 0
+        }
+      ],
+      "elevationM": 0,
+      "floors": 6,
+      "floorHeightM": 3.2,
+      "use": "WORKSHOP",
+      "gatewayNodeId": "J30",
+      "energyProfileId": null
+    },
+    {
+      "id": "B210",
+      "districtId": "D2",
+      "footprint": [
+        {
+          "eastM": 575,
+          "northM": 252,
+          "elevationM": 0
+        },
+        {
+          "eastM": 593,
+          "northM": 252,
+          "elevationM": 0
+        },
+        {
+          "eastM": 593,
+          "northM": 276,
+          "elevationM": 0
+        },
+        {
+          "eastM": 575,
+          "northM": 276,
+          "elevationM": 0
+        }
+      ],
+      "elevationM": 0,
+      "floors": 2,
+      "floorHeightM": 3.2,
+      "use": "WORKSHOP",
+      "gatewayNodeId": "J31",
+      "energyProfileId": null
+    },
+    {
+      "id": "B211",
+      "districtId": "D2",
+      "footprint": [
+        {
+          "eastM": 575,
+          "northM": 396,
+          "elevationM": 0
+        },
+        {
+          "eastM": 593,
+          "northM": 396,
+          "elevationM": 0
+        },
+        {
+          "eastM": 593,
+          "northM": 420,
+          "elevationM": 0
+        },
+        {
+          "eastM": 575,
+          "northM": 420,
+          "elevationM": 0
+        }
+      ],
+      "elevationM": 0,
+      "floors": 3,
+      "floorHeightM": 3.2,
+      "use": "WORKSHOP",
+      "gatewayNodeId": "J32",
+      "energyProfileId": null
+    },
+    {
+      "id": "B212",
+      "districtId": "D2",
+      "footprint": [
+        {
+          "eastM": 601,
+          "northM": -60,
+          "elevationM": 0
+        },
+        {
+          "eastM": 619,
+          "northM": -60,
+          "elevationM": 0
+        },
+        {
+          "eastM": 619,
+          "northM": -36,
+          "elevationM": 0
+        },
+        {
+          "eastM": 601,
+          "northM": -36,
+          "elevationM": 0
+        }
+      ],
+      "elevationM": 0,
+      "floors": 4,
+      "floorHeightM": 3.2,
+      "use": "WORKSHOP",
+      "gatewayNodeId": "J30",
+      "energyProfileId": null
+    },
+    {
+      "id": "B213",
+      "districtId": "D2",
+      "footprint": [
+        {
+          "eastM": 601,
+          "northM": 48,
+          "elevationM": 0
+        },
+        {
+          "eastM": 619,
+          "northM": 48,
+          "elevationM": 0
+        },
+        {
+          "eastM": 619,
+          "northM": 72,
+          "elevationM": 0
+        },
+        {
+          "eastM": 601,
+          "northM": 72,
+          "elevationM": 0
+        }
+      ],
+      "elevationM": 0,
+      "floors": 5,
+      "floorHeightM": 3.2,
+      "use": "WORKSHOP",
+      "gatewayNodeId": "J30",
+      "energyProfileId": null
+    },
+    {
+      "id": "B214",
+      "districtId": "D2",
+      "footprint": [
+        {
+          "eastM": 601,
+          "northM": 252,
+          "elevationM": 0
+        },
+        {
+          "eastM": 619,
+          "northM": 252,
+          "elevationM": 0
+        },
+        {
+          "eastM": 619,
+          "northM": 276,
+          "elevationM": 0
+        },
+        {
+          "eastM": 601,
+          "northM": 276,
+          "elevationM": 0
+        }
+      ],
+      "elevationM": 0,
+      "floors": 6,
+      "floorHeightM": 3.2,
+      "use": "WORKSHOP",
+      "gatewayNodeId": "J31",
+      "energyProfileId": null
+    },
+    {
+      "id": "B215",
+      "districtId": "D2",
+      "footprint": [
+        {
+          "eastM": 601,
+          "northM": 396,
+          "elevationM": 0
+        },
+        {
+          "eastM": 619,
+          "northM": 396,
+          "elevationM": 0
+        },
+        {
+          "eastM": 619,
+          "northM": 420,
+          "elevationM": 0
+        },
+        {
+          "eastM": 601,
+          "northM": 420,
+          "elevationM": 0
+        }
+      ],
+      "elevationM": 0,
+      "floors": 2,
+      "floorHeightM": 3.2,
+      "use": "WORKSHOP",
+      "gatewayNodeId": "J32",
+      "energyProfileId": null
+    }
+  ]
+}

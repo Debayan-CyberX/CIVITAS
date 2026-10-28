@@ -1,1 +1,1 @@
-Reserved for B03 deterministic route selection and closure invalidation.
+`router.ts` implements expanded lane/movement Dijkstra, integer free-flow costs, full-path ASCII tie-breaking, current-edge preservation and topology-version caching. See [B02–B05 evidence](../../../../docs/b02-b05/README.md).

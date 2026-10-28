@@ -1,1 +1,1 @@
-Reserved for B03 vehicle integration, body footprints, signals, and junction reservations.
+`dynamics.ts` implements IDM and ballistic integration. `footprints.ts` reconstructs occupancy across edge boundaries. `../engine.ts` orders signals, reservations, proposals, admissions and safety checks. See [B02–B05 evidence](../../../../docs/b02-b05/README.md).

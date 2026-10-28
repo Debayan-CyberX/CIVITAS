@@ -1,0 +1,101 @@
+[
+  {
+    "runtime": {
+      "engineVersion": "engine/0.2.0",
+      "engineBuildSha": "72dbff91338e283c6bd3f42f2c3e261fc9dd026b57bc9002d31e847d12e7b007",
+      "runtimeEngine": "V8",
+      "runtimeVersion": "Chromium-156.0.8078.4",
+      "platform": "Windows",
+      "numericContractVersion": "kinematics/1"
+    },
+    "fleet": 300,
+    "inNetworkAtWarmup": 236,
+    "asOfTick": 1261,
+    "viewport": {
+      "width": 1280,
+      "height": 720,
+      "dpr": 1
+    },
+    "commandSamples": 30,
+    "commandAckP50Ms": 1.5999999642372131,
+    "commandAckP95Ms": 3.199999988079071,
+    "commandAckP99Ms": 3.600000023841858,
+    "inspectionSamples": 30,
+    "inspectionP95Ms": 5.699999988079071,
+    "fourTimes": {
+      "elapsedMs": 1504.199999988079,
+      "advancedTicks": 60,
+      "achievedSpeed": 3.9888312724687878
+    },
+    "maxBufferedSnapshots": 3,
+    "browser": "chromium",
+    "browserVersion": "156.0.8078.4",
+    "scope": "Preliminary worker transport after 1200 exact warm-up steps; full renderer/frame protocol deferred to B06–B08"
+  },
+  {
+    "runtime": {
+      "engineVersion": "engine/0.2.0",
+      "engineBuildSha": "72dbff91338e283c6bd3f42f2c3e261fc9dd026b57bc9002d31e847d12e7b007",
+      "runtimeEngine": "SPIDERMONKEY",
+      "runtimeVersion": "Firefox-157.0",
+      "platform": "Windows",
+      "numericContractVersion": "kinematics/1"
+    },
+    "fleet": 300,
+    "inNetworkAtWarmup": 236,
+    "asOfTick": 1263,
+    "viewport": {
+      "width": 1280,
+      "height": 720,
+      "dpr": 1
+    },
+    "commandSamples": 30,
+    "commandAckP50Ms": 3,
+    "commandAckP95Ms": 5,
+    "commandAckP99Ms": 6,
+    "inspectionSamples": 30,
+    "inspectionP95Ms": 12,
+    "fourTimes": {
+      "elapsedMs": 1516,
+      "advancedTicks": 60,
+      "achievedSpeed": 3.9577836411609497
+    },
+    "maxBufferedSnapshots": 3,
+    "browser": "firefox",
+    "browserVersion": "157.0",
+    "scope": "Preliminary worker transport after 1200 exact warm-up steps; full renderer/frame protocol deferred to B06–B08"
+  },
+  {
+    "runtime": {
+      "engineVersion": "engine/0.2.0",
+      "engineBuildSha": "72dbff91338e283c6bd3f42f2c3e261fc9dd026b57bc9002d31e847d12e7b007",
+      "runtimeEngine": "JAVASCRIPTCORE",
+      "runtimeVersion": "WebKit-605.1.15",
+      "platform": "MacOS",
+      "numericContractVersion": "kinematics/1"
+    },
+    "fleet": 300,
+    "inNetworkAtWarmup": 236,
+    "asOfTick": 1269,
+    "viewport": {
+      "width": 1280,
+      "height": 720,
+      "dpr": 2
+    },
+    "commandSamples": 30,
+    "commandAckP50Ms": 16,
+    "commandAckP95Ms": 17,
+    "commandAckP99Ms": 17,
+    "inspectionSamples": 30,
+    "inspectionP95Ms": 17,
+    "fourTimes": {
+      "elapsedMs": 1542,
+      "advancedTicks": 60,
+      "achievedSpeed": 3.8910505836575875
+    },
+    "maxBufferedSnapshots": 3,
+    "browser": "webkit",
+    "browserVersion": "27.2",
+    "scope": "Preliminary worker transport after 1200 exact warm-up steps; full renderer/frame protocol deferred to B06–B08"
+  }
+]

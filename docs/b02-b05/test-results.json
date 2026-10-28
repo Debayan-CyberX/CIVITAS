@@ -1,0 +1,20 @@
+{
+  "engineBuildSha": "72dbff91338e283c6bd3f42f2c3e261fc9dd026b57bc9002d31e847d12e7b007",
+  "unit": {
+    "passed": 78,
+    "failed": 0,
+    "pending": 0
+  },
+  "properties": {
+    "passed": 4,
+    "failed": 0,
+    "pending": 0,
+    "generatedCommandCases": 100,
+    "generatedGraphCases": 100,
+    "ticksPerCase": 1000,
+    "seeds": [155921, 130363]
+  },
+  "fullBrowserReplayCases": 3,
+  "headlessCases": 18,
+  "performancePass": true
+}

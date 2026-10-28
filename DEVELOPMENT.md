@@ -1,6 +1,23 @@
-# CIVITAS development — Stage 01 / B01
+# CIVITAS development — Stage 01 / B02–B05
 
-This checkout contains the B01 foundation. The original README and seven Stage 00 documents remain the reviewed design record. See [the B01 implementation report](docs/b01/README.md) for scope, evidence, and the B02 handoff.
+This checkout contains the Aster fixture, deterministic traffic core, headless evidence tools, and dedicated simulation worker/application bridge. Read [the B02–B05 report](docs/b02-b05/README.md) for current scope, measured results, operational formats, and the B06 handoff. The original README and seven Stage 00 documents remain the reviewed design record.
+
+Run the engine with the existing pinned toolchain:
+
+```powershell
+npm run sim:run -- --fleet 200 --seed 104729 --ticks 9000
+npm run sim:run -- --fleet 300 --seed 104729 --ticks 9000 --closure true
+npm run sim:verify -- --seeds 104729,130363,155921 --fleets 100,200,300 --ticks 9000
+npm run perf:headless -- --fleet 300 --ticks 9000 --out artifacts/local/performance
+```
+
+The CLI also accepts `--city`, `--scenario`, `--manifest`, and `--commands` JSON paths, and `--out` for its output directory. Command fixtures are submitted at S0. Imported content hashes/references must agree. Artifacts and separate machine timing reports are written under ignored `artifacts/local` by default. `data:build` reproduces authored city/scenario inputs; it does not regenerate expected test hashes.
+
+The foundation page remains the B01 diagnostic because B06–B08 views and controls are excluded. The operational browser entry is `apps/web/src/bridge/simulation-client.ts`: initialize `createSimulationClient(runId)` with validated inputs, expected hashes, and `client.identity`; await commands and subscribe to readonly observations. It loads the real dedicated worker. Rendering must never import or advance the core.
+
+The existing verification commands below discover the additional tests too. Full browser replay tests run 9,000 transitions twice plus import/replay and can take several minutes; use `npm run test:e2e -- --workers=1` for predictable resource use. Full Stage 01 rendering and interaction acceptance remains B06–B08 work.
+
+The remaining notes record the original B01 foundation. Their statements about unimplemented modules describe that earlier checkpoint; current implementation details and evidence are in the linked B02–B05 report.
 
 ## Prerequisites
 
