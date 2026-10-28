@@ -1,6 +1,6 @@
 # CIVITAS — design system and experience direction
 
-Status: Stage 00 art and interaction specification. No visual benchmark or usability test has been run.
+Status: normative art and interaction specification. The Stage 01 application now implements the architectural scene, charcoal/champagne shell, responsive semantic controls and map; [B06–B08 evidence](b06-b08/README.md) records automated checks and measured performance. Formal human art review, assistive-technology review and Stage 02 asset work remain outstanding.
 
 ## Creative direction: the city as an architectural instrument
 

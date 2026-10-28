@@ -1,0 +1,36 @@
+{
+  "date": "2026-10-28T14:54:41.219Z",
+  "node": "v24.22.1",
+  "npm": "npm/11.19.1 node/v24.22.1 win32 x64 workspaces/false",
+  "results": [
+    {
+      "command": "npm run format:check",
+      "exitCode": 0,
+      "elapsedMs": 2013.6008
+    },
+    {
+      "command": "npm run typecheck",
+      "exitCode": 0,
+      "elapsedMs": 9338.2692
+    },
+    {
+      "command": "npm run lint",
+      "exitCode": 0,
+      "elapsedMs": 9916.976400000001
+    },
+    {
+      "command": "npm run test",
+      "exitCode": 0,
+      "elapsedMs": 35336.5687
+    },
+    {
+      "command": "npm run build",
+      "exitCode": 0,
+      "elapsedMs": 2479.0485999999946
+    },
+    {
+      "command": "playwright test --workers=1 --reporter=list,json",
+      "exitCode": 1
+    }
+  ]
+}

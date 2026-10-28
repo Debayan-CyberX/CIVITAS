@@ -1,0 +1,35 @@
+
+> civitas@0.1.0 build
+> npm run inputs:build && npm run build --workspace @civitas/web
+
+
+> civitas@0.1.0 inputs:build
+> tsx scripts/build-presentation-inputs.ts
+
+Prepared nine validated Aster presentation inputs.
+
+> @civitas/web@0.1.0 build
+> vite build
+
+vite v8.3.5 building client environment for production...
+transforming...
+✓ 154 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                              0.66 kB │ gzip:   0.37 kB
+dist/.vite/manifest.json                     1.19 kB │ gzip:   0.36 kB
+dist/assets/probe.worker-y0YTLFYm.js       113.49 kB
+dist/assets/simulation.worker-Cr4lJBar.js  167.20 kB
+dist/assets/index-Dr9cPom5.css              20.69 kB │ gzip:   5.53 kB
+dist/assets/simulationClient-CkATtgft.js     0.09 kB │ gzip:   0.08 kB
+dist/assets/jsx-runtime-OXo1H56q.js         18.74 kB │ gzip:   7.33 kB
+dist/assets/simulation-client-DjmyAo_S.js  111.87 kB │ gzip:  32.74 kB
+dist/assets/index-CmzRzCyI.js              246.35 kB │ gzip:  77.47 kB
+dist/assets/CityScene-DEPoNqNd.js          947.59 kB │ gzip: 251.15 kB
+
+✓ built in 439ms
+[plugin builtin:vite-reporter]
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rolldownOptions.output.codeSplitting to improve chunking: https://rolldown.rs/reference/OutputOptions.codeSplitting
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.

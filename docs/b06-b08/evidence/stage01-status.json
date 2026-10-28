@@ -1,0 +1,306 @@
+{
+  "stage": "01",
+  "status": "COMPLETE",
+  "engineSourceId": "72dbff91338e283c6bd3f42f2c3e261fc9dd026b57bc9002d31e847d12e7b007",
+  "lockfileSha256": "6541f384f9b58741ac4f054f77bf56a784cd8cf3a9a0d8100b6cc433fbe41cb0",
+  "validation": {
+    "date": "2026-10-28T14:54:41.219Z",
+    "node": "v24.22.1",
+    "npm": "npm/11.19.1 node/v24.22.1 win32 x64 workspaces/false",
+    "results": [
+      {
+        "command": "npm run format:check",
+        "exitCode": 0,
+        "elapsedMs": 2013.6008
+      },
+      {
+        "command": "npm run typecheck",
+        "exitCode": 0,
+        "elapsedMs": 9338.2692
+      },
+      {
+        "command": "npm run lint",
+        "exitCode": 0,
+        "elapsedMs": 9916.976400000001
+      },
+      {
+        "command": "npm run test",
+        "exitCode": 0,
+        "elapsedMs": 35336.5687
+      },
+      {
+        "command": "npm run build",
+        "exitCode": 0,
+        "elapsedMs": 2479.0485999999946
+      },
+      {
+        "command": "playwright test --workers=1 --reporter=list,json",
+        "exitCode": 1
+      }
+    ]
+  },
+  "finalValidation": {
+    "date": "2026-10-28T15:27:19.711Z",
+    "node": "v24.22.1",
+    "npm": "npm/11.19.1 node/v24.22.1 win32 x64 workspaces/false",
+    "results": [
+      {
+        "command": "npm run format:check",
+        "exitCode": 0,
+        "elapsedMs": 2342.065
+      },
+      {
+        "command": "npm run typecheck",
+        "exitCode": 0,
+        "elapsedMs": 8883.8704
+      },
+      {
+        "command": "npm run lint",
+        "exitCode": 0,
+        "elapsedMs": 11738.028900000001
+      },
+      {
+        "command": "npm run test:unit",
+        "exitCode": 0,
+        "elapsedMs": 10104.674299999999
+      },
+      {
+        "command": "npm run build",
+        "exitCode": 0,
+        "elapsedMs": 2140.3076
+      }
+    ]
+  },
+  "browserStats": {
+    "expected": 60,
+    "skipped": 12,
+    "unexpected": 0
+  },
+  "measuredPerformanceReports": 4,
+  "preliminaryAssetHistory": [
+    "Earlier uninstrumented render sample: CityScene-BQI8kuOL.js",
+    "Earlier uninstrumented render sample: index-B1r8oKip.js",
+    "Earlier uninstrumented render sample: jsx-runtime-C0BAPZ2q.js"
+  ],
+  "measurementProvenance": "Uninstrumented Standard/Reduced frame samples preceded the final same-interval trip re-admission interpolation correction. They remain preliminary Stage 01 renderer evidence, with their original asset identities retained. Final-build complete main-thread traces, frame intervals, heap, draw counts and SHA-256 asset identities are recorded separately after that correction. Worker transport, geometry, materials and simulation code were unchanged by the correction.",
+  "mainThreadTrace": [
+    {
+      "speed": 1,
+      "sampleSeconds": 120,
+      "warmupSeconds": 60,
+      "viewport": {
+        "width": 1920,
+        "height": 1080
+      },
+      "fleet": 300,
+      "quality": "standard",
+      "gpu": {
+        "samples": 4,
+        "antialias": true,
+        "backingWidth": 1920,
+        "backingHeight": 795
+      },
+      "assets": [
+        {
+          "name": "CityScene-DEPoNqNd.js",
+          "raw": 947590,
+          "sha256": "7285a59177012d895535d9ba736126f0dc6f474bb8b47d3bb336054fa543156b"
+        },
+        {
+          "name": "index-CmzRzCyI.js",
+          "raw": 246352,
+          "sha256": "b99f79348c232202ef5f313b2cf86676d75558990c6b34e25da7858192857dee"
+        },
+        {
+          "name": "index-Dr9cPom5.css",
+          "raw": 20691,
+          "sha256": "39458193c46770a7a1e41429e7de08415a68b8b302a7e207b63124cd73112ec5"
+        },
+        {
+          "name": "jsx-runtime-OXo1H56q.js",
+          "raw": 18741,
+          "sha256": "685477953c6d4a2ba104a8548e36d27129bae0377a64188e2f36c5e2cdc3277e"
+        },
+        {
+          "name": "probe.worker-y0YTLFYm.js",
+          "raw": 113499,
+          "sha256": "78cf0410eb3f6a17a10b7623f722c02c3b834ecb83c5277af6500457ea47e806"
+        },
+        {
+          "name": "simulation-client-DjmyAo_S.js",
+          "raw": 111878,
+          "sha256": "6e9cbd5b4d28710208d0011d0cfe6881748f0aa4585fc8413f7b129579519b2d"
+        },
+        {
+          "name": "simulation.worker-Cr4lJBar.js",
+          "raw": 167203,
+          "sha256": "4c9202acb7e30e5a5acd866250624ed963a9db9e4a5f059e0afb98981ab113eb"
+        },
+        {
+          "name": "simulationClient-CkATtgft.js",
+          "raw": 95,
+          "sha256": "6f1f717b191122854c54c64a3422e3cf8cb3d98267007051a1f96fe8c64ebdff"
+        }
+      ],
+      "workMsPerFrame": {
+        "n": 7204,
+        "p50": 1.642,
+        "p95": 3.44,
+        "p99": 5.009,
+        "max": 10.844,
+        "taskSlices": 52138,
+        "rendererThread": "10744:15788",
+        "frameIntervalMs": {
+          "p50": 16.714,
+          "p95": 17.748,
+          "p99": 18.162,
+          "max": 18.822
+        },
+        "method": "Union of all top-level renderer-main RunTask slices intersected with actual FireAnimationFrame boundaries. Includes React, message parsing, browser work and tracing overhead; conservative upper bound for application JS, not just Three.js callbacks."
+      },
+      "heap": [
+        {
+          "type": "worker",
+          "url": "http://127.0.0.1:4173/assets/simulation.worker-Cr4lJBar.js",
+          "usedSize": 12143892
+        },
+        {
+          "type": "page",
+          "url": "http://127.0.0.1:4173/",
+          "usedSize": 13790792
+        }
+      ],
+      "render": {
+        "calls": 25,
+        "triangles": 94014
+      },
+      "rawTraceBytes": 204685832
+    },
+    {
+      "speed": 4,
+      "sampleSeconds": 120,
+      "warmupSeconds": 60,
+      "viewport": {
+        "width": 1920,
+        "height": 1080
+      },
+      "fleet": 300,
+      "quality": "standard",
+      "gpu": {
+        "samples": 4,
+        "antialias": true,
+        "backingWidth": 1920,
+        "backingHeight": 795
+      },
+      "assets": [
+        {
+          "name": "CityScene-DEPoNqNd.js",
+          "raw": 947590,
+          "sha256": "7285a59177012d895535d9ba736126f0dc6f474bb8b47d3bb336054fa543156b"
+        },
+        {
+          "name": "index-CmzRzCyI.js",
+          "raw": 246352,
+          "sha256": "b99f79348c232202ef5f313b2cf86676d75558990c6b34e25da7858192857dee"
+        },
+        {
+          "name": "index-Dr9cPom5.css",
+          "raw": 20691,
+          "sha256": "39458193c46770a7a1e41429e7de08415a68b8b302a7e207b63124cd73112ec5"
+        },
+        {
+          "name": "jsx-runtime-OXo1H56q.js",
+          "raw": 18741,
+          "sha256": "685477953c6d4a2ba104a8548e36d27129bae0377a64188e2f36c5e2cdc3277e"
+        },
+        {
+          "name": "probe.worker-y0YTLFYm.js",
+          "raw": 113499,
+          "sha256": "78cf0410eb3f6a17a10b7623f722c02c3b834ecb83c5277af6500457ea47e806"
+        },
+        {
+          "name": "simulation-client-DjmyAo_S.js",
+          "raw": 111878,
+          "sha256": "6e9cbd5b4d28710208d0011d0cfe6881748f0aa4585fc8413f7b129579519b2d"
+        },
+        {
+          "name": "simulation.worker-Cr4lJBar.js",
+          "raw": 167203,
+          "sha256": "4c9202acb7e30e5a5acd866250624ed963a9db9e4a5f059e0afb98981ab113eb"
+        },
+        {
+          "name": "simulationClient-CkATtgft.js",
+          "raw": 95,
+          "sha256": "6f1f717b191122854c54c64a3422e3cf8cb3d98267007051a1f96fe8c64ebdff"
+        }
+      ],
+      "workMsPerFrame": {
+        "n": 7205,
+        "p50": 1.999,
+        "p95": 4.29,
+        "p99": 5.588,
+        "max": 14.021,
+        "taskSlices": 57194,
+        "rendererThread": "10744:15788",
+        "frameIntervalMs": {
+          "p50": 16.697,
+          "p95": 17.837,
+          "p99": 18.266,
+          "max": 31.159
+        },
+        "method": "Union of all top-level renderer-main RunTask slices intersected with actual FireAnimationFrame boundaries. Includes React, message parsing, browser work and tracing overhead; conservative upper bound for application JS, not just Three.js callbacks."
+      },
+      "heap": [
+        {
+          "type": "worker",
+          "url": "http://127.0.0.1:4173/assets/simulation.worker-Cr4lJBar.js",
+          "usedSize": 35285860
+        },
+        {
+          "type": "page",
+          "url": "http://127.0.0.1:4173/",
+          "usedSize": 13594052
+        }
+      ],
+      "render": {
+        "calls": 25,
+        "triangles": 94494
+      },
+      "rawTraceBytes": 223736572
+    }
+  ],
+  "conservativeGpuEstimates": [
+    {
+      "quality": "standard",
+      "speed": 1,
+      "bytes": 98804736,
+      "samples": 4,
+      "method": "Conservative color+depth multisample buffers, resolve/swap color buffers, shadow color+depth and 4 MiB geometry allowance; uses observed Standard default-framebuffer MSAA samples from CPU trace setup. Estimate only; supersedes the simpler raw collector approximation."
+    },
+    {
+      "quality": "standard",
+      "speed": 4,
+      "bytes": 98804736,
+      "samples": 4,
+      "method": "Conservative color+depth multisample buffers, resolve/swap color buffers, shadow color+depth and 4 MiB geometry allowance; uses observed Standard default-framebuffer MSAA samples from CPU trace setup. Estimate only; supersedes the simpler raw collector approximation."
+    },
+    {
+      "quality": "reduced",
+      "speed": 1,
+      "bytes": 13492224,
+      "samples": 0,
+      "method": "Conservative color+depth multisample buffers, resolve/swap color buffers, shadow color+depth and 4 MiB geometry allowance; uses observed Standard default-framebuffer MSAA samples from CPU trace setup. Estimate only; supersedes the simpler raw collector approximation."
+    },
+    {
+      "quality": "reduced",
+      "speed": 4,
+      "bytes": 13492224,
+      "samples": 0,
+      "method": "Conservative color+depth multisample buffers, resolve/swap color buffers, shadow color+depth and 4 MiB geometry allowance; uses observed Standard default-framebuffer MSAA samples from CPU trace setup. Estimate only; supersedes the simpler raw collector approximation."
+    }
+  ],
+  "limitations": [
+    "Measurements certify only the available i5-1335U / Iris Xe host. The specified i5-1135G7 reference machine, actual mid-range mobile device and manual NVDA review are unavailable; emulation and automated axe do not replace those reviews."
+  ],
+  "unresolved": []
+}

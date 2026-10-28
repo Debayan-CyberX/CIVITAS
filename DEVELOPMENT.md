@@ -1,6 +1,6 @@
-# CIVITAS development — Stage 01 / B02–B05
+# CIVITAS development — Stage 01 interactive city
 
-This checkout contains the Aster fixture, deterministic traffic core, headless evidence tools, and dedicated simulation worker/application bridge. Read [the B02–B05 report](docs/b02-b05/README.md) for current scope, measured results, operational formats, and the B06 handoff. The original README and seven Stage 00 documents remain the reviewed design record.
+This checkout contains the Aster fixture, deterministic traffic core, dedicated worker, instanced React Three Fiber city, independent SVG map, simulation controls, inspectors, closures and evidence tables. Read [the B06–B08 report](docs/b06-b08/README.md) for release status, measurements and remaining gates, and [implementation architecture](docs/b06-b08/architecture.md) for presentation boundaries. The engine evidence remains in [B02–B05](docs/b02-b05/README.md).
 
 Run the engine with the existing pinned toolchain:
 
@@ -13,9 +13,9 @@ npm run perf:headless -- --fleet 300 --ticks 9000 --out artifacts/local/performa
 
 The CLI also accepts `--city`, `--scenario`, `--manifest`, and `--commands` JSON paths, and `--out` for its output directory. Command fixtures are submitted at S0. Imported content hashes/references must agree. Artifacts and separate machine timing reports are written under ignored `artifacts/local` by default. `data:build` reproduces authored city/scenario inputs; it does not regenerate expected test hashes.
 
-The foundation page remains the B01 diagnostic because B06–B08 views and controls are excluded. The operational browser entry is `apps/web/src/bridge/simulation-client.ts`: initialize `createSimulationClient(runId)` with validated inputs, expected hashes, and `client.identity`; await commands and subscribe to readonly observations. It loads the real dedicated worker. Rendering must never import or advance the core.
+The main page is the interactive city; `/foundation` retains the B01 diagnostic and its original assertions. The operational browser boundary is `apps/web/src/bridge/simulation-client.ts`. The application validates bundled inputs, awaits worker acknowledgements and subscribes to read-only observations. Rendering never imports or advances the core. `npm run dev` and `npm run build` generate all nine validated fleet/seed inputs first; generated JSON is not source-controlled.
 
-The existing verification commands below discover the additional tests too. Full browser replay tests run 9,000 transitions twice plus import/replay and can take several minutes; use `npm run test:e2e -- --workers=1` for predictable resource use. Full Stage 01 rendering and interaction acceptance remains B06–B08 work.
+`npm run verify:stage01` runs formatting, strict types, lint, all unit/property tests, production build and the complete browser suite, saving evidence under `docs/b06-b08/evidence`. Full browser replay tests run 9,000 transitions twice plus import/replay and can take several minutes. Hardware performance is opt-in: in PowerShell set `$env:CIVITAS_RENDER_PERF='1'`, then run `npx playwright test tests/e2e/render-performance.spec.ts --project=chromium --workers=1`. Four runs each warm for 60 s and sample for 120 s. Run hardware samples without other benchmarks in parallel. `npm run evidence:stage01` assembles the measured status and deliberately exits nonzero while required gates remain unresolved.
 
 The remaining notes record the original B01 foundation. Their statements about unimplemented modules describe that earlier checkpoint; current implementation details and evidence are in the linked B02–B05 report.
 
@@ -23,14 +23,14 @@ The remaining notes record the original B01 foundation. Their statements about u
 
 Use Node **24.22.1** and npm **11.19.1**, matching `.node-version`, `engines`, and `packageManager`. Select that Node version with your existing version manager or install the official release. Other versions fail installation intentionally because `engine-strict` is enabled. No global project tooling, secrets, backend, database, or container is needed.
 
-## Run the foundation
+## Run the application
 
 ```powershell
 npm ci
 npm run dev
 ```
 
-Open <http://127.0.0.1:5173>. This is a foundation page with a real module-worker transport check. It has no simulation clock, city, routing, vehicle motion, or numerical simulation readings. R3F and Three.js are pinned for later work and are not rendered in B01.
+Open <http://127.0.0.1:5173>. The experiment starts paused. Use Play, Pause, Step and Speed in the bottom strip. Select a road in City, Map or Laboratory → Explore; closing a direction is accepted for the next tick and only applies after Step or Play. Laboratory also contains metric definitions, events, validated experiment inputs, display settings and export/import/replay. Narrow screens default to Map. No runtime external service is required.
 
 ## Verify B01
 

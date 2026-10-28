@@ -1,6 +1,6 @@
 # CIVITAS — Stage 01 build plan
 
-Status: ready-to-implement specification; **not started**. Stage 00 ends with this plan. Do not execute the commands below until Stage 01 is requested.
+Status: implementation plan retained as the acceptance reference. B01–B08 are implemented and Stage 01 engineering acceptance passes on the recorded available host. [The current report](b06-b08/README.md) retains exact measurements, evidence provenance and device/accessibility limitations. Stage 02 and full-MVP gates remain separate.
 
 ## Deliverable and exclusions
 

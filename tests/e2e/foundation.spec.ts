@@ -14,7 +14,7 @@ test('production React shell validates a real module-worker round trip', async (
   page.on('request', (request) => {
     if (!request.url().startsWith('http://127.0.0.1:4173/')) remoteRequests.push(request.url());
   });
-  await page.goto('/');
+  await page.goto('/foundation');
   await expect(page.getByRole('heading', { name: 'CIVITAS', exact: true })).toBeVisible();
   await expect(page.getByRole('status')).toHaveText('Local worker connection verified.');
   expect(workers.some((url) => /\/assets\/probe\.worker-.*\.js$/.test(url))).toBe(true);
@@ -28,7 +28,7 @@ test('unsupported Worker support is explicit without fabricated running state', 
   await page.addInitScript(() => {
     Object.defineProperty(window, 'Worker', { value: undefined });
   });
-  await page.goto('/');
+  await page.goto('/foundation');
   await expect(page.getByRole('status')).toContainText('Local worker unavailable');
   await expect(
     page.getByText(
@@ -38,7 +38,7 @@ test('unsupported Worker support is explicit without fabricated running state', 
 });
 
 test('foundation accessibility has no serious or critical axe issues', async ({ page }) => {
-  await page.goto('/');
+  await page.goto('/foundation');
   await expect(page.getByRole('status')).toHaveText('Local worker connection verified.');
   const results = await new AxeBuilder({ page }).analyze();
   expect(

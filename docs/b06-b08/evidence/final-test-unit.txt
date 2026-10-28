@@ -1,0 +1,12 @@
+
+> civitas@0.1.0 test:unit
+> vitest run --project unit
+
+
+ RUN  v5.0.5 C:/Users/shivl/OneDrive/Desktop/CIVITAS
+
+
+ Test Files  8 passed (8)
+      Tests  88 passed (88)
+   Start at  20:57:07
+   Duration  9.59s (tests 92%, import 6%, transform 2%)

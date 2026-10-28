@@ -21,6 +21,7 @@ __pycache__/
 
 # Generated local runs; small reviewed fixtures belong in tests/fixtures instead
 artifacts/local/
+apps/web/public/inputs/
 
 # OS files
 .DS_Store

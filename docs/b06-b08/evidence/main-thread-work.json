@@ -1,0 +1,186 @@
+[
+  {
+    "speed": 1,
+    "sampleSeconds": 120,
+    "warmupSeconds": 60,
+    "viewport": {
+      "width": 1920,
+      "height": 1080
+    },
+    "fleet": 300,
+    "quality": "standard",
+    "gpu": {
+      "samples": 4,
+      "antialias": true,
+      "backingWidth": 1920,
+      "backingHeight": 795
+    },
+    "assets": [
+      {
+        "name": "CityScene-DEPoNqNd.js",
+        "raw": 947590,
+        "sha256": "7285a59177012d895535d9ba736126f0dc6f474bb8b47d3bb336054fa543156b"
+      },
+      {
+        "name": "index-CmzRzCyI.js",
+        "raw": 246352,
+        "sha256": "b99f79348c232202ef5f313b2cf86676d75558990c6b34e25da7858192857dee"
+      },
+      {
+        "name": "index-Dr9cPom5.css",
+        "raw": 20691,
+        "sha256": "39458193c46770a7a1e41429e7de08415a68b8b302a7e207b63124cd73112ec5"
+      },
+      {
+        "name": "jsx-runtime-OXo1H56q.js",
+        "raw": 18741,
+        "sha256": "685477953c6d4a2ba104a8548e36d27129bae0377a64188e2f36c5e2cdc3277e"
+      },
+      {
+        "name": "probe.worker-y0YTLFYm.js",
+        "raw": 113499,
+        "sha256": "78cf0410eb3f6a17a10b7623f722c02c3b834ecb83c5277af6500457ea47e806"
+      },
+      {
+        "name": "simulation-client-DjmyAo_S.js",
+        "raw": 111878,
+        "sha256": "6e9cbd5b4d28710208d0011d0cfe6881748f0aa4585fc8413f7b129579519b2d"
+      },
+      {
+        "name": "simulation.worker-Cr4lJBar.js",
+        "raw": 167203,
+        "sha256": "4c9202acb7e30e5a5acd866250624ed963a9db9e4a5f059e0afb98981ab113eb"
+      },
+      {
+        "name": "simulationClient-CkATtgft.js",
+        "raw": 95,
+        "sha256": "6f1f717b191122854c54c64a3422e3cf8cb3d98267007051a1f96fe8c64ebdff"
+      }
+    ],
+    "workMsPerFrame": {
+      "n": 7204,
+      "p50": 1.642,
+      "p95": 3.44,
+      "p99": 5.009,
+      "max": 10.844,
+      "taskSlices": 52138,
+      "rendererThread": "10744:15788",
+      "frameIntervalMs": {
+        "p50": 16.714,
+        "p95": 17.748,
+        "p99": 18.162,
+        "max": 18.822
+      },
+      "method": "Union of all top-level renderer-main RunTask slices intersected with actual FireAnimationFrame boundaries. Includes React, message parsing, browser work and tracing overhead; conservative upper bound for application JS, not just Three.js callbacks."
+    },
+    "heap": [
+      {
+        "type": "worker",
+        "url": "http://127.0.0.1:4173/assets/simulation.worker-Cr4lJBar.js",
+        "usedSize": 12143892
+      },
+      {
+        "type": "page",
+        "url": "http://127.0.0.1:4173/",
+        "usedSize": 13790792
+      }
+    ],
+    "render": {
+      "calls": 25,
+      "triangles": 94014
+    },
+    "rawTraceBytes": 204685832
+  },
+  {
+    "speed": 4,
+    "sampleSeconds": 120,
+    "warmupSeconds": 60,
+    "viewport": {
+      "width": 1920,
+      "height": 1080
+    },
+    "fleet": 300,
+    "quality": "standard",
+    "gpu": {
+      "samples": 4,
+      "antialias": true,
+      "backingWidth": 1920,
+      "backingHeight": 795
+    },
+    "assets": [
+      {
+        "name": "CityScene-DEPoNqNd.js",
+        "raw": 947590,
+        "sha256": "7285a59177012d895535d9ba736126f0dc6f474bb8b47d3bb336054fa543156b"
+      },
+      {
+        "name": "index-CmzRzCyI.js",
+        "raw": 246352,
+        "sha256": "b99f79348c232202ef5f313b2cf86676d75558990c6b34e25da7858192857dee"
+      },
+      {
+        "name": "index-Dr9cPom5.css",
+        "raw": 20691,
+        "sha256": "39458193c46770a7a1e41429e7de08415a68b8b302a7e207b63124cd73112ec5"
+      },
+      {
+        "name": "jsx-runtime-OXo1H56q.js",
+        "raw": 18741,
+        "sha256": "685477953c6d4a2ba104a8548e36d27129bae0377a64188e2f36c5e2cdc3277e"
+      },
+      {
+        "name": "probe.worker-y0YTLFYm.js",
+        "raw": 113499,
+        "sha256": "78cf0410eb3f6a17a10b7623f722c02c3b834ecb83c5277af6500457ea47e806"
+      },
+      {
+        "name": "simulation-client-DjmyAo_S.js",
+        "raw": 111878,
+        "sha256": "6e9cbd5b4d28710208d0011d0cfe6881748f0aa4585fc8413f7b129579519b2d"
+      },
+      {
+        "name": "simulation.worker-Cr4lJBar.js",
+        "raw": 167203,
+        "sha256": "4c9202acb7e30e5a5acd866250624ed963a9db9e4a5f059e0afb98981ab113eb"
+      },
+      {
+        "name": "simulationClient-CkATtgft.js",
+        "raw": 95,
+        "sha256": "6f1f717b191122854c54c64a3422e3cf8cb3d98267007051a1f96fe8c64ebdff"
+      }
+    ],
+    "workMsPerFrame": {
+      "n": 7205,
+      "p50": 1.999,
+      "p95": 4.29,
+      "p99": 5.588,
+      "max": 14.021,
+      "taskSlices": 57194,
+      "rendererThread": "10744:15788",
+      "frameIntervalMs": {
+        "p50": 16.697,
+        "p95": 17.837,
+        "p99": 18.266,
+        "max": 31.159
+      },
+      "method": "Union of all top-level renderer-main RunTask slices intersected with actual FireAnimationFrame boundaries. Includes React, message parsing, browser work and tracing overhead; conservative upper bound for application JS, not just Three.js callbacks."
+    },
+    "heap": [
+      {
+        "type": "worker",
+        "url": "http://127.0.0.1:4173/assets/simulation.worker-Cr4lJBar.js",
+        "usedSize": 35285860
+      },
+      {
+        "type": "page",
+        "url": "http://127.0.0.1:4173/",
+        "usedSize": 13594052
+      }
+    ],
+    "render": {
+      "calls": 25,
+      "triangles": 94494
+    },
+    "rawTraceBytes": 223736572
+  }
+]

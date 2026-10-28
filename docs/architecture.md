@@ -1,6 +1,6 @@
 # CIVITAS — architecture
 
-Status: Stage 00 design, not an implemented system. [Simulation semantics](simulation-spec.md) are authoritative.
+Status: normative design with a Stage 01 implementation. [Simulation semantics](simulation-spec.md) remain authoritative. [B06–B08 implementation notes](b06-b08/architecture.md) document the actual protocol/2 presentation adapter, instanced scene, SVG fallback, application controls and remaining verification limits. Release status is in [the implementation report](b06-b08/README.md).
 
 ## System boundary
 

@@ -1,10 +1,17 @@
 import { describe, it, expect } from 'vitest';
 import { WorkerHost } from '../../packages/simulation-worker/src/host';
 import type { EngineCommand, EngineObservation } from '@civitas/contracts';
-import { prepareAster, RunSession } from '@civitas/simulation';
+import {
+  canonical,
+  compileCity,
+  generateManifest,
+  prepareAster,
+  RunSession,
+} from '@civitas/simulation';
+import { ScenarioSchema } from '@civitas/contracts';
 import { digest, identity } from '../../scripts/runtime';
 
-async function fixture() {
+async function fixture(horizon = 9000) {
   let wall = 0;
   let callback: (() => void) | undefined;
   const output: EngineObservation[] = [];
@@ -20,6 +27,20 @@ async function fixture() {
   };
   const host = new WorkerHost(clock, digest, identity(), (m) => output.push(m));
   const inputs = await prepareAster(digest, 100);
+  if (horizon !== 9000) {
+    inputs.scenario = ScenarioSchema.parse({
+      ...inputs.scenario,
+      horizonTicks: horizon,
+      warmupTicks: 0,
+    });
+    inputs.hashes.scenario = await digest(canonical(inputs.scenario));
+    inputs.manifest = generateManifest(
+      compileCity(inputs.city),
+      inputs.scenario,
+      inputs.hashes.scenario,
+    );
+    inputs.hashes.manifest = await digest(canonical(inputs.manifest));
+  }
   let serial = 0;
   let epoch = 1;
   type Payload<T = EngineCommand> = T extends EngineCommand
@@ -63,6 +84,33 @@ async function fixture() {
   };
 }
 describe('worker authoritative clock and lifecycle', () => {
+  it('publishes the exact odd-tick snapshot when a wall gap pauses the run', async () => {
+    const f = await fixture();
+    await f.send({ type: 'PLAY' });
+    await f.advance(100);
+    await f.advance(501);
+    expect(f.output.findLast((m) => m.type === 'SNAPSHOT')).toMatchObject({
+      snapshot: { tick: 1 },
+    });
+    expect(f.output.findLast((m) => m.type === 'CONTROL_ACK')).toMatchObject({
+      mode: 'PAUSED',
+      authoritativeTick: 1,
+    });
+    f.host.dispose();
+  });
+  it('acknowledges horizon completion and publishes its exact endpoint', async () => {
+    const f = await fixture(3);
+    await f.send({ type: 'PLAY' });
+    await f.advance(400);
+    expect(f.output.findLast((m) => m.type === 'SNAPSHOT')).toMatchObject({
+      snapshot: { tick: 3 },
+    });
+    expect(f.output.findLast((m) => m.type === 'CONTROL_ACK')).toMatchObject({
+      mode: 'PAUSED',
+      authoritativeTick: 3,
+    });
+    f.host.dispose();
+  });
   it('does not hide a long wall gap behind a speed command', async () => {
     const f = await fixture();
     await f.send({ type: 'PLAY' });

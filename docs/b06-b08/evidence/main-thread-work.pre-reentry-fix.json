@@ -1,0 +1,58 @@
+[
+  {
+    "speed": 1,
+    "sampleSeconds": 120,
+    "warmupSeconds": 60,
+    "viewport": {
+      "width": 1920,
+      "height": 1080
+    },
+    "fleet": 300,
+    "quality": "standard",
+    "gpu": {
+      "samples": 4,
+      "antialias": true,
+      "backingWidth": 1920,
+      "backingHeight": 795
+    },
+    "workMsPerFrame": {
+      "n": 7205,
+      "p50": 1.389,
+      "p95": 3.122,
+      "p99": 4.338,
+      "max": 12.349,
+      "taskSlices": 53455,
+      "rendererThread": "11964:8856",
+      "method": "Union of all top-level renderer-main RunTask slices intersected with actual FireAnimationFrame boundaries. Includes React, message parsing, browser work and tracing overhead; conservative upper bound for application JS, not just Three.js callbacks."
+    },
+    "rawTraceBytes": 205444398
+  },
+  {
+    "speed": 4,
+    "sampleSeconds": 120,
+    "warmupSeconds": 60,
+    "viewport": {
+      "width": 1920,
+      "height": 1080
+    },
+    "fleet": 300,
+    "quality": "standard",
+    "gpu": {
+      "samples": 4,
+      "antialias": true,
+      "backingWidth": 1920,
+      "backingHeight": 795
+    },
+    "workMsPerFrame": {
+      "n": 7203,
+      "p50": 1.886,
+      "p95": 3.717,
+      "p99": 4.897,
+      "max": 14.472,
+      "taskSlices": 56721,
+      "rendererThread": "11964:8856",
+      "method": "Union of all top-level renderer-main RunTask slices intersected with actual FireAnimationFrame boundaries. Includes React, message parsing, browser work and tracing overhead; conservative upper bound for application JS, not just Three.js callbacks."
+    },
+    "rawTraceBytes": 220889564
+  }
+]

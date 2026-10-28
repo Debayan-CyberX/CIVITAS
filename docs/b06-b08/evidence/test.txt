@@ -1,0 +1,29 @@
+
+> civitas@0.1.0 test
+> npm run test:unit && npm run test:properties
+
+
+> civitas@0.1.0 test:unit
+> vitest run --project unit
+
+
+ RUN  v5.0.5 C:/Users/shivl/OneDrive/Desktop/CIVITAS
+
+
+ Test Files  8 passed (8)
+      Tests  85 passed (85)
+   Start at  20:10:53
+   Duration  10.16s (tests 73%, import 20%, transform 7%)
+
+
+> civitas@0.1.0 test:properties
+> vitest run --project properties
+
+
+ RUN  v5.0.5 C:/Users/shivl/OneDrive/Desktop/CIVITAS
+
+
+ Test Files  2 passed (2)
+      Tests  4 passed (4)
+   Start at  20:11:04
+   Duration  23.53s (tests 98%, import 2%, transform 1%)

@@ -1,0 +1,358 @@
+{
+  "config": {
+    "argv": [
+      "C:\\Users\\shivl\\AppData\\Local\\Temp\\civitas-b01-toolchain\\node-v24.22.1-win-x64\\node.exe",
+      "C:\\Users\\shivl\\OneDrive\\Desktop\\CIVITAS\\node_modules\\@playwright\\test\\cli.js",
+      "test",
+      "tests/e2e/living-city.spec.ts",
+      "--grep",
+      "configured fleet 300",
+      "--workers=1",
+      "--reporter=list,json"
+    ],
+    "configFile": "C:\\Users\\shivl\\OneDrive\\Desktop\\CIVITAS\\playwright.config.ts",
+    "rootDir": "C:/Users/shivl/OneDrive/Desktop/CIVITAS/tests/e2e",
+    "failOnFlakyTests": false,
+    "forbidOnly": true,
+    "fullyParallel": true,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "C:/Users/shivl/OneDrive/Desktop/CIVITAS/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "C:/Users/shivl/OneDrive/Desktop/CIVITAS/tests/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "C:/Users/shivl/OneDrive/Desktop/CIVITAS/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "C:/Users/shivl/OneDrive/Desktop/CIVITAS/tests/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "C:/Users/shivl/OneDrive/Desktop/CIVITAS/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "webkit",
+        "name": "webkit",
+        "testDir": "C:/Users/shivl/OneDrive/Desktop/CIVITAS/tests/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "C:\\Users\\shivl\\OneDrive\\Desktop\\CIVITAS\\test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "chromium",
+        "testDir": "C:\\Users\\shivl\\OneDrive\\Desktop\\CIVITAS\\tests\\e2e",
+        "snapshotDir": "C:\\Users\\shivl\\OneDrive\\Desktop\\CIVITAS\\tests\\e2e",
+        "testIgnore": [],
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 30000,
+        "use": {
+          "baseURL": "http://127.0.0.1:4173",
+          "trace": "retain-on-failure",
+          "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.8078.4 Safari/537.36",
+          "viewport": {
+            "width": 1280,
+            "height": 720
+          },
+          "screen": {
+            "width": 1920,
+            "height": 1080
+          },
+          "deviceScaleFactor": 1,
+          "isMobile": false,
+          "hasTouch": false,
+          "defaultBrowserType": "chromium",
+          "launchOptions": {
+            "args": [
+              "--use-angle=d3d11"
+            ]
+          }
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "chromium"
+      },
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "C:\\Users\\shivl\\OneDrive\\Desktop\\CIVITAS\\test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "firefox",
+        "testDir": "C:\\Users\\shivl\\OneDrive\\Desktop\\CIVITAS\\tests\\e2e",
+        "snapshotDir": "C:\\Users\\shivl\\OneDrive\\Desktop\\CIVITAS\\tests\\e2e",
+        "testIgnore": [],
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 30000,
+        "use": {
+          "baseURL": "http://127.0.0.1:4173",
+          "trace": "retain-on-failure",
+          "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:157.0) Gecko/20100101 Firefox/157.0",
+          "viewport": {
+            "width": 1280,
+            "height": 720
+          },
+          "screen": {
+            "width": 1920,
+            "height": 1080
+          },
+          "deviceScaleFactor": 1,
+          "isMobile": false,
+          "hasTouch": false,
+          "defaultBrowserType": "firefox"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "firefox"
+      },
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "C:\\Users\\shivl\\OneDrive\\Desktop\\CIVITAS\\test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "webkit",
+        "testDir": "C:\\Users\\shivl\\OneDrive\\Desktop\\CIVITAS\\tests\\e2e",
+        "snapshotDir": "C:\\Users\\shivl\\OneDrive\\Desktop\\CIVITAS\\tests\\e2e",
+        "testIgnore": [],
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 30000,
+        "use": {
+          "baseURL": "http://127.0.0.1:4173",
+          "trace": "retain-on-failure",
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/27.2 Safari/605.1.15",
+          "viewport": {
+            "width": 1280,
+            "height": 720
+          },
+          "screen": {
+            "width": 1792,
+            "height": 1120
+          },
+          "deviceScaleFactor": 2,
+          "isMobile": false,
+          "hasTouch": false,
+          "defaultBrowserType": "webkit"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "webkit"
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list"
+      ],
+      [
+        "json"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.64.1",
+    "workers": 1,
+    "webServer": {
+      "command": "npm run preview",
+      "url": "http://127.0.0.1:4173",
+      "reuseExistingServer": false,
+      "timeout": 30000
+    }
+  },
+  "suites": [
+    {
+      "title": "living-city.spec.ts",
+      "file": "living-city.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "configured fleet 300: live counts reconcile between scene, map and worker",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4687,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T15:27:22.244Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "visible-count-reconciliation",
+                      "contentType": "application/json",
+                      "body": "eyJmbGVldCI6MzAwLCJpbk5ldHdvcmsiOjIzLCJ0aWNrIjo3OSwiY29tcGF0aWJpbGl0eSI6eyJlbmdpbmVCdWlsZFNoYSI6IjcyZGJmZjkxMzM4ZTI4M2M2YmQzZjQyZjJjM2UyNjFmYzlkZDAyNmI1N2JjOTAwMmQzMWU4NDdkMTJlN2IwMDciLCJlbmdpbmVWZXJzaW9uIjoiZW5naW5lLzAuMi4wIiwibnVtZXJpY0NvbnRyYWN0VmVyc2lvbiI6ImtpbmVtYXRpY3MvMSIsInBsYXRmb3JtIjoiV2luZG93cyIsInJ1bnRpbWVFbmdpbmUiOiJWOCIsInJ1bnRpbWVWZXJzaW9uIjoiQ2hyb21pdW0tMTU2LjAuODA3OC40In19"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "f99d72a4640187624650-de72f7ad9cfa29f0a79e",
+          "file": "living-city.spec.ts",
+          "line": 105,
+          "column": 3
+        },
+        {
+          "title": "configured fleet 300: live counts reconcile between scene, map and worker",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 7276,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T15:27:27.686Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "visible-count-reconciliation",
+                      "contentType": "application/json",
+                      "body": "eyJmbGVldCI6MzAwLCJpbk5ldHdvcmsiOjIzLCJ0aWNrIjo4MiwiY29tcGF0aWJpbGl0eSI6eyJlbmdpbmVCdWlsZFNoYSI6IjcyZGJmZjkxMzM4ZTI4M2M2YmQzZjQyZjJjM2UyNjFmYzlkZDAyNmI1N2JjOTAwMmQzMWU4NDdkMTJlN2IwMDciLCJlbmdpbmVWZXJzaW9uIjoiZW5naW5lLzAuMi4wIiwibnVtZXJpY0NvbnRyYWN0VmVyc2lvbiI6ImtpbmVtYXRpY3MvMSIsInBsYXRmb3JtIjoiV2luZG93cyIsInJ1bnRpbWVFbmdpbmUiOiJTUElERVJNT05LRVkiLCJydW50aW1lVmVyc2lvbiI6IkZpcmVmb3gtMTU3LjAifX0="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "f99d72a4640187624650-5a77e62f662e3d549e63",
+          "file": "living-city.spec.ts",
+          "line": 105,
+          "column": 3
+        },
+        {
+          "title": "configured fleet 300: live counts reconcile between scene, map and worker",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 10792,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T15:27:36.568Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "visible-count-reconciliation",
+                      "contentType": "application/json",
+                      "body": "eyJmbGVldCI6MzAwLCJpbk5ldHdvcmsiOjIwLCJ0aWNrIjo3MiwiY29tcGF0aWJpbGl0eSI6eyJlbmdpbmVCdWlsZFNoYSI6IjcyZGJmZjkxMzM4ZTI4M2M2YmQzZjQyZjJjM2UyNjFmYzlkZDAyNmI1N2JjOTAwMmQzMWU4NDdkMTJlN2IwMDciLCJlbmdpbmVWZXJzaW9uIjoiZW5naW5lLzAuMi4wIiwibnVtZXJpY0NvbnRyYWN0VmVyc2lvbiI6ImtpbmVtYXRpY3MvMSIsInBsYXRmb3JtIjoiTWFjT1MiLCJydW50aW1lRW5naW5lIjoiSkFWQVNDUklQVENPUkUiLCJydW50aW1lVmVyc2lvbiI6IldlYktpdC02MDUuMS4xNSJ9fQ=="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "f99d72a4640187624650-d127e4f7ffbd9778b87b",
+          "file": "living-city.spec.ts",
+          "line": 105,
+          "column": 3
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-28T15:27:20.797Z",
+    "duration": 27088.561,
+    "expected": 3,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

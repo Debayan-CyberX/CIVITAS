@@ -181,6 +181,7 @@ export class WorkerHost {
     this.lastWall = now;
     if (gap > 500 || gap < 0) {
       this.stop();
+      this.publish(true);
       this.emit('stream', {
         type: 'STATUS',
         authoritativeTick: this.session.engine.tick,
@@ -197,6 +198,8 @@ export class WorkerHost {
     while (this.debt >= 100 && count < 20 && this.clock.now() - start < 8) {
       if (this.session.engine.tick >= this.session.engine.horizon) {
         this.stop();
+        this.publish(true);
+        this.ack('stream');
         break;
       }
       await this.transition();
@@ -315,6 +318,7 @@ export class WorkerHost {
             const gap = this.clock.now() - this.lastWall;
             if (gap > 500 || gap < 0) {
               this.stop();
+              this.publish(true);
               this.emit('stream', {
                 type: 'STATUS',
                 authoritativeTick: this.session.engine.tick,
@@ -353,6 +357,23 @@ export class WorkerHost {
             ? [
                 `Location: ${JSON.stringify(agent.location)}`,
                 `Active trip: ${agent.activeTripId ?? 'none'}`,
+                `Speed: ${agent.speedMmPerSecond / 1000} m/s`,
+                `Queued ticks below 0.5 m/s: ${agent.lowSpeedTicks}`,
+                `Reservation: ${agent.reservationId ?? 'none'}`,
+                `Route topology: ${agent.routeTopology}; cursor: ${agent.routeCursor}`,
+                ...Array.from(
+                  { length: Math.min(24, Math.ceil((agent.route?.edges.length ?? 0) / 4)) },
+                  (_, i) =>
+                    `Route ${i + 1}: ${
+                      agent.route?.edges
+                        .slice(i * 4, i * 4 + 4)
+                        .map((edge) => edge.id)
+                        .join(' → ') ?? 'none'
+                    }`,
+                ),
+                ...(agent.route && agent.route.edges.length > 96
+                  ? ['Route display truncated after 96 edges. Full route is retained in export.']
+                  : []),
               ]
             : request
               ? e

@@ -1,0 +1,32 @@
+{
+  "date": "2026-10-28T15:27:19.711Z",
+  "node": "v24.22.1",
+  "npm": "npm/11.19.1 node/v24.22.1 win32 x64 workspaces/false",
+  "results": [
+    {
+      "command": "npm run format:check",
+      "exitCode": 0,
+      "elapsedMs": 2342.065
+    },
+    {
+      "command": "npm run typecheck",
+      "exitCode": 0,
+      "elapsedMs": 8883.8704
+    },
+    {
+      "command": "npm run lint",
+      "exitCode": 0,
+      "elapsedMs": 11738.028900000001
+    },
+    {
+      "command": "npm run test:unit",
+      "exitCode": 0,
+      "elapsedMs": 10104.674299999999
+    },
+    {
+      "command": "npm run build",
+      "exitCode": 0,
+      "elapsedMs": 2140.3076
+    }
+  ]
+}

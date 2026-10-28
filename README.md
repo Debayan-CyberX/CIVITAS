@@ -2,7 +2,9 @@
 
 An interactive urban simulation laboratory for a fictional city. The city must explain its behavior through reproducible movement, interventions, and measured outcomes.
 
-**Current stage: Stage 00 — architecture and experience specification only.** There is no application, simulation implementation, benchmark result, or deployment in this repository yet. Stage 01 is specified and has not started.
+**Current state: Stage 01 engineering acceptance complete on the recorded test host.** CIVITAS includes Aster's deterministic traffic engine, worker-driven 3D city, independent SVG map, directional closures, inspection, metrics and verified JSON replay. [The B06–B08 report](docs/b06-b08/README.md) contains measured results, test evidence and device/accessibility limitations. Stage 02 cinematic assets and full-MVP release certification remain future work.
+
+Use Node 24.22.1 / npm 11.19.1, then run `npm ci` and `npm run dev`. Open <http://127.0.0.1:5173>. Start paused, press Play, select a road or explore entities in Laboratory, close a direction, then step or resume to apply it. [Development and validation instructions](DEVELOPMENT.md) describe the available commands and evidence. The historical B01 diagnostic is at `/foundation`.
 
 ## Read the dossier
 
@@ -21,6 +23,6 @@ The simulation specification owns model semantics, units, tick ordering, and met
 - React, TypeScript, Vite, React Three Fiber, Three.js, Zustand, and a dedicated simulation Web Worker.
 - FastAPI and PostgreSQL/PostGIS are future infrastructure, outside the browser MVP's critical path.
 - No Docker, paid API requirement, real-world calibration claim, fabricated results, or decorative metrics.
-- All numerical values in this dossier are **design inputs, proposed budgets, analytical examples, or acceptance thresholds**. They are not measured performance or city outcomes.
+- Numerical thresholds in the original dossier are design requirements. Measured outcomes are kept separately in [B02–B05 evidence](docs/b02-b05/README.md) and [B06–B08 evidence](docs/b06-b08/README.md).
 
 Prepared on 2026-10-28. External compatibility references were checked on that date; installation and peer compatibility still require verification at Stage 01.

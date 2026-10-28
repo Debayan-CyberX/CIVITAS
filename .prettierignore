@@ -5,6 +5,8 @@ playwright-report/
 test-results/
 artifacts/local/
 package-lock.json
+# Raw measured output is preserved as emitted by the evidence collectors.
+docs/b06-b08/evidence/*.json
 # Preserve the reviewed Stage 00 dossier verbatim.
 /README.md
 docs/vision.md

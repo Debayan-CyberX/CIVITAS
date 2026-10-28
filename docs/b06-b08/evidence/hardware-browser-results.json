@@ -1,0 +1,401 @@
+{
+  "config": {
+    "argv": [
+      "C:\\Users\\shivl\\AppData\\Local\\Temp\\civitas-b01-toolchain\\node-v24.22.1-win-x64\\node.exe",
+      "C:\\Users\\shivl\\OneDrive\\Desktop\\CIVITAS\\node_modules\\@playwright\\test\\cli.js",
+      "test",
+      "tests/e2e/render-performance.spec.ts",
+      "--project=chromium",
+      "--workers=1",
+      "--reporter=list,json"
+    ],
+    "configFile": "C:\\Users\\shivl\\OneDrive\\Desktop\\CIVITAS\\playwright.config.ts",
+    "rootDir": "C:/Users/shivl/OneDrive/Desktop/CIVITAS/tests/e2e",
+    "failOnFlakyTests": false,
+    "forbidOnly": true,
+    "fullyParallel": true,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "C:/Users/shivl/OneDrive/Desktop/CIVITAS/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "C:/Users/shivl/OneDrive/Desktop/CIVITAS/tests/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "C:/Users/shivl/OneDrive/Desktop/CIVITAS/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "C:/Users/shivl/OneDrive/Desktop/CIVITAS/tests/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "C:/Users/shivl/OneDrive/Desktop/CIVITAS/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "webkit",
+        "name": "webkit",
+        "testDir": "C:/Users/shivl/OneDrive/Desktop/CIVITAS/tests/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "C:\\Users\\shivl\\OneDrive\\Desktop\\CIVITAS\\test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "chromium",
+        "testDir": "C:\\Users\\shivl\\OneDrive\\Desktop\\CIVITAS\\tests\\e2e",
+        "snapshotDir": "C:\\Users\\shivl\\OneDrive\\Desktop\\CIVITAS\\tests\\e2e",
+        "testIgnore": [],
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 30000,
+        "use": {
+          "baseURL": "http://127.0.0.1:4173",
+          "trace": "retain-on-failure",
+          "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.8078.4 Safari/537.36",
+          "viewport": {
+            "width": 1280,
+            "height": 720
+          },
+          "screen": {
+            "width": 1920,
+            "height": 1080
+          },
+          "deviceScaleFactor": 1,
+          "isMobile": false,
+          "hasTouch": false,
+          "defaultBrowserType": "chromium",
+          "launchOptions": {
+            "args": [
+              "--use-angle=d3d11"
+            ]
+          }
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "chromium"
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list"
+      ],
+      [
+        "json"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.64.1",
+    "workers": 1,
+    "webServer": {
+      "command": "npm run preview",
+      "url": "http://127.0.0.1:4173",
+      "reuseExistingServer": false,
+      "timeout": 30000
+    }
+  },
+  "suites": [
+    {
+      "title": "render-performance.spec.ts",
+      "file": "render-performance.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "render measurement standard 1x",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 195095,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "Hardware sample standard 1x: 60 s warm-up started.\n"
+                    },
+                    {
+                      "text": "Hardware sample standard 1x: 120 s frame measurement started.\n"
+                    },
+                    {
+                      "text": "Hardware sample standard 1x: 30 / 120 s sampled.\n"
+                    },
+                    {
+                      "text": "Hardware sample standard 1x: 60 / 120 s sampled.\n"
+                    },
+                    {
+                      "text": "Hardware sample standard 1x: 90 / 120 s sampled.\n"
+                    },
+                    {
+                      "text": "Hardware sample standard 1x: 120 / 120 s sampled.\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T15:02:25.245Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "render-performance",
+                      "contentType": "application/json",
+                      "body": "ewogICJkYXRlIjogIjIwMjYtMTAtMjhUMTU6MDU6MzkuOTg2WiIsCiAgImNvbW1pdEJlZm9yZUNoYW5nZXMiOiAiYTA5OTVlNDc5NjAzNjk0ZDdiMTBmNmEwN2ZhN2JmZjUwOTZhNmY3NyIsCiAgImhhcmR3YXJlIjogewogICAgImNwdSI6ICIxM3RoIEdlbiBJbnRlbChSKSBDb3JlKFRNKSBpNS0xMzM1VSIsCiAgICAibWVtb3J5IjogMTY4NDkyNTY0NDgsCiAgICAib3MiOiAiMTAuMC4yNjIwMCIsCiAgICAicG93ZXIiOiAiUG93ZXIgU2NoZW1lIEdVSUQ6IDM4MWI0MjIyLWY2OTQtNDFmMC05Njg1LWZmNWJiMjYwZGYyZSAgKEJhbGFuY2VkKSIKICB9LAogICJicm93c2VyIjogewogICAgIm5hbWUiOiAiY2hyb21pdW0iLAogICAgInZlcnNpb24iOiAiMTU2LjAuODA3OC40IiwKICAgICJyZW5kZXJlciI6ICJBTkdMRSAoSW50ZWwsIEludGVsKFIpIElyaXMoUikgWGUgR3JhcGhpY3MgKDB4MDAwMEE3QTEpIERpcmVjdDNEMTEgdnNfNV8wIHBzXzVfMCwgRDNEMTEpIiwKICAgICJkcHIiOiAxLAogICAgImJhY2tpbmdXaWR0aCI6IDE5MjAsCiAgICAiYmFja2luZ0hlaWdodCI6IDc5NSwKICAgICJ1YSI6ICJNb3ppbGxhLzUuMCAoV2luZG93cyBOVCAxMC4wOyBXaW42NDsgeDY0KSBBcHBsZVdlYktpdC81MzcuMzYgKEtIVE1MLCBsaWtlIEdlY2tvKSBDaHJvbWUvMTU2LjAuODA3OC40IFNhZmFyaS81MzcuMzYiCiAgfSwKICAidmlld3BvcnQiOiB7CiAgICAid2lkdGgiOiAxOTIwLAogICAgImhlaWdodCI6IDEwODAKICB9LAogICJxdWFsaXR5IjogInN0YW5kYXJkIiwKICAiZmxlZXQiOiAzMDAsCiAgInNlZWQiOiAxMDQ3MjksCiAgInJlcXVlc3RlZFNwZWVkIjogMSwKICAid2FybXVwU2Vjb25kcyI6IDYwLAogICJzYW1wbGVTZWNvbmRzIjogMTIwLAogICJjb2xkSW50ZXJhY3RpdmVNcyI6IDE0MDYuODI0OCwKICAiY29sZE5ldHdvcmsiOiAiQ0RQIGNvbGQgY2FjaGUsIDEwIE1icHMgZG93bmxvYWQgLyAxMDAgbXMgbGF0ZW5jeTsgcHJvZHVjdGlvbiBWaXRlIHByZXZpZXcgc2VydmVzIHVuY29tcHJlc3NlZCBmaWxlcyIsCiAgImZyYW1lSW50ZXJ2YWxNcyI6IHsKICAgICJuIjogNzIwNCwKICAgICJwNTAiOiAxNi42OTk5OTk5OTk5OTcwOSwKICAgICJwOTUiOiAxNi43MDAwMDAwMDAwMTE2NCwKICAgICJwOTkiOiAxNi44MDAwMDAwMDAwMDI5MSwKICAgICJtYXgiOiAxNi44MDAwMDAwMDAwMTc0NjIKICB9LAogICJmcHMiOiB7CiAgICAibiI6IDcyMDQsCiAgICAicDUwIjogNTkuODgwMjM5NTIwOTY4NTE2LAogICAgInA5NSI6IDYwLjI0MDk2Mzg1NTQ1MzM3LAogICAgInA5OSI6IDYwLjI0MDk2Mzg1NTUwNjE4LAogICAgIm1heCI6IDYwLjYwNjA2MDYwNjA2MDYxCiAgfSwKICAibWlzc2VkRnJhbWVzT3ZlcjIwTXMiOiAwLAogICJyZW5kZXJMb29wV29ya01zIjogewogICAgIm4iOiA3MjA0LAogICAgInA1MCI6IDAuODAwMDAwMDExOTIwOTI5LAogICAgInA5NSI6IDEuNDAwMDAwMDM1NzYyNzg2OSwKICAgICJwOTkiOiAxLjY5OTk5OTk4ODA3OTA3MSwKICAgICJtYXgiOiAyLjUKICB9LAogICJmcmFtZUxvbmdUYXNrcyI6IFtdLAogICJvcmRpbmFyeUludGVyYWN0aW9uTG9uZ1Rhc2tzIjogW10sCiAgInNlbGVjdGlvbkZlZWRiYWNrTXMiOiB7CiAgICAibiI6IDMwLAogICAgInA1MCI6IDI5LjYwMDAwMDAyMzg0MTg1OCwKICAgICJwOTUiOiA0My4xMDAwMDAwMjM4NDE4NiwKICAgICJwOTkiOiA0NC45MDAwMDAwMzU3NjI3OSwKICAgICJtYXgiOiA0NC45MDAwMDAwMzU3NjI3OQogIH0sCiAgImNvbW1hbmRBY2tNcyI6IHsKICAgICJuIjogMzAsCiAgICAicDUwIjogMC41LAogICAgInA5NSI6IDMuNjk5OTk5OTg4MDc5MDcxLAogICAgInA5OSI6IDQuMTAwMDAwMDIzODQxODU4LAogICAgIm1heCI6IDQuMTAwMDAwMDIzODQxODU4CiAgfSwKICAibWF4U25hcHNob3RCeXRlcyI6IDYyMTEsCiAgInNuYXBzaG90c0R1cmluZ0ZyYW1lU2FtcGxlIjogNjAwLAogICJwZWFrSW5OZXR3b3JrIjogMjU4LAogICJjYXVzYWxPYnNlcnZhdGlvbiI6IHsKICAgICJmaW5hbFRpY2siOiAxODcxLAogICAgImZpbmFsSGFzaCI6ICI0MWMxNTM0NDJjMDhmNDEzYWRiYzkyZDgzOWVkY2Y3ODgxYTQyMGJkZjA0ZDg2NzYxNGYzYjk5MTdlODdmMGI5IiwKICAgICJldmVudERpZ2VzdCI6ICJjZDk3NTI3YTY3OWRmOWVlNjIzMGNmNzQ3MzJmZWI4NTUwN2Q5NTlhY2VkMzZiY2E5YTJjY2JjYjI3Y2Y2YzRjIiwKICAgICJjb21tYW5kcyI6IDMwLAogICAgImFwcGxpZWRDbG9zdXJlcyI6IDE1LAogICAgInJlb3BlbmluZ3MiOiAxNSwKICAgICJyZXJvdXRlcyI6IDM5OSwKICAgICJkcmFpbmluZ0V4Y2VwdGlvbnMiOiAxMzUsCiAgICAicm91dGVCbG9ja2VkRXZlbnRzIjogMCwKICAgICJzYWZldHlEaWFnbm9zdGljcyI6IFtdLAogICAgImluTmV0d29yayI6IDI1OCwKICAgICJzb3VyY2VRdWV1ZWQiOiA0MSwKICAgICJjb21wbGV0ZWQiOiA1NywKICAgICJ1bmZpbmlzaGVkIjogNTQzCiAgfSwKICAicmVuZGVyIjogewogICAgImNhbGxzIjogMjUsCiAgICAidHJpYW5nbGVzIjogOTQwNjIsCiAgICAiZ2VvbWV0cmllcyI6IDIxLAogICAgInRleHR1cmVzIjogMwogIH0sCiAgImhlYXAiOiB7CiAgICAiaXNvbGF0ZXMiOiBbCiAgICAgIDEyMTU4NDM2LAogICAgICAyMTAyNjI0OAogICAgXSwKICAgICJ0b3RhbEJ5dGVzIjogMzMxODQ2ODQsCiAgICAidGFyZ2V0cyI6IFsKICAgICAgewogICAgICAgICJ0eXBlIjogIndvcmtlciIsCiAgICAgICAgInVybCI6ICJodHRwOi8vMTI3LjAuMC4xOjQxNzMvYXNzZXRzL3NpbXVsYXRpb24ud29ya2VyLUNyNGxKQmFyLmpzIiwKICAgICAgICAidXNlZFNpemUiOiAxMjE1ODQzNgogICAgICB9LAogICAgICB7CiAgICAgICAgInR5cGUiOiAicGFnZSIsCiAgICAgICAgInVybCI6ICJodHRwOi8vMTI3LjAuMC4xOjQxNzMvIiwKICAgICAgICAidXNlZFNpemUiOiAyMTAyNjI0OAogICAgICB9CiAgICBdLAogICAgIm5vdGUiOiAiUGFnZSBhbmQgd29ya2VyIHNhbXBsZWQgYWZ0ZXIgZXhwbGljaXQgR0MuIE5vdCBtYWluLXRocmVhZC1vbmx5LiIKICB9LAogICJncHVBbGxvY2F0aW9uRXN0aW1hdGVCeXRlcyI6IDU2MDY1NTM2LAogICJncHVFc3RpbWF0ZU5vdGUiOiAiRnJhbWVidWZmZXIvY29sb3IvZGVwdGggYXBwcm94aW1hdGlvbiwgc2hhZG93IGNvbG9yK2RlcHRoLCA0IE1pQiBjb25zZXJ2YXRpdmUgZ2VvbWV0cnkgYWxsb3dhbmNlLiBOb3QgYSBtZWFzdXJlZCBHUFUgYWxsb2NhdGlvbi4iLAogICJncHVUaW1pbmciOiAiVW5hdmFpbGFibGUiLAogICJhc3NldHMiOiBbCiAgICB7CiAgICAgICJuYW1lIjogIkNpdHlTY2VuZS1CUUk4a3VPTC5qcyIsCiAgICAgICJyYXciOiA5NDc1OTAsCiAgICAgICJnemlwIjogMjQ5MTA4CiAgICB9LAogICAgewogICAgICAibmFtZSI6ICJpbmRleC1CMXI4b0tpcC5qcyIsCiAgICAgICJyYXciOiAyNDYzNTIsCiAgICAgICJnemlwIjogNzY3MDYKICAgIH0sCiAgICB7CiAgICAgICJuYW1lIjogImluZGV4LURyOWNQb201LmNzcyIsCiAgICAgICJyYXciOiAyMDY5MSwKICAgICAgImd6aXAiOiA1NDcxCiAgICB9LAogICAgewogICAgICAibmFtZSI6ICJqc3gtcnVudGltZS1DMEJBUFoycS5qcyIsCiAgICAgICJyYXciOiAxODUyMCwKICAgICAgImd6aXAiOiA3MjQ1CiAgICB9LAogICAgewogICAgICAibmFtZSI6ICJwcm9iZS53b3JrZXIteTBZVExGWW0uanMiLAogICAgICAicmF3IjogMTEzNDk5LAogICAgICAiZ3ppcCI6IDMxNDY5CiAgICB9LAogICAgewogICAgICAibmFtZSI6ICJzaW11bGF0aW9uLWNsaWVudC1Eam15QW9fUy5qcyIsCiAgICAgICJyYXciOiAxMTE4NzgsCiAgICAgICJnemlwIjogMzI1MTYKICAgIH0sCiAgICB7CiAgICAgICJuYW1lIjogInNpbXVsYXRpb24ud29ya2VyLUNyNGxKQmFyLmpzIiwKICAgICAgInJhdyI6IDE2NzIwMywKICAgICAgImd6aXAiOiA0NzQwNwogICAgfSwKICAgIHsKICAgICAgIm5hbWUiOiAic2ltdWxhdGlvbkNsaWVudC1Da0FUdGdmdC5qcyIsCiAgICAgICJyYXciOiA5NSwKICAgICAgImd6aXAiOiA4OAogICAgfQogIF0sCiAgInNlbGVjdGVkSW5wdXRzR3ppcEJ5dGVzIjogNDU3NjkKfQ=="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "172a30a27ddd7e9a6a36-8113b8acf61c135ba320",
+          "file": "render-performance.spec.ts",
+          "line": 39,
+          "column": 5
+        },
+        {
+          "title": "render measurement standard 4x",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 195808,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "Hardware sample standard 4x: 60 s warm-up started.\n"
+                    },
+                    {
+                      "text": "Hardware sample standard 4x: 120 s frame measurement started.\n"
+                    },
+                    {
+                      "text": "Hardware sample standard 4x: 30 / 120 s sampled.\n"
+                    },
+                    {
+                      "text": "Hardware sample standard 4x: 60 / 120 s sampled.\n"
+                    },
+                    {
+                      "text": "Hardware sample standard 4x: 90 / 120 s sampled.\n"
+                    },
+                    {
+                      "text": "Hardware sample standard 4x: 120 / 120 s sampled.\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T15:05:40.467Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "render-performance",
+                      "contentType": "application/json",
+                      "body": "ewogICJkYXRlIjogIjIwMjYtMTAtMjhUMTU6MDg6NTUuODk2WiIsCiAgImNvbW1pdEJlZm9yZUNoYW5nZXMiOiAiYTA5OTVlNDc5NjAzNjk0ZDdiMTBmNmEwN2ZhN2JmZjUwOTZhNmY3NyIsCiAgImhhcmR3YXJlIjogewogICAgImNwdSI6ICIxM3RoIEdlbiBJbnRlbChSKSBDb3JlKFRNKSBpNS0xMzM1VSIsCiAgICAibWVtb3J5IjogMTY4NDkyNTY0NDgsCiAgICAib3MiOiAiMTAuMC4yNjIwMCIsCiAgICAicG93ZXIiOiAiUG93ZXIgU2NoZW1lIEdVSUQ6IDM4MWI0MjIyLWY2OTQtNDFmMC05Njg1LWZmNWJiMjYwZGYyZSAgKEJhbGFuY2VkKSIKICB9LAogICJicm93c2VyIjogewogICAgIm5hbWUiOiAiY2hyb21pdW0iLAogICAgInZlcnNpb24iOiAiMTU2LjAuODA3OC40IiwKICAgICJyZW5kZXJlciI6ICJBTkdMRSAoSW50ZWwsIEludGVsKFIpIElyaXMoUikgWGUgR3JhcGhpY3MgKDB4MDAwMEE3QTEpIERpcmVjdDNEMTEgdnNfNV8wIHBzXzVfMCwgRDNEMTEpIiwKICAgICJkcHIiOiAxLAogICAgImJhY2tpbmdXaWR0aCI6IDE5MjAsCiAgICAiYmFja2luZ0hlaWdodCI6IDc5NSwKICAgICJ1YSI6ICJNb3ppbGxhLzUuMCAoV2luZG93cyBOVCAxMC4wOyBXaW42NDsgeDY0KSBBcHBsZVdlYktpdC81MzcuMzYgKEtIVE1MLCBsaWtlIEdlY2tvKSBDaHJvbWUvMTU2LjAuODA3OC40IFNhZmFyaS81MzcuMzYiCiAgfSwKICAidmlld3BvcnQiOiB7CiAgICAid2lkdGgiOiAxOTIwLAogICAgImhlaWdodCI6IDEwODAKICB9LAogICJxdWFsaXR5IjogInN0YW5kYXJkIiwKICAiZmxlZXQiOiAzMDAsCiAgInNlZWQiOiAxMDQ3MjksCiAgInJlcXVlc3RlZFNwZWVkIjogNCwKICAid2FybXVwU2Vjb25kcyI6IDYwLAogICJzYW1wbGVTZWNvbmRzIjogMTIwLAogICJjb2xkSW50ZXJhY3RpdmVNcyI6IDEzMjUuMzg2NDk5OTk5OTkzMiwKICAiY29sZE5ldHdvcmsiOiAiQ0RQIGNvbGQgY2FjaGUsIDEwIE1icHMgZG93bmxvYWQgLyAxMDAgbXMgbGF0ZW5jeTsgcHJvZHVjdGlvbiBWaXRlIHByZXZpZXcgc2VydmVzIHVuY29tcHJlc3NlZCBmaWxlcyIsCiAgImZyYW1lSW50ZXJ2YWxNcyI6IHsKICAgICJuIjogNzIwNSwKICAgICJwNTAiOiAxNi42OTk5OTk5OTk5OTcwOSwKICAgICJwOTUiOiAxNi43MDAwMDAwMDAwMTE2NCwKICAgICJwOTkiOiAxNi44MDAwMDAwMDAwMDI5MSwKICAgICJtYXgiOiAxNi44MDAwMDAwMDAwMTc0NjIKICB9LAogICJmcHMiOiB7CiAgICAibiI6IDcyMDUsCiAgICAicDUwIjogNTkuODgwMjM5NTIwOTY4NTE2LAogICAgInA5NSI6IDYwLjI0MDk2Mzg1NTQ1MzM3LAogICAgInA5OSI6IDYwLjI0MDk2Mzg1NTUwNjE4LAogICAgIm1heCI6IDYwLjYwNjA2MDYwNjA2MDYxCiAgfSwKICAibWlzc2VkRnJhbWVzT3ZlcjIwTXMiOiAwLAogICJyZW5kZXJMb29wV29ya01zIjogewogICAgIm4iOiA3MjA1LAogICAgInA1MCI6IDAuODAwMDAwMDExOTIwOTI5LAogICAgInA5NSI6IDEuMzk5OTk5OTc2MTU4MTQyLAogICAgInA5OSI6IDEuNjk5OTk5OTg4MDc5MDcxLAogICAgIm1heCI6IDMuNjAwMDAwMDIzODQxODU4CiAgfSwKICAiZnJhbWVMb25nVGFza3MiOiBbXSwKICAib3JkaW5hcnlJbnRlcmFjdGlvbkxvbmdUYXNrcyI6IFtdLAogICJzZWxlY3Rpb25GZWVkYmFja01zIjogewogICAgIm4iOiAzMCwKICAgICJwNTAiOiAzMSwKICAgICJwOTUiOiAzMy45MDAwMDAwMzU3NjI3OSwKICAgICJwOTkiOiAzNC4zMDAwMDAwMTE5MjA5MywKICAgICJtYXgiOiAzNC4zMDAwMDAwMTE5MjA5MwogIH0sCiAgImNvbW1hbmRBY2tNcyI6IHsKICAgICJuIjogMzAsCiAgICAicDUwIjogMSwKICAgICJwOTUiOiA1LjUsCiAgICAicDk5IjogMTAuMTk5OTk5OTg4MDc5MDcxLAogICAgIm1heCI6IDEwLjE5OTk5OTk4ODA3OTA3MQogIH0sCiAgIm1heFNuYXBzaG90Qnl0ZXMiOiA2Mjc3LAogICJzbmFwc2hvdHNEdXJpbmdGcmFtZVNhbXBsZSI6IDE1NDAsCiAgInBlYWtJbk5ldHdvcmsiOiAyNzgsCiAgImNhdXNhbE9ic2VydmF0aW9uIjogewogICAgImZpbmFsVGljayI6IDcyNzgsCiAgICAiZmluYWxIYXNoIjogImVjNDY0YWRiOWIwY2ExNjQ3ZTg1OTEwZTU4YTc2NTg4MWZhMmM4OGNiN2UzNThlNmVjMzE4NjBiMzEyZjI1MmEiLAogICAgImV2ZW50RGlnZXN0IjogIjZmYjYxNzE2YThkYTQxYjIyNGUwZjIwMDMxODY5ODZlY2QzZGM0ZTBjNDk5OGNhMzE5NzYxYjRiNjY1ZjlhMDkiLAogICAgImNvbW1hbmRzIjogMzAsCiAgICAiYXBwbGllZENsb3N1cmVzIjogMTUsCiAgICAicmVvcGVuaW5ncyI6IDE1LAogICAgInJlcm91dGVzIjogNTg3LAogICAgImRyYWluaW5nRXhjZXB0aW9ucyI6IDEwNSwKICAgICJyb3V0ZUJsb2NrZWRFdmVudHMiOiAwLAogICAgInNhZmV0eURpYWdub3N0aWNzIjogW10sCiAgICAiaW5OZXR3b3JrIjogMjc2LAogICAgInNvdXJjZVF1ZXVlZCI6IDI0LAogICAgImNvbXBsZXRlZCI6IDI0OSwKICAgICJ1bmZpbmlzaGVkIjogMTU4MAogIH0sCiAgInJlbmRlciI6IHsKICAgICJjYWxscyI6IDI1LAogICAgInRyaWFuZ2xlcyI6IDk0NTY2LAogICAgImdlb21ldHJpZXMiOiAyMSwKICAgICJ0ZXh0dXJlcyI6IDMKICB9LAogICJoZWFwIjogewogICAgImlzb2xhdGVzIjogWwogICAgICAzMzc3NzI4OCwKICAgICAgMzk0Nzk2MjgKICAgIF0sCiAgICAidG90YWxCeXRlcyI6IDczMjU2OTE2LAogICAgInRhcmdldHMiOiBbCiAgICAgIHsKICAgICAgICAidHlwZSI6ICJ3b3JrZXIiLAogICAgICAgICJ1cmwiOiAiaHR0cDovLzEyNy4wLjAuMTo0MTczL2Fzc2V0cy9zaW11bGF0aW9uLndvcmtlci1DcjRsSkJhci5qcyIsCiAgICAgICAgInVzZWRTaXplIjogMzM3NzcyODgKICAgICAgfSwKICAgICAgewogICAgICAgICJ0eXBlIjogInBhZ2UiLAogICAgICAgICJ1cmwiOiAiaHR0cDovLzEyNy4wLjAuMTo0MTczLyIsCiAgICAgICAgInVzZWRTaXplIjogMzk0Nzk2MjgKICAgICAgfQogICAgXSwKICAgICJub3RlIjogIlBhZ2UgYW5kIHdvcmtlciBzYW1wbGVkIGFmdGVyIGV4cGxpY2l0IEdDLiBOb3QgbWFpbi10aHJlYWQtb25seS4iCiAgfSwKICAiZ3B1QWxsb2NhdGlvbkVzdGltYXRlQnl0ZXMiOiA1NjA2NTUzNiwKICAiZ3B1RXN0aW1hdGVOb3RlIjogIkZyYW1lYnVmZmVyL2NvbG9yL2RlcHRoIGFwcHJveGltYXRpb24sIHNoYWRvdyBjb2xvcitkZXB0aCwgNCBNaUIgY29uc2VydmF0aXZlIGdlb21ldHJ5IGFsbG93YW5jZS4gTm90IGEgbWVhc3VyZWQgR1BVIGFsbG9jYXRpb24uIiwKICAiZ3B1VGltaW5nIjogIlVuYXZhaWxhYmxlIiwKICAiYXNzZXRzIjogWwogICAgewogICAgICAibmFtZSI6ICJDaXR5U2NlbmUtQlFJOGt1T0wuanMiLAogICAgICAicmF3IjogOTQ3NTkwLAogICAgICAiZ3ppcCI6IDI0OTEwOAogICAgfSwKICAgIHsKICAgICAgIm5hbWUiOiAiaW5kZXgtQjFyOG9LaXAuanMiLAogICAgICAicmF3IjogMjQ2MzUyLAogICAgICAiZ3ppcCI6IDc2NzA2CiAgICB9LAogICAgewogICAgICAibmFtZSI6ICJpbmRleC1EcjljUG9tNS5jc3MiLAogICAgICAicmF3IjogMjA2OTEsCiAgICAgICJnemlwIjogNTQ3MQogICAgfSwKICAgIHsKICAgICAgIm5hbWUiOiAianN4LXJ1bnRpbWUtQzBCQVBaMnEuanMiLAogICAgICAicmF3IjogMTg1MjAsCiAgICAgICJnemlwIjogNzI0NQogICAgfSwKICAgIHsKICAgICAgIm5hbWUiOiAicHJvYmUud29ya2VyLXkwWVRMRlltLmpzIiwKICAgICAgInJhdyI6IDExMzQ5OSwKICAgICAgImd6aXAiOiAzMTQ2OQogICAgfSwKICAgIHsKICAgICAgIm5hbWUiOiAic2ltdWxhdGlvbi1jbGllbnQtRGpteUFvX1MuanMiLAogICAgICAicmF3IjogMTExODc4LAogICAgICAiZ3ppcCI6IDMyNTE2CiAgICB9LAogICAgewogICAgICAibmFtZSI6ICJzaW11bGF0aW9uLndvcmtlci1DcjRsSkJhci5qcyIsCiAgICAgICJyYXciOiAxNjcyMDMsCiAgICAgICJnemlwIjogNDc0MDcKICAgIH0sCiAgICB7CiAgICAgICJuYW1lIjogInNpbXVsYXRpb25DbGllbnQtQ2tBVHRnZnQuanMiLAogICAgICAicmF3IjogOTUsCiAgICAgICJnemlwIjogODgKICAgIH0KICBdLAogICJzZWxlY3RlZElucHV0c0d6aXBCeXRlcyI6IDQ1NzY5Cn0="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "172a30a27ddd7e9a6a36-f12111a306a71698bb14",
+          "file": "render-performance.spec.ts",
+          "line": 39,
+          "column": 5
+        },
+        {
+          "title": "render measurement reduced 1x",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 197872,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "Hardware sample reduced 1x: 60 s warm-up started.\n"
+                    },
+                    {
+                      "text": "Hardware sample reduced 1x: 120 s frame measurement started.\n"
+                    },
+                    {
+                      "text": "Hardware sample reduced 1x: 30 / 120 s sampled.\n"
+                    },
+                    {
+                      "text": "Hardware sample reduced 1x: 60 / 120 s sampled.\n"
+                    },
+                    {
+                      "text": "Hardware sample reduced 1x: 90 / 120 s sampled.\n"
+                    },
+                    {
+                      "text": "Hardware sample reduced 1x: 120 / 120 s sampled.\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T15:08:56.294Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "render-performance",
+                      "contentType": "application/json",
+                      "body": "ewogICJkYXRlIjogIjIwMjYtMTAtMjhUMTU6MTI6MTMuOTExWiIsCiAgImNvbW1pdEJlZm9yZUNoYW5nZXMiOiAiYTA5OTVlNDc5NjAzNjk0ZDdiMTBmNmEwN2ZhN2JmZjUwOTZhNmY3NyIsCiAgImhhcmR3YXJlIjogewogICAgImNwdSI6ICIxM3RoIEdlbiBJbnRlbChSKSBDb3JlKFRNKSBpNS0xMzM1VSIsCiAgICAibWVtb3J5IjogMTY4NDkyNTY0NDgsCiAgICAib3MiOiAiMTAuMC4yNjIwMCIsCiAgICAicG93ZXIiOiAiUG93ZXIgU2NoZW1lIEdVSUQ6IDM4MWI0MjIyLWY2OTQtNDFmMC05Njg1LWZmNWJiMjYwZGYyZSAgKEJhbGFuY2VkKSIKICB9LAogICJicm93c2VyIjogewogICAgIm5hbWUiOiAiY2hyb21pdW0iLAogICAgInZlcnNpb24iOiAiMTU2LjAuODA3OC40IiwKICAgICJyZW5kZXJlciI6ICJBTkdMRSAoSW50ZWwsIEludGVsKFIpIElyaXMoUikgWGUgR3JhcGhpY3MgKDB4MDAwMEE3QTEpIERpcmVjdDNEMTEgdnNfNV8wIHBzXzVfMCwgRDNEMTEpIiwKICAgICJkcHIiOiAxLAogICAgImJhY2tpbmdXaWR0aCI6IDEyODAsCiAgICAiYmFja2luZ0hlaWdodCI6IDQ1NCwKICAgICJ1YSI6ICJNb3ppbGxhLzUuMCAoV2luZG93cyBOVCAxMC4wOyBXaW42NDsgeDY0KSBBcHBsZVdlYktpdC81MzcuMzYgKEtIVE1MLCBsaWtlIEdlY2tvKSBDaHJvbWUvMTU2LjAuODA3OC40IFNhZmFyaS81MzcuMzYiCiAgfSwKICAidmlld3BvcnQiOiB7CiAgICAid2lkdGgiOiAxMjgwLAogICAgImhlaWdodCI6IDcyMAogIH0sCiAgInF1YWxpdHkiOiAicmVkdWNlZCIsCiAgImZsZWV0IjogMzAwLAogICJzZWVkIjogMTA0NzI5LAogICJyZXF1ZXN0ZWRTcGVlZCI6IDEsCiAgIndhcm11cFNlY29uZHMiOiA2MCwKICAic2FtcGxlU2Vjb25kcyI6IDEyMCwKICAiY29sZEludGVyYWN0aXZlTXMiOiAxMzA0Ljk0MzgwMDAwMDAwODIsCiAgImNvbGROZXR3b3JrIjogIkNEUCBjb2xkIGNhY2hlLCAxMCBNYnBzIGRvd25sb2FkIC8gMTAwIG1zIGxhdGVuY3k7IHByb2R1Y3Rpb24gVml0ZSBwcmV2aWV3IHNlcnZlcyB1bmNvbXByZXNzZWQgZmlsZXMiLAogICJmcmFtZUludGVydmFsTXMiOiB7CiAgICAibiI6IDcyMDUsCiAgICAicDUwIjogMTYuNjk5OTk5OTk5OTk3MDksCiAgICAicDk1IjogMTYuNzk5OTk5OTk5OTg4MzYsCiAgICAicDk5IjogMTYuODAwMDAwMDAwMDAyOTEsCiAgICAibWF4IjogMTYuODAwMDAwMDAwMDE3NDYyCiAgfSwKICAiZnBzIjogewogICAgIm4iOiA3MjA1LAogICAgInA1MCI6IDU5Ljg4MDIzOTUyMDk2ODUxNiwKICAgICJwOTUiOiA2MC4yNDA5NjM4NTU0NTMzNywKICAgICJwOTkiOiA2MC4yNDA5NjM4NTU1MDYxOCwKICAgICJtYXgiOiA2MC42MDYwNjA2MDYwNjA2MQogIH0sCiAgIm1pc3NlZEZyYW1lc092ZXIyME1zIjogMCwKICAicmVuZGVyTG9vcFdvcmtNcyI6IHsKICAgICJuIjogNzIwNSwKICAgICJwNTAiOiAwLjYwMDAwMDAyMzg0MTg1NzksCiAgICAicDk1IjogMS4wOTk5OTk5NjQyMzcyMTMxLAogICAgInA5OSI6IDEuMzAwMDAwMDExOTIwOTI5LAogICAgIm1heCI6IDUKICB9LAogICJmcmFtZUxvbmdUYXNrcyI6IFtdLAogICJvcmRpbmFyeUludGVyYWN0aW9uTG9uZ1Rhc2tzIjogW10sCiAgInNlbGVjdGlvbkZlZWRiYWNrTXMiOiB7CiAgICAibiI6IDMwLAogICAgInA1MCI6IDI0LjUsCiAgICAicDk1IjogMzIuODAwMDAwMDExOTIwOTMsCiAgICAicDk5IjogNDIuMzk5OTk5OTc2MTU4MTQsCiAgICAibWF4IjogNDIuMzk5OTk5OTc2MTU4MTQKICB9LAogICJjb21tYW5kQWNrTXMiOiB7CiAgICAibiI6IDMwLAogICAgInA1MCI6IDAuMzAwMDAwMDExOTIwOTI4OTYsCiAgICAicDk1IjogNC40MDAwMDAwMzU3NjI3ODcsCiAgICAicDk5IjogNi41OTk5OTk5NjQyMzcyMTMsCiAgICAibWF4IjogNi41OTk5OTk5NjQyMzcyMTMKICB9LAogICJtYXhTbmFwc2hvdEJ5dGVzIjogNjIzMiwKICAic25hcHNob3RzRHVyaW5nRnJhbWVTYW1wbGUiOiA2MDAsCiAgInBlYWtJbk5ldHdvcmsiOiAyNTksCiAgImNhdXNhbE9ic2VydmF0aW9uIjogewogICAgImZpbmFsVGljayI6IDE5MDksCiAgICAiZmluYWxIYXNoIjogImUwYWFjZmYwZjNhNjgxYWM5OTdkOGViZjBiMzVmNWY4NTEwZjU5ZDg3ODFkNDljMDU2OTQ3NjVlNGI0YTMwZTYiLAogICAgImV2ZW50RGlnZXN0IjogImYzY2FhMzQ5ZGI4MDE5ODZjNzc5YzRhMWQwMjIxNDM0MDk5Y2YxM2JjMTA2MzA3MDBkOWVjOTY3MTVhMDlmNzciLAogICAgImNvbW1hbmRzIjogMzAsCiAgICAiYXBwbGllZENsb3N1cmVzIjogMTUsCiAgICAicmVvcGVuaW5ncyI6IDE1LAogICAgInJlcm91dGVzIjogNDAxLAogICAgImRyYWluaW5nRXhjZXB0aW9ucyI6IDEzMywKICAgICJyb3V0ZUJsb2NrZWRFdmVudHMiOiAwLAogICAgInNhZmV0eURpYWdub3N0aWNzIjogW10sCiAgICAiaW5OZXR3b3JrIjogMjU5LAogICAgInNvdXJjZVF1ZXVlZCI6IDQwLAogICAgImNvbXBsZXRlZCI6IDU5LAogICAgInVuZmluaXNoZWQiOiA1NDEKICB9LAogICJyZW5kZXIiOiB7CiAgICAiY2FsbHMiOiAxOSwKICAgICJ0cmlhbmdsZXMiOiAzMjQ4NiwKICAgICJnZW9tZXRyaWVzIjogMjAsCiAgICAidGV4dHVyZXMiOiAzCiAgfSwKICAiaGVhcCI6IHsKICAgICJpc29sYXRlcyI6IFsKICAgICAgMTI0Mjg2NDAsCiAgICAgIDIxNDU0MjAwCiAgICBdLAogICAgInRvdGFsQnl0ZXMiOiAzMzg4Mjg0MCwKICAgICJ0YXJnZXRzIjogWwogICAgICB7CiAgICAgICAgInR5cGUiOiAid29ya2VyIiwKICAgICAgICAidXJsIjogImh0dHA6Ly8xMjcuMC4wLjE6NDE3My9hc3NldHMvc2ltdWxhdGlvbi53b3JrZXItQ3I0bEpCYXIuanMiLAogICAgICAgICJ1c2VkU2l6ZSI6IDEyNDI4NjQwCiAgICAgIH0sCiAgICAgIHsKICAgICAgICAidHlwZSI6ICJwYWdlIiwKICAgICAgICAidXJsIjogImh0dHA6Ly8xMjcuMC4wLjE6NDE3My8iLAogICAgICAgICJ1c2VkU2l6ZSI6IDIxNDU0MjAwCiAgICAgIH0KICAgIF0sCiAgICAibm90ZSI6ICJQYWdlIGFuZCB3b3JrZXIgc2FtcGxlZCBhZnRlciBleHBsaWNpdCBHQy4gTm90IG1haW4tdGhyZWFkLW9ubHkuIgogIH0sCiAgImdwdUFsbG9jYXRpb25Fc3RpbWF0ZUJ5dGVzIjogMTExNjc3NDQsCiAgImdwdUVzdGltYXRlTm90ZSI6ICJGcmFtZWJ1ZmZlci9jb2xvci9kZXB0aCBhcHByb3hpbWF0aW9uLCBzaGFkb3cgY29sb3IrZGVwdGgsIDQgTWlCIGNvbnNlcnZhdGl2ZSBnZW9tZXRyeSBhbGxvd2FuY2UuIE5vdCBhIG1lYXN1cmVkIEdQVSBhbGxvY2F0aW9uLiIsCiAgImdwdVRpbWluZyI6ICJVbmF2YWlsYWJsZSIsCiAgImFzc2V0cyI6IFsKICAgIHsKICAgICAgIm5hbWUiOiAiQ2l0eVNjZW5lLUJRSThrdU9MLmpzIiwKICAgICAgInJhdyI6IDk0NzU5MCwKICAgICAgImd6aXAiOiAyNDkxMDgKICAgIH0sCiAgICB7CiAgICAgICJuYW1lIjogImluZGV4LUIxcjhvS2lwLmpzIiwKICAgICAgInJhdyI6IDI0NjM1MiwKICAgICAgImd6aXAiOiA3NjcwNgogICAgfSwKICAgIHsKICAgICAgIm5hbWUiOiAiaW5kZXgtRHI5Y1BvbTUuY3NzIiwKICAgICAgInJhdyI6IDIwNjkxLAogICAgICAiZ3ppcCI6IDU0NzEKICAgIH0sCiAgICB7CiAgICAgICJuYW1lIjogImpzeC1ydW50aW1lLUMwQkFQWjJxLmpzIiwKICAgICAgInJhdyI6IDE4NTIwLAogICAgICAiZ3ppcCI6IDcyNDUKICAgIH0sCiAgICB7CiAgICAgICJuYW1lIjogInByb2JlLndvcmtlci15MFlUTEZZbS5qcyIsCiAgICAgICJyYXciOiAxMTM0OTksCiAgICAgICJnemlwIjogMzE0NjkKICAgIH0sCiAgICB7CiAgICAgICJuYW1lIjogInNpbXVsYXRpb24tY2xpZW50LURqbXlBb19TLmpzIiwKICAgICAgInJhdyI6IDExMTg3OCwKICAgICAgImd6aXAiOiAzMjUxNgogICAgfSwKICAgIHsKICAgICAgIm5hbWUiOiAic2ltdWxhdGlvbi53b3JrZXItQ3I0bEpCYXIuanMiLAogICAgICAicmF3IjogMTY3MjAzLAogICAgICAiZ3ppcCI6IDQ3NDA3CiAgICB9LAogICAgewogICAgICAibmFtZSI6ICJzaW11bGF0aW9uQ2xpZW50LUNrQVR0Z2Z0LmpzIiwKICAgICAgInJhdyI6IDk1LAogICAgICAiZ3ppcCI6IDg4CiAgICB9CiAgXSwKICAic2VsZWN0ZWRJbnB1dHNHemlwQnl0ZXMiOiA0NTc2OQp9"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "172a30a27ddd7e9a6a36-ef69b636f71103b51c09",
+          "file": "render-performance.spec.ts",
+          "line": 39,
+          "column": 5
+        },
+        {
+          "title": "render measurement reduced 4x",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 196880,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "Hardware sample reduced 4x: 60 s warm-up started.\n"
+                    },
+                    {
+                      "text": "Hardware sample reduced 4x: 120 s frame measurement started.\n"
+                    },
+                    {
+                      "text": "Hardware sample reduced 4x: 30 / 120 s sampled.\n"
+                    },
+                    {
+                      "text": "Hardware sample reduced 4x: 60 / 120 s sampled.\n"
+                    },
+                    {
+                      "text": "Hardware sample reduced 4x: 90 / 120 s sampled.\n"
+                    },
+                    {
+                      "text": "Hardware sample reduced 4x: 120 / 120 s sampled.\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T15:12:14.185Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "render-performance",
+                      "contentType": "application/json",
+                      "body": "ewogICJkYXRlIjogIjIwMjYtMTAtMjhUMTU6MTU6MzAuODE0WiIsCiAgImNvbW1pdEJlZm9yZUNoYW5nZXMiOiAiYTA5OTVlNDc5NjAzNjk0ZDdiMTBmNmEwN2ZhN2JmZjUwOTZhNmY3NyIsCiAgImhhcmR3YXJlIjogewogICAgImNwdSI6ICIxM3RoIEdlbiBJbnRlbChSKSBDb3JlKFRNKSBpNS0xMzM1VSIsCiAgICAibWVtb3J5IjogMTY4NDkyNTY0NDgsCiAgICAib3MiOiAiMTAuMC4yNjIwMCIsCiAgICAicG93ZXIiOiAiUG93ZXIgU2NoZW1lIEdVSUQ6IDM4MWI0MjIyLWY2OTQtNDFmMC05Njg1LWZmNWJiMjYwZGYyZSAgKEJhbGFuY2VkKSIKICB9LAogICJicm93c2VyIjogewogICAgIm5hbWUiOiAiY2hyb21pdW0iLAogICAgInZlcnNpb24iOiAiMTU2LjAuODA3OC40IiwKICAgICJyZW5kZXJlciI6ICJBTkdMRSAoSW50ZWwsIEludGVsKFIpIElyaXMoUikgWGUgR3JhcGhpY3MgKDB4MDAwMEE3QTEpIERpcmVjdDNEMTEgdnNfNV8wIHBzXzVfMCwgRDNEMTEpIiwKICAgICJkcHIiOiAxLAogICAgImJhY2tpbmdXaWR0aCI6IDEyODAsCiAgICAiYmFja2luZ0hlaWdodCI6IDQ1NCwKICAgICJ1YSI6ICJNb3ppbGxhLzUuMCAoV2luZG93cyBOVCAxMC4wOyBXaW42NDsgeDY0KSBBcHBsZVdlYktpdC81MzcuMzYgKEtIVE1MLCBsaWtlIEdlY2tvKSBDaHJvbWUvMTU2LjAuODA3OC40IFNhZmFyaS81MzcuMzYiCiAgfSwKICAidmlld3BvcnQiOiB7CiAgICAid2lkdGgiOiAxMjgwLAogICAgImhlaWdodCI6IDcyMAogIH0sCiAgInF1YWxpdHkiOiAicmVkdWNlZCIsCiAgImZsZWV0IjogMzAwLAogICJzZWVkIjogMTA0NzI5LAogICJyZXF1ZXN0ZWRTcGVlZCI6IDQsCiAgIndhcm11cFNlY29uZHMiOiA2MCwKICAic2FtcGxlU2Vjb25kcyI6IDEyMCwKICAiY29sZEludGVyYWN0aXZlTXMiOiAxMzM3LjIzOTM5OTk5OTk2MjIsCiAgImNvbGROZXR3b3JrIjogIkNEUCBjb2xkIGNhY2hlLCAxMCBNYnBzIGRvd25sb2FkIC8gMTAwIG1zIGxhdGVuY3k7IHByb2R1Y3Rpb24gVml0ZSBwcmV2aWV3IHNlcnZlcyB1bmNvbXByZXNzZWQgZmlsZXMiLAogICJmcmFtZUludGVydmFsTXMiOiB7CiAgICAibiI6IDcyMDUsCiAgICAicDUwIjogMTYuNjk5OTk5OTk5OTk3MDksCiAgICAicDk1IjogMTYuNzAwMDAwMDAwMDExNjQsCiAgICAicDk5IjogMTYuODAwMDAwMDAwMDAyOTEsCiAgICAibWF4IjogMTYuODAwMDAwMDAwMDE3NDYyCiAgfSwKICAiZnBzIjogewogICAgIm4iOiA3MjA1LAogICAgInA1MCI6IDU5Ljg4MDIzOTUyMDk2ODUxNiwKICAgICJwOTUiOiA2MC4yNDA5NjM4NTU0NTMzNywKICAgICJwOTkiOiA2MC4yNDA5NjM4NTU1MDYxOCwKICAgICJtYXgiOiA2MC42MDYwNjA2MDYwNjA2MQogIH0sCiAgIm1pc3NlZEZyYW1lc092ZXIyME1zIjogMCwKICAicmVuZGVyTG9vcFdvcmtNcyI6IHsKICAgICJuIjogNzIwNSwKICAgICJwNTAiOiAwLjYwMDAwMDAyMzg0MTg1NzksCiAgICAicDk1IjogMS4wOTk5OTk5NjQyMzcyMTMxLAogICAgInA5OSI6IDEuMjk5OTk5OTUyMzE2Mjg0MiwKICAgICJtYXgiOiAyLjMwMDAwMDAxMTkyMDkyOQogIH0sCiAgImZyYW1lTG9uZ1Rhc2tzIjogW10sCiAgIm9yZGluYXJ5SW50ZXJhY3Rpb25Mb25nVGFza3MiOiBbXSwKICAic2VsZWN0aW9uRmVlZGJhY2tNcyI6IHsKICAgICJuIjogMzAsCiAgICAicDUwIjogMjYuMjAwMDAwMDQ3NjgzNzE2LAogICAgInA5NSI6IDI5LjUsCiAgICAicDk5IjogMzEuNjAwMDAwMDIzODQxODU4LAogICAgIm1heCI6IDMxLjYwMDAwMDAyMzg0MTg1OAogIH0sCiAgImNvbW1hbmRBY2tNcyI6IHsKICAgICJuIjogMzAsCiAgICAicDUwIjogMC40MDAwMDAwMzU3NjI3ODY4NywKICAgICJwOTUiOiAzLjE5OTk5OTk4ODA3OTA3MSwKICAgICJwOTkiOiA0LjUsCiAgICAibWF4IjogNC41CiAgfSwKICAibWF4U25hcHNob3RCeXRlcyI6IDYyODgsCiAgInNuYXBzaG90c0R1cmluZ0ZyYW1lU2FtcGxlIjogMTU2MCwKICAicGVha0luTmV0d29yayI6IDI3OCwKICAiY2F1c2FsT2JzZXJ2YXRpb24iOiB7CiAgICAiZmluYWxUaWNrIjogNzMwMSwKICAgICJmaW5hbEhhc2giOiAiNTA0OGM5MjNkYTZlMDIwNTkyOWQ2NjAzMzQwNWZhMDBlYWE4ZGQwZTc1Y2YzNmZjYmI0MDZjZDgzMGM3ZmEyYyIsCiAgICAiZXZlbnREaWdlc3QiOiAiOTc3ZWEyYzdiZmNmZmM1ZWQ0NzM2ZjU0NTRmMjczZDYyZjQzMzRlMzRkOTBhZGZmNDllMjNhOWYyMWEyNWI5YyIsCiAgICAiY29tbWFuZHMiOiAzMCwKICAgICJhcHBsaWVkQ2xvc3VyZXMiOiAxNSwKICAgICJyZW9wZW5pbmdzIjogMTUsCiAgICAicmVyb3V0ZXMiOiA1ODgsCiAgICAiZHJhaW5pbmdFeGNlcHRpb25zIjogMTA1LAogICAgInJvdXRlQmxvY2tlZEV2ZW50cyI6IDAsCiAgICAic2FmZXR5RGlhZ25vc3RpY3MiOiBbXSwKICAgICJpbk5ldHdvcmsiOiAyNzYsCiAgICAic291cmNlUXVldWVkIjogMjQsCiAgICAiY29tcGxldGVkIjogMjUwLAogICAgInVuZmluaXNoZWQiOiAxNTg5CiAgfSwKICAicmVuZGVyIjogewogICAgImNhbGxzIjogMTksCiAgICAidHJpYW5nbGVzIjogMzI5OTAsCiAgICAiZ2VvbWV0cmllcyI6IDIwLAogICAgInRleHR1cmVzIjogMwogIH0sCiAgImhlYXAiOiB7CiAgICAiaXNvbGF0ZXMiOiBbCiAgICAgIDM0MDU4OTgwLAogICAgICAzOTc4NTM1NgogICAgXSwKICAgICJ0b3RhbEJ5dGVzIjogNzM4NDQzMzYsCiAgICAidGFyZ2V0cyI6IFsKICAgICAgewogICAgICAgICJ0eXBlIjogIndvcmtlciIsCiAgICAgICAgInVybCI6ICJodHRwOi8vMTI3LjAuMC4xOjQxNzMvYXNzZXRzL3NpbXVsYXRpb24ud29ya2VyLUNyNGxKQmFyLmpzIiwKICAgICAgICAidXNlZFNpemUiOiAzNDA1ODk4MAogICAgICB9LAogICAgICB7CiAgICAgICAgInR5cGUiOiAicGFnZSIsCiAgICAgICAgInVybCI6ICJodHRwOi8vMTI3LjAuMC4xOjQxNzMvIiwKICAgICAgICAidXNlZFNpemUiOiAzOTc4NTM1NgogICAgICB9CiAgICBdLAogICAgIm5vdGUiOiAiUGFnZSBhbmQgd29ya2VyIHNhbXBsZWQgYWZ0ZXIgZXhwbGljaXQgR0MuIE5vdCBtYWluLXRocmVhZC1vbmx5LiIKICB9LAogICJncHVBbGxvY2F0aW9uRXN0aW1hdGVCeXRlcyI6IDExMTY3NzQ0LAogICJncHVFc3RpbWF0ZU5vdGUiOiAiRnJhbWVidWZmZXIvY29sb3IvZGVwdGggYXBwcm94aW1hdGlvbiwgc2hhZG93IGNvbG9yK2RlcHRoLCA0IE1pQiBjb25zZXJ2YXRpdmUgZ2VvbWV0cnkgYWxsb3dhbmNlLiBOb3QgYSBtZWFzdXJlZCBHUFUgYWxsb2NhdGlvbi4iLAogICJncHVUaW1pbmciOiAiVW5hdmFpbGFibGUiLAogICJhc3NldHMiOiBbCiAgICB7CiAgICAgICJuYW1lIjogIkNpdHlTY2VuZS1CUUk4a3VPTC5qcyIsCiAgICAgICJyYXciOiA5NDc1OTAsCiAgICAgICJnemlwIjogMjQ5MTA4CiAgICB9LAogICAgewogICAgICAibmFtZSI6ICJpbmRleC1CMXI4b0tpcC5qcyIsCiAgICAgICJyYXciOiAyNDYzNTIsCiAgICAgICJnemlwIjogNzY3MDYKICAgIH0sCiAgICB7CiAgICAgICJuYW1lIjogImluZGV4LURyOWNQb201LmNzcyIsCiAgICAgICJyYXciOiAyMDY5MSwKICAgICAgImd6aXAiOiA1NDcxCiAgICB9LAogICAgewogICAgICAibmFtZSI6ICJqc3gtcnVudGltZS1DMEJBUFoycS5qcyIsCiAgICAgICJyYXciOiAxODUyMCwKICAgICAgImd6aXAiOiA3MjQ1CiAgICB9LAogICAgewogICAgICAibmFtZSI6ICJwcm9iZS53b3JrZXIteTBZVExGWW0uanMiLAogICAgICAicmF3IjogMTEzNDk5LAogICAgICAiZ3ppcCI6IDMxNDY5CiAgICB9LAogICAgewogICAgICAibmFtZSI6ICJzaW11bGF0aW9uLWNsaWVudC1Eam15QW9fUy5qcyIsCiAgICAgICJyYXciOiAxMTE4NzgsCiAgICAgICJnemlwIjogMzI1MTYKICAgIH0sCiAgICB7CiAgICAgICJuYW1lIjogInNpbXVsYXRpb24ud29ya2VyLUNyNGxKQmFyLmpzIiwKICAgICAgInJhdyI6IDE2NzIwMywKICAgICAgImd6aXAiOiA0NzQwNwogICAgfSwKICAgIHsKICAgICAgIm5hbWUiOiAic2ltdWxhdGlvbkNsaWVudC1Da0FUdGdmdC5qcyIsCiAgICAgICJyYXciOiA5NSwKICAgICAgImd6aXAiOiA4OAogICAgfQogIF0sCiAgInNlbGVjdGVkSW5wdXRzR3ppcEJ5dGVzIjogNDU3NjkKfQ=="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "172a30a27ddd7e9a6a36-bfac12f0868903f8189a",
+          "file": "render-performance.spec.ts",
+          "line": 39,
+          "column": 5
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-28T15:02:22.731Z",
+    "duration": 790134.175,
+    "expected": 4,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

@@ -1,0 +1,239 @@
+{
+  "config": {
+    "argv": [
+      "C:\\Users\\shivl\\AppData\\Local\\Temp\\civitas-b01-toolchain\\node-v24.22.1-win-x64\\node.exe",
+      "C:\\Users\\shivl\\OneDrive\\Desktop\\CIVITAS\\node_modules\\@playwright\\test\\cli.js",
+      "test",
+      "tests/e2e/main-thread-trace.spec.ts",
+      "--project=chromium",
+      "--workers=1",
+      "--reporter=list,json"
+    ],
+    "configFile": "C:\\Users\\shivl\\OneDrive\\Desktop\\CIVITAS\\playwright.config.ts",
+    "rootDir": "C:/Users/shivl/OneDrive/Desktop/CIVITAS/tests/e2e",
+    "failOnFlakyTests": false,
+    "forbidOnly": true,
+    "fullyParallel": true,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "C:/Users/shivl/OneDrive/Desktop/CIVITAS/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "C:/Users/shivl/OneDrive/Desktop/CIVITAS/tests/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "C:/Users/shivl/OneDrive/Desktop/CIVITAS/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "C:/Users/shivl/OneDrive/Desktop/CIVITAS/tests/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "C:/Users/shivl/OneDrive/Desktop/CIVITAS/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "webkit",
+        "name": "webkit",
+        "testDir": "C:/Users/shivl/OneDrive/Desktop/CIVITAS/tests/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "C:\\Users\\shivl\\OneDrive\\Desktop\\CIVITAS\\test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "chromium",
+        "testDir": "C:\\Users\\shivl\\OneDrive\\Desktop\\CIVITAS\\tests\\e2e",
+        "snapshotDir": "C:\\Users\\shivl\\OneDrive\\Desktop\\CIVITAS\\tests\\e2e",
+        "testIgnore": [],
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 30000,
+        "use": {
+          "baseURL": "http://127.0.0.1:4173",
+          "trace": "retain-on-failure",
+          "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.8078.4 Safari/537.36",
+          "viewport": {
+            "width": 1280,
+            "height": 720
+          },
+          "screen": {
+            "width": 1920,
+            "height": 1080
+          },
+          "deviceScaleFactor": 1,
+          "isMobile": false,
+          "hasTouch": false,
+          "defaultBrowserType": "chromium",
+          "launchOptions": {
+            "args": [
+              "--use-angle=d3d11"
+            ]
+          }
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "chromium"
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list"
+      ],
+      [
+        "json"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.64.1",
+    "workers": 1,
+    "webServer": {
+      "command": "npm run preview",
+      "url": "http://127.0.0.1:4173",
+      "reuseExistingServer": false,
+      "timeout": 30000
+    }
+  },
+  "suites": [
+    {
+      "title": "main-thread-trace.spec.ts",
+      "file": "main-thread-trace.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "complete main-thread task attribution at 300 agents, Standard 1x and 4x",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 420000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 340389,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "Full main-thread trace: 60 s warm-up started.\n"
+                    },
+                    {
+                      "text": "Full main-thread trace: 1x 120 s sample started.\n"
+                    },
+                    {
+                      "text": "Full main-thread trace 1x: 30 / 120 s.\n"
+                    },
+                    {
+                      "text": "Full main-thread trace 1x: 60 / 120 s.\n"
+                    },
+                    {
+                      "text": "Full main-thread trace 1x: 90 / 120 s.\n"
+                    },
+                    {
+                      "text": "Full main-thread trace 1x: 120 / 120 s.\n"
+                    },
+                    {
+                      "text": "Full main-thread trace: 4x 120 s sample started.\n"
+                    },
+                    {
+                      "text": "Full main-thread trace 4x: 30 / 120 s.\n"
+                    },
+                    {
+                      "text": "Full main-thread trace 4x: 60 / 120 s.\n"
+                    },
+                    {
+                      "text": "Full main-thread trace 4x: 90 / 120 s.\n"
+                    },
+                    {
+                      "text": "Full main-thread trace 4x: 120 / 120 s.\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T15:27:50.599Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "full-main-thread-work",
+                      "contentType": "application/json",
+                      "body": "WwogIHsKICAgICJzcGVlZCI6IDEsCiAgICAic2FtcGxlU2Vjb25kcyI6IDEyMCwKICAgICJ3YXJtdXBTZWNvbmRzIjogNjAsCiAgICAidmlld3BvcnQiOiB7CiAgICAgICJ3aWR0aCI6IDE5MjAsCiAgICAgICJoZWlnaHQiOiAxMDgwCiAgICB9LAogICAgImZsZWV0IjogMzAwLAogICAgInF1YWxpdHkiOiAic3RhbmRhcmQiLAogICAgImdwdSI6IHsKICAgICAgInNhbXBsZXMiOiA0LAogICAgICAiYW50aWFsaWFzIjogdHJ1ZSwKICAgICAgImJhY2tpbmdXaWR0aCI6IDE5MjAsCiAgICAgICJiYWNraW5nSGVpZ2h0IjogNzk1CiAgICB9LAogICAgImFzc2V0cyI6IFsKICAgICAgewogICAgICAgICJuYW1lIjogIkNpdHlTY2VuZS1ERVBvTnFOZC5qcyIsCiAgICAgICAgInJhdyI6IDk0NzU5MCwKICAgICAgICAic2hhMjU2IjogIjcyODVhNTkxNzcwMTJkODk1NTM1ZDliYTczNjEyNmYwZGM2ZjQ3NGJiOGI0N2QzYmIzMzYwNTRmYTU0MzE1NmIiCiAgICAgIH0sCiAgICAgIHsKICAgICAgICAibmFtZSI6ICJpbmRleC1DbXpSekN5SS5qcyIsCiAgICAgICAgInJhdyI6IDI0NjM1MiwKICAgICAgICAic2hhMjU2IjogImI5OWY3OTM0OGMyMzIyMDJlZjVmMzEzYjJjZjg2Njc2ZDc1NTU4OTkwYzZiMzRlMjVkYTc4NTgxOTI4NTdkZWUiCiAgICAgIH0sCiAgICAgIHsKICAgICAgICAibmFtZSI6ICJpbmRleC1EcjljUG9tNS5jc3MiLAogICAgICAgICJyYXciOiAyMDY5MSwKICAgICAgICAic2hhMjU2IjogIjM5NDU4MTkzYzQ2NzcwYTdhMWU0MTQyOWU3ZGUwODQxNWE2OGI4YjMwMmE3ZTIwN2I2MzEyNGNkNzMxMTJlYzUiCiAgICAgIH0sCiAgICAgIHsKICAgICAgICAibmFtZSI6ICJqc3gtcnVudGltZS1PWG8xSDU2cS5qcyIsCiAgICAgICAgInJhdyI6IDE4NzQxLAogICAgICAgICJzaGEyNTYiOiAiNjg1NDc3OTUzYzZkNGEyYmExMDRhODU0OGUzNmQyNzEyOWJhZTAzNzdhNjQxODhlMmYzNmM1ZTJjZGMzMjc3ZSIKICAgICAgfSwKICAgICAgewogICAgICAgICJuYW1lIjogInByb2JlLndvcmtlci15MFlUTEZZbS5qcyIsCiAgICAgICAgInJhdyI6IDExMzQ5OSwKICAgICAgICAic2hhMjU2IjogIjc4Y2YwNDEwZWIzZjZhMTdhMTBiNzYyM2Y3MjJjMDJjM2I4MzRlY2I4M2M1Mjc3YWY2NTAwNDU3ZWE0N2U4MDYiCiAgICAgIH0sCiAgICAgIHsKICAgICAgICAibmFtZSI6ICJzaW11bGF0aW9uLWNsaWVudC1Eam15QW9fUy5qcyIsCiAgICAgICAgInJhdyI6IDExMTg3OCwKICAgICAgICAic2hhMjU2IjogIjZlOWNiZDViNGQyODcxMDIwOGQwMDExZDBjZmU2ODgxNzQ4ZjBhYTQ1ODVmYzg0MTNmN2IxMjk1Nzk1MTliMmQiCiAgICAgIH0sCiAgICAgIHsKICAgICAgICAibmFtZSI6ICJzaW11bGF0aW9uLndvcmtlci1DcjRsSkJhci5qcyIsCiAgICAgICAgInJhdyI6IDE2NzIwMywKICAgICAgICAic2hhMjU2IjogIjRjOTIwMmFjYjdlMzBlNWE1YWNkODY2MjUwNjI0ZWQ5NjNhOWRiOWU0YTVmMDU5ZTBhZmI5ODk4MWFiMTEzZWIiCiAgICAgIH0sCiAgICAgIHsKICAgICAgICAibmFtZSI6ICJzaW11bGF0aW9uQ2xpZW50LUNrQVR0Z2Z0LmpzIiwKICAgICAgICAicmF3IjogOTUsCiAgICAgICAgInNoYTI1NiI6ICI2ZjFmNzE3YjE5MTEyMjg1NGM1NGM2NGEzNDIyZTNjZjhjYjNkOTgyNjcwMDcwNTFhMWY5NmZlOGM2NGViZGZmIgogICAgICB9CiAgICBdLAogICAgIndvcmtNc1BlckZyYW1lIjogewogICAgICAibiI6IDcyMDQsCiAgICAgICJwNTAiOiAxLjY0MiwKICAgICAgInA5NSI6IDMuNDQsCiAgICAgICJwOTkiOiA1LjAwOSwKICAgICAgIm1heCI6IDEwLjg0NCwKICAgICAgInRhc2tTbGljZXMiOiA1MjEzOCwKICAgICAgInJlbmRlcmVyVGhyZWFkIjogIjEwNzQ0OjE1Nzg4IiwKICAgICAgImZyYW1lSW50ZXJ2YWxNcyI6IHsKICAgICAgICAicDUwIjogMTYuNzE0LAogICAgICAgICJwOTUiOiAxNy43NDgsCiAgICAgICAgInA5OSI6IDE4LjE2MiwKICAgICAgICAibWF4IjogMTguODIyCiAgICAgIH0sCiAgICAgICJtZXRob2QiOiAiVW5pb24gb2YgYWxsIHRvcC1sZXZlbCByZW5kZXJlci1tYWluIFJ1blRhc2sgc2xpY2VzIGludGVyc2VjdGVkIHdpdGggYWN0dWFsIEZpcmVBbmltYXRpb25GcmFtZSBib3VuZGFyaWVzLiBJbmNsdWRlcyBSZWFjdCwgbWVzc2FnZSBwYXJzaW5nLCBicm93c2VyIHdvcmsgYW5kIHRyYWNpbmcgb3ZlcmhlYWQ7IGNvbnNlcnZhdGl2ZSB1cHBlciBib3VuZCBmb3IgYXBwbGljYXRpb24gSlMsIG5vdCBqdXN0IFRocmVlLmpzIGNhbGxiYWNrcy4iCiAgICB9LAogICAgImhlYXAiOiBbCiAgICAgIHsKICAgICAgICAidHlwZSI6ICJ3b3JrZXIiLAogICAgICAgICJ1cmwiOiAiaHR0cDovLzEyNy4wLjAuMTo0MTczL2Fzc2V0cy9zaW11bGF0aW9uLndvcmtlci1DcjRsSkJhci5qcyIsCiAgICAgICAgInVzZWRTaXplIjogMTIxNDM4OTIKICAgICAgfSwKICAgICAgewogICAgICAgICJ0eXBlIjogInBhZ2UiLAogICAgICAgICJ1cmwiOiAiaHR0cDovLzEyNy4wLjAuMTo0MTczLyIsCiAgICAgICAgInVzZWRTaXplIjogMTM3OTA3OTIKICAgICAgfQogICAgXSwKICAgICJyZW5kZXIiOiB7CiAgICAgICJjYWxscyI6IDI1LAogICAgICAidHJpYW5nbGVzIjogOTQwMTQKICAgIH0sCiAgICAicmF3VHJhY2VCeXRlcyI6IDIwNDY4NTgzMgogIH0sCiAgewogICAgInNwZWVkIjogNCwKICAgICJzYW1wbGVTZWNvbmRzIjogMTIwLAogICAgIndhcm11cFNlY29uZHMiOiA2MCwKICAgICJ2aWV3cG9ydCI6IHsKICAgICAgIndpZHRoIjogMTkyMCwKICAgICAgImhlaWdodCI6IDEwODAKICAgIH0sCiAgICAiZmxlZXQiOiAzMDAsCiAgICAicXVhbGl0eSI6ICJzdGFuZGFyZCIsCiAgICAiZ3B1IjogewogICAgICAic2FtcGxlcyI6IDQsCiAgICAgICJhbnRpYWxpYXMiOiB0cnVlLAogICAgICAiYmFja2luZ1dpZHRoIjogMTkyMCwKICAgICAgImJhY2tpbmdIZWlnaHQiOiA3OTUKICAgIH0sCiAgICAiYXNzZXRzIjogWwogICAgICB7CiAgICAgICAgIm5hbWUiOiAiQ2l0eVNjZW5lLURFUG9OcU5kLmpzIiwKICAgICAgICAicmF3IjogOTQ3NTkwLAogICAgICAgICJzaGEyNTYiOiAiNzI4NWE1OTE3NzAxMmQ4OTU1MzVkOWJhNzM2MTI2ZjBkYzZmNDc0YmI4YjQ3ZDNiYjMzNjA1NGZhNTQzMTU2YiIKICAgICAgfSwKICAgICAgewogICAgICAgICJuYW1lIjogImluZGV4LUNtelJ6Q3lJLmpzIiwKICAgICAgICAicmF3IjogMjQ2MzUyLAogICAgICAgICJzaGEyNTYiOiAiYjk5Zjc5MzQ4YzIzMjIwMmVmNWYzMTNiMmNmODY2NzZkNzU1NTg5OTBjNmIzNGUyNWRhNzg1ODE5Mjg1N2RlZSIKICAgICAgfSwKICAgICAgewogICAgICAgICJuYW1lIjogImluZGV4LURyOWNQb201LmNzcyIsCiAgICAgICAgInJhdyI6IDIwNjkxLAogICAgICAgICJzaGEyNTYiOiAiMzk0NTgxOTNjNDY3NzBhN2ExZTQxNDI5ZTdkZTA4NDE1YTY4YjhiMzAyYTdlMjA3YjYzMTI0Y2Q3MzExMmVjNSIKICAgICAgfSwKICAgICAgewogICAgICAgICJuYW1lIjogImpzeC1ydW50aW1lLU9YbzFINTZxLmpzIiwKICAgICAgICAicmF3IjogMTg3NDEsCiAgICAgICAgInNoYTI1NiI6ICI2ODU0Nzc5NTNjNmQ0YTJiYTEwNGE4NTQ4ZTM2ZDI3MTI5YmFlMDM3N2E2NDE4OGUyZjM2YzVlMmNkYzMyNzdlIgogICAgICB9LAogICAgICB7CiAgICAgICAgIm5hbWUiOiAicHJvYmUud29ya2VyLXkwWVRMRlltLmpzIiwKICAgICAgICAicmF3IjogMTEzNDk5LAogICAgICAgICJzaGEyNTYiOiAiNzhjZjA0MTBlYjNmNmExN2ExMGI3NjIzZjcyMmMwMmMzYjgzNGVjYjgzYzUyNzdhZjY1MDA0NTdlYTQ3ZTgwNiIKICAgICAgfSwKICAgICAgewogICAgICAgICJuYW1lIjogInNpbXVsYXRpb24tY2xpZW50LURqbXlBb19TLmpzIiwKICAgICAgICAicmF3IjogMTExODc4LAogICAgICAgICJzaGEyNTYiOiAiNmU5Y2JkNWI0ZDI4NzEwMjA4ZDAwMTFkMGNmZTY4ODE3NDhmMGFhNDU4NWZjODQxM2Y3YjEyOTU3OTUxOWIyZCIKICAgICAgfSwKICAgICAgewogICAgICAgICJuYW1lIjogInNpbXVsYXRpb24ud29ya2VyLUNyNGxKQmFyLmpzIiwKICAgICAgICAicmF3IjogMTY3MjAzLAogICAgICAgICJzaGEyNTYiOiAiNGM5MjAyYWNiN2UzMGU1YTVhY2Q4NjYyNTA2MjRlZDk2M2E5ZGI5ZTRhNWYwNTllMGFmYjk4OTgxYWIxMTNlYiIKICAgICAgfSwKICAgICAgewogICAgICAgICJuYW1lIjogInNpbXVsYXRpb25DbGllbnQtQ2tBVHRnZnQuanMiLAogICAgICAgICJyYXciOiA5NSwKICAgICAgICAic2hhMjU2IjogIjZmMWY3MTdiMTkxMTIyODU0YzU0YzY0YTM0MjJlM2NmOGNiM2Q5ODI2NzAwNzA1MWExZjk2ZmU4YzY0ZWJkZmYiCiAgICAgIH0KICAgIF0sCiAgICAid29ya01zUGVyRnJhbWUiOiB7CiAgICAgICJuIjogNzIwNSwKICAgICAgInA1MCI6IDEuOTk5LAogICAgICAicDk1IjogNC4yOSwKICAgICAgInA5OSI6IDUuNTg4LAogICAgICAibWF4IjogMTQuMDIxLAogICAgICAidGFza1NsaWNlcyI6IDU3MTk0LAogICAgICAicmVuZGVyZXJUaHJlYWQiOiAiMTA3NDQ6MTU3ODgiLAogICAgICAiZnJhbWVJbnRlcnZhbE1zIjogewogICAgICAgICJwNTAiOiAxNi42OTcsCiAgICAgICAgInA5NSI6IDE3LjgzNywKICAgICAgICAicDk5IjogMTguMjY2LAogICAgICAgICJtYXgiOiAzMS4xNTkKICAgICAgfSwKICAgICAgIm1ldGhvZCI6ICJVbmlvbiBvZiBhbGwgdG9wLWxldmVsIHJlbmRlcmVyLW1haW4gUnVuVGFzayBzbGljZXMgaW50ZXJzZWN0ZWQgd2l0aCBhY3R1YWwgRmlyZUFuaW1hdGlvbkZyYW1lIGJvdW5kYXJpZXMuIEluY2x1ZGVzIFJlYWN0LCBtZXNzYWdlIHBhcnNpbmcsIGJyb3dzZXIgd29yayBhbmQgdHJhY2luZyBvdmVyaGVhZDsgY29uc2VydmF0aXZlIHVwcGVyIGJvdW5kIGZvciBhcHBsaWNhdGlvbiBKUywgbm90IGp1c3QgVGhyZWUuanMgY2FsbGJhY2tzLiIKICAgIH0sCiAgICAiaGVhcCI6IFsKICAgICAgewogICAgICAgICJ0eXBlIjogIndvcmtlciIsCiAgICAgICAgInVybCI6ICJodHRwOi8vMTI3LjAuMC4xOjQxNzMvYXNzZXRzL3NpbXVsYXRpb24ud29ya2VyLUNyNGxKQmFyLmpzIiwKICAgICAgICAidXNlZFNpemUiOiAzNTI4NTg2MAogICAgICB9LAogICAgICB7CiAgICAgICAgInR5cGUiOiAicGFnZSIsCiAgICAgICAgInVybCI6ICJodHRwOi8vMTI3LjAuMC4xOjQxNzMvIiwKICAgICAgICAidXNlZFNpemUiOiAxMzU5NDA1MgogICAgICB9CiAgICBdLAogICAgInJlbmRlciI6IHsKICAgICAgImNhbGxzIjogMjUsCiAgICAgICJ0cmlhbmdsZXMiOiA5NDQ5NAogICAgfSwKICAgICJyYXdUcmFjZUJ5dGVzIjogMjIzNzM2NTcyCiAgfQpd"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "5e2d2bd8c9abb04a348f-f740bd65bfeda6b1694a",
+          "file": "main-thread-trace.spec.ts",
+          "line": 81,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-28T15:27:49.141Z",
+    "duration": 342850.104,
+    "expected": 1,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

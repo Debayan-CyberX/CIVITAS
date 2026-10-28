@@ -1,0 +1,12 @@
+
+> civitas@0.1.0 typecheck
+> node scripts/typecheck.mjs
+
+Typecheck: packages/contracts
+Typecheck: packages/simulation
+Typecheck: packages/simulation-worker
+Typecheck: apps/web
+Typecheck: apps/web/tsconfig.node.json
+Typecheck: tsconfig.tools.json
+Typecheck: tsconfig.browser-tests.json
+Typecheck: tsconfig.pure-tests.json

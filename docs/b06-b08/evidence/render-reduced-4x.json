@@ -1,0 +1,160 @@
+{
+  "date": "2026-10-28T15:15:30.814Z",
+  "commitBeforeChanges": "a0995e479603694d7b10f6a07fa7bff5096a6f77",
+  "hardware": {
+    "cpu": "13th Gen Intel(R) Core(TM) i5-1335U",
+    "memory": 16849256448,
+    "os": "10.0.26200",
+    "power": "Power Scheme GUID: 381b4222-f694-41f0-9685-ff5bb260df2e  (Balanced)"
+  },
+  "browser": {
+    "name": "chromium",
+    "version": "156.0.8078.4",
+    "renderer": "ANGLE (Intel, Intel(R) Iris(R) Xe Graphics (0x0000A7A1) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+    "dpr": 1,
+    "backingWidth": 1280,
+    "backingHeight": 454,
+    "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.8078.4 Safari/537.36"
+  },
+  "viewport": {
+    "width": 1280,
+    "height": 720
+  },
+  "quality": "reduced",
+  "fleet": 300,
+  "seed": 104729,
+  "requestedSpeed": 4,
+  "warmupSeconds": 60,
+  "sampleSeconds": 120,
+  "coldInteractiveMs": 1337.2393999999622,
+  "coldNetwork": "CDP cold cache, 10 Mbps download / 100 ms latency; production Vite preview serves uncompressed files",
+  "frameIntervalMs": {
+    "n": 7205,
+    "p50": 16.69999999999709,
+    "p95": 16.70000000001164,
+    "p99": 16.80000000000291,
+    "max": 16.800000000017462
+  },
+  "fps": {
+    "n": 7205,
+    "p50": 59.880239520968516,
+    "p95": 60.24096385545337,
+    "p99": 60.24096385550618,
+    "max": 60.60606060606061
+  },
+  "missedFramesOver20Ms": 0,
+  "renderLoopWorkMs": {
+    "n": 7205,
+    "p50": 0.6000000238418579,
+    "p95": 1.0999999642372131,
+    "p99": 1.2999999523162842,
+    "max": 2.300000011920929
+  },
+  "frameLongTasks": [],
+  "ordinaryInteractionLongTasks": [],
+  "selectionFeedbackMs": {
+    "n": 30,
+    "p50": 26.200000047683716,
+    "p95": 29.5,
+    "p99": 31.600000023841858,
+    "max": 31.600000023841858
+  },
+  "commandAckMs": {
+    "n": 30,
+    "p50": 0.40000003576278687,
+    "p95": 3.199999988079071,
+    "p99": 4.5,
+    "max": 4.5
+  },
+  "maxSnapshotBytes": 6288,
+  "snapshotsDuringFrameSample": 1560,
+  "peakInNetwork": 278,
+  "causalObservation": {
+    "finalTick": 7301,
+    "finalHash": "5048c923da6e0205929d66033405fa00eaa8dd0e75cf36fcbb406cd830c7fa2c",
+    "eventDigest": "977ea2c7bfcffc5ed4736f5454f273d62f4334e34d90adff49e23a9f21a25b9c",
+    "commands": 30,
+    "appliedClosures": 15,
+    "reopenings": 15,
+    "reroutes": 588,
+    "drainingExceptions": 105,
+    "routeBlockedEvents": 0,
+    "safetyDiagnostics": [],
+    "inNetwork": 276,
+    "sourceQueued": 24,
+    "completed": 250,
+    "unfinished": 1589
+  },
+  "render": {
+    "calls": 19,
+    "triangles": 32990,
+    "geometries": 20,
+    "textures": 3
+  },
+  "heap": {
+    "isolates": [
+      34058980,
+      39785356
+    ],
+    "totalBytes": 73844336,
+    "targets": [
+      {
+        "type": "worker",
+        "url": "http://127.0.0.1:4173/assets/simulation.worker-Cr4lJBar.js",
+        "usedSize": 34058980
+      },
+      {
+        "type": "page",
+        "url": "http://127.0.0.1:4173/",
+        "usedSize": 39785356
+      }
+    ],
+    "note": "Page and worker sampled after explicit GC. Not main-thread-only."
+  },
+  "gpuAllocationEstimateBytes": 11167744,
+  "gpuEstimateNote": "Framebuffer/color/depth approximation, shadow color+depth, 4 MiB conservative geometry allowance. Not a measured GPU allocation.",
+  "gpuTiming": "Unavailable",
+  "assets": [
+    {
+      "name": "CityScene-BQI8kuOL.js",
+      "raw": 947590,
+      "gzip": 249108
+    },
+    {
+      "name": "index-B1r8oKip.js",
+      "raw": 246352,
+      "gzip": 76706
+    },
+    {
+      "name": "index-Dr9cPom5.css",
+      "raw": 20691,
+      "gzip": 5471
+    },
+    {
+      "name": "jsx-runtime-C0BAPZ2q.js",
+      "raw": 18520,
+      "gzip": 7245
+    },
+    {
+      "name": "probe.worker-y0YTLFYm.js",
+      "raw": 113499,
+      "gzip": 31469
+    },
+    {
+      "name": "simulation-client-DjmyAo_S.js",
+      "raw": 111878,
+      "gzip": 32516
+    },
+    {
+      "name": "simulation.worker-Cr4lJBar.js",
+      "raw": 167203,
+      "gzip": 47407
+    },
+    {
+      "name": "simulationClient-CkATtgft.js",
+      "raw": 95,
+      "gzip": 88
+    }
+  ],
+  "selectedInputsGzipBytes": 45769
+}

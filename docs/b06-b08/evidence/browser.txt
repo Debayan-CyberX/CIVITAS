@@ -1,0 +1,119 @@
+
+Running 69 tests using 1 worker
+
+  ok  1 [chromium] › tests\e2e\foundation.spec.ts:4:1 › production React shell validates a real module-worker round trip (299ms)
+  ok  2 [chromium] › tests\e2e\foundation.spec.ts:25:1 › unsupported Worker support is explicit without fabricated running state (175ms)
+  ok  3 [chromium] › tests\e2e\foundation.spec.ts:40:1 › foundation accessibility has no serious or critical axe issues (708ms)
+  ok  4 [chromium] › tests\e2e\full-replay.spec.ts:8:1 › 9000-tick worker closure experiment repeats and replays exactly (1.6m)
+  ok  5 [chromium] › tests\e2e\living-city.spec.ts:28:1 › living city: acknowledged closure, reopen, export, exact replay and view independence (4.3s)
+  ok  6 [chromium] › tests\e2e\living-city.spec.ts:105:3 › configured fleet 100: live counts reconcile between scene, map and worker (4.2s)
+  ok  7 [chromium] › tests\e2e\living-city.spec.ts:105:3 › configured fleet 200: live counts reconcile between scene, map and worker (4.3s)
+  ok  8 [chromium] › tests\e2e\living-city.spec.ts:105:3 › configured fleet 300: live counts reconcile between scene, map and worker (4.5s)
+  ok  9 [chromium] › tests\e2e\living-city.spec.ts:161:1 › WebGL unavailable: keyboard closure and playback remain functional (804ms)
+  ok 10 [chromium] › tests\e2e\living-city.spec.ts:196:1 › graphics context loss preserves tick, closure and selection (1.8s)
+  ok 11 [chromium] › tests\e2e\living-city.spec.ts:228:3 › responsive 820px and reduced motion accessibility (1.3s)
+  ok 12 [chromium] › tests\e2e\living-city.spec.ts:228:3 › responsive 390px and reduced motion accessibility (967ms)
+  ok 13 [chromium] › tests\e2e\living-city.spec.ts:228:3 › responsive 320px and reduced motion accessibility (1.0s)
+  ok 14 [chromium] › tests\e2e\living-city.spec.ts:250:1 › application accessibility: loaded, selected, evidence and reset dialog (8.1s)
+  ok 15 [chromium] › tests\e2e\living-city.spec.ts:273:1 › worker failure offers explicit recovery of the last exported run (6.5s)
+  ok 16 [chromium] › tests\e2e\living-city.spec.ts:299:1 › snapshot starvation freezes Map symbols and reports stale evidence (5.2s)
+  ok 17 [chromium] › tests\e2e\living-city.spec.ts:337:1 › presentation cadence at 30, 60 and 120 callbacks per second cannot change a run (17.4s)
+  -  18 [chromium] › tests\e2e\render-performance.spec.ts:37:5 › render measurement standard 1x
+  -  19 [chromium] › tests\e2e\render-performance.spec.ts:37:5 › render measurement standard 4x
+  -  20 [chromium] › tests\e2e\render-performance.spec.ts:37:5 › render measurement reduced 1x
+  -  21 [chromium] › tests\e2e\render-performance.spec.ts:37:5 › render measurement reduced 4x
+  ok 22 [chromium] › tests\e2e\simulation-worker.spec.ts:8:1 › production simulation worker controls, export/replay, epochs and explicit recovery (2.8s)
+  ok 23 [chromium] › tests\e2e\transport-performance.spec.ts:7:1 › preliminary worker transport budgets at 300 agents and 1x/4x (6.0s)
+  ok 24 [firefox] › tests\e2e\foundation.spec.ts:4:1 › production React shell validates a real module-worker round trip (1.8s)
+  ok 25 [firefox] › tests\e2e\foundation.spec.ts:25:1 › unsupported Worker support is explicit without fabricated running state (1.6s)
+  ok 26 [firefox] › tests\e2e\foundation.spec.ts:40:1 › foundation accessibility has no serious or critical axe issues (1.4s)
+  ok 27 [firefox] › tests\e2e\full-replay.spec.ts:8:1 › 9000-tick worker closure experiment repeats and replays exactly (2.1m)
+  ok 28 [firefox] › tests\e2e\living-city.spec.ts:28:1 › living city: acknowledged closure, reopen, export, exact replay and view independence (6.0s)
+  ok 29 [firefox] › tests\e2e\living-city.spec.ts:105:3 › configured fleet 100: live counts reconcile between scene, map and worker (5.2s)
+  ok 30 [firefox] › tests\e2e\living-city.spec.ts:105:3 › configured fleet 200: live counts reconcile between scene, map and worker (5.5s)
+  ok 31 [firefox] › tests\e2e\living-city.spec.ts:105:3 › configured fleet 300: live counts reconcile between scene, map and worker (5.4s)
+  ok 32 [firefox] › tests\e2e\living-city.spec.ts:161:1 › WebGL unavailable: keyboard closure and playback remain functional (1.4s)
+  ok 33 [firefox] › tests\e2e\living-city.spec.ts:196:1 › graphics context loss preserves tick, closure and selection (3.6s)
+  ok 34 [firefox] › tests\e2e\living-city.spec.ts:228:3 › responsive 820px and reduced motion accessibility (2.0s)
+  ok 35 [firefox] › tests\e2e\living-city.spec.ts:228:3 › responsive 390px and reduced motion accessibility (1.5s)
+  ok 36 [firefox] › tests\e2e\living-city.spec.ts:228:3 › responsive 320px and reduced motion accessibility (1.6s)
+  ok 37 [firefox] › tests\e2e\living-city.spec.ts:250:1 › application accessibility: loaded, selected, evidence and reset dialog (11.4s)
+  ok 38 [firefox] › tests\e2e\living-city.spec.ts:273:1 › worker failure offers explicit recovery of the last exported run (3.1s)
+  ok 39 [firefox] › tests\e2e\living-city.spec.ts:299:1 › snapshot starvation freezes Map symbols and reports stale evidence (4.2s)
+  ok 40 [firefox] › tests\e2e\living-city.spec.ts:337:1 › presentation cadence at 30, 60 and 120 callbacks per second cannot change a run (20.9s)
+  -  41 [firefox] › tests\e2e\render-performance.spec.ts:37:5 › render measurement standard 1x
+  -  42 [firefox] › tests\e2e\render-performance.spec.ts:37:5 › render measurement standard 4x
+  -  43 [firefox] › tests\e2e\render-performance.spec.ts:37:5 › render measurement reduced 1x
+  -  44 [firefox] › tests\e2e\render-performance.spec.ts:37:5 › render measurement reduced 4x
+  ok 45 [firefox] › tests\e2e\simulation-worker.spec.ts:8:1 › production simulation worker controls, export/replay, epochs and explicit recovery (5.3s)
+  ok 46 [firefox] › tests\e2e\transport-performance.spec.ts:7:1 › preliminary worker transport budgets at 300 agents and 1x/4x (8.4s)
+  ok 47 [webkit] › tests\e2e\foundation.spec.ts:4:1 › production React shell validates a real module-worker round trip (444ms)
+  ok 48 [webkit] › tests\e2e\foundation.spec.ts:25:1 › unsupported Worker support is explicit without fabricated running state (404ms)
+  ok 49 [webkit] › tests\e2e\foundation.spec.ts:40:1 › foundation accessibility has no serious or critical axe issues (1.1s)
+  ok 50 [webkit] › tests\e2e\full-replay.spec.ts:8:1 › 9000-tick worker closure experiment repeats and replays exactly (2.5m)
+  ok 51 [webkit] › tests\e2e\living-city.spec.ts:28:1 › living city: acknowledged closure, reopen, export, exact replay and view independence (18.5s)
+  ok 52 [webkit] › tests\e2e\living-city.spec.ts:105:3 › configured fleet 100: live counts reconcile between scene, map and worker (13.4s)
+  ok 53 [webkit] › tests\e2e\living-city.spec.ts:105:3 › configured fleet 200: live counts reconcile between scene, map and worker (12.9s)
+  ok 54 [webkit] › tests\e2e\living-city.spec.ts:105:3 › configured fleet 300: live counts reconcile between scene, map and worker (13.8s)
+  ok 55 [webkit] › tests\e2e\living-city.spec.ts:161:1 › WebGL unavailable: keyboard closure and playback remain functional (2.2s)
+  ok 56 [webkit] › tests\e2e\living-city.spec.ts:196:1 › graphics context loss preserves tick, closure and selection (9.5s)
+  ok 57 [webkit] › tests\e2e\living-city.spec.ts:228:3 › responsive 820px and reduced motion accessibility (9.2s)
+  ok 58 [webkit] › tests\e2e\living-city.spec.ts:228:3 › responsive 390px and reduced motion accessibility (2.6s)
+  ok 59 [webkit] › tests\e2e\living-city.spec.ts:228:3 › responsive 320px and reduced motion accessibility (3.0s)
+  ok 60 [webkit] › tests\e2e\living-city.spec.ts:250:1 › application accessibility: loaded, selected, evidence and reset dialog (26.6s)
+  ok 61 [webkit] › tests\e2e\living-city.spec.ts:273:1 › worker failure offers explicit recovery of the last exported run (9.5s)
+  ok 62 [webkit] › tests\e2e\living-city.spec.ts:299:1 › snapshot starvation freezes Map symbols and reports stale evidence (5.7s)
+  x  63 [webkit] › tests\e2e\living-city.spec.ts:337:1 › presentation cadence at 30, 60 and 120 callbacks per second cannot change a run (1.5m)
+  -  64 [webkit] › tests\e2e\render-performance.spec.ts:37:5 › render measurement standard 1x
+  -  65 [webkit] › tests\e2e\render-performance.spec.ts:37:5 › render measurement standard 4x
+  -  66 [webkit] › tests\e2e\render-performance.spec.ts:37:5 › render measurement reduced 1x
+  -  67 [webkit] › tests\e2e\render-performance.spec.ts:37:5 › render measurement reduced 4x
+  ok 68 [webkit] › tests\e2e\simulation-worker.spec.ts:8:1 › production simulation worker controls, export/replay, epochs and explicit recovery (7.3s)
+  ok 69 [webkit] › tests\e2e\transport-performance.spec.ts:7:1 › preliminary worker transport budgets at 300 agents and 1x/4x (16.0s)
+
+
+  1) [webkit] › tests\e2e\living-city.spec.ts:337:1 › presentation cadence at 30, 60 and 120 callbacks per second cannot change a run
+
+    Test timeout of 90000ms exceeded.
+
+    Error: locator.click: Test ended.
+    Call log:
+      - waiting for getByRole('button', { name: 'Step one tick' })
+        - locator resolved to <button aria-label="Step one tick">…</button>
+      - attempting click action
+        - waiting for element to be visible, enabled and stable
+
+
+      360 |     await page.getByRole('button', { name: 'Close J11 → J21', exact: true }).click();
+      361 |     for (let tick = 0; tick < 10; tick++)
+    > 362 |       await page.getByRole('button', { name: 'Step one tick' }).click();
+          |                                                                 ^
+      363 |     await page.getByRole('button', { name: 'Reopen J11 → J21', exact: true }).click();
+      364 |     for (let tick = 10; tick < 20; tick++)
+      365 |       await page.getByRole('button', { name: 'Step one tick' }).click();
+        at C:\Users\shivl\OneDrive\Desktop\CIVITAS\tests\e2e\living-city.spec.ts:362:65
+
+    Error Context: test-results\living-city-presentation-c-40b60--second-cannot-change-a-run-webkit\error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results\living-city-presentation-c-40b60--second-cannot-change-a-run-webkit\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\living-city-presentation-c-40b60--second-cannot-change-a-run-webkit\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  1 failed
+    [webkit] › tests\e2e\living-city.spec.ts:337:1 › presentation cadence at 30, 60 and 120 callbacks per second cannot change a run
+  12 skipped
+  56 passed (13.2m)
+[WebServer] (node:14644) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+(node:26372) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:16468) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3564) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:4456) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)

@@ -1,0 +1,55 @@
+{
+  "runId": "aster-300-104729-baseline",
+  "compatibility": {
+    "engineVersion": "engine/0.2.0",
+    "engineBuildSha": "72dbff91338e283c6bd3f42f2c3e261fc9dd026b57bc9002d31e847d12e7b007",
+    "runtimeEngine": "V8",
+    "runtimeVersion": "Node-24.22.1-V8-13.6.233.17-node.58",
+    "platform": "win32-x64",
+    "numericContractVersion": "kinematics/1"
+  },
+  "inputs": {
+    "city": "92b02caa2ad93f4b8f719cf978e019bc8994cb25ae16eb90f28fe1221364388c",
+    "scenario": "f032a37ef19c2448156e6cf847e239aeaf3121a125c7a52ef217c715cc322a17",
+    "manifest": "e8e109a3fafce11e0e4679be13c8c2e6af19c855d81ed307a1c8b53ac6a1ab82"
+  },
+  "stats": {
+    "tick": 9000,
+    "fleet": 300,
+    "inNetwork": 281,
+    "sourceQueued": 19,
+    "parked": 0,
+    "completed": 299,
+    "backlog": 1820,
+    "queued": 237,
+    "peakInNetwork": 281,
+    "peakTick": 8857,
+    "safetyCorrections": 0,
+    "emergencyViolations": 0
+  },
+  "elapsedMs": 11061.660399999999,
+  "p50Ms": 0.602999999999156,
+  "p95Ms": 1.1111999999993714,
+  "p99Ms": 2.046000000000049,
+  "artifactBytes": 31711338,
+  "checkpointBytes": 19449113,
+  "eventBytes": 974255,
+  "metricBytes": 5700156,
+  "metricLedgerBytes": 5113200,
+  "peakObservedHeapBytes": 327682328,
+  "retainedHeapBytes": 89227488,
+  "explicitGc": true,
+  "finalHash": "3b77732bbb77a88c4a7c991f9114604d28b525688d6692d6aecbfd0fae6ab0cd",
+  "eventDigest": "e1c10e1829c240e61d38e140442a9ed7538a20938ae5ec8c274102a91e7802e1",
+  "events": 7607,
+  "checkpoints": 94,
+  "metrics": 73882,
+  "verified": false,
+  "hardware": {
+    "cpu": "13th Gen Intel(R) Core(TM) i5-1335U",
+    "logicalCpus": 12,
+    "totalMemoryBytes": 16849256448,
+    "os": "win32 10.0.26200",
+    "powerScheme": "Power Scheme GUID: 381b4222-f694-41f0-9685-ff5bb260df2e  (Balanced)"
+  }
+}
